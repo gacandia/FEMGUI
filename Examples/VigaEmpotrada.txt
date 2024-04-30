@@ -1,0 +1,230 @@
+window -100 1100 -100 1000
+gridlines X [-100 0 100 200 300 400 500 600 700 800 900 1000 1100] Y [-100 0 100 200 300 400 500 600 700 800 900 1000]
+
+mat 1 E ElasticIsotropic 1000 0.25 0
+
+section 1 EI=1 1 1000 1 1 0.1
+
+node 1 400 200
+node 2 500 100
+node 3 500 200
+node 4 100 0
+node 5 0 100
+node 6 0 0
+node 7 100 100
+node 8 200 0
+node 9 300 300
+node 10 200 400
+node 11 200 300
+node 12 400 100
+node 13 300 200
+node 14 300 100
+node 15 100 300
+node 16 100 200
+node 17 200 200
+node 18 0 200
+node 19 400 400
+node 20 400 300
+node 21 500 300
+node 22 800 400
+node 23 700 400
+node 24 800 300
+node 25 500 0
+node 26 700 100
+node 27 700 200
+node 28 600 200
+node 29 600 100
+node 30 600 300
+node 31 700 300
+node 32 600 400
+node 33 900 200
+node 34 1000 200
+node 35 900 300
+node 36 600 0
+node 37 800 100
+node 38 800 200
+node 39 0 300
+node 40 300 0
+node 41 400 0
+node 42 200 100
+node 43 100 400
+node 44 0 400
+node 45 300 400
+node 46 500 400
+node 47 1000 300
+node 48 900 400
+node 49 900 100
+node 50 1000 400
+node 51 800 0
+node 52 900 0
+node 53 1000 0
+node 54 1000 100
+node 55 700 0
+
+fix 5 1 1 0
+fix 6 1 1 0
+fix 18 1 1 0
+fix 39 1 1 0
+fix 44 1 1 0
+
+element tri31 1 1 2 3 1 pstress 1
+element tri31 2 4 5 6 1 pstress 1
+element tri31 3 7 4 8 1 pstress 1
+element tri31 4 9 10 11 1 pstress 1
+element tri31 5 12 13 14 1 pstress 1
+element tri31 6 15 16 17 1 pstress 1
+element tri31 7 18 5 7 1 pstress 1
+element tri31 8 9 11 13 1 pstress 1
+element tri31 9 19 20 21 1 pstress 1
+element tri31 10 22 23 24 1 pstress 1
+element tri31 11 25 2 12 1 pstress 1
+element tri31 12 26 27 28 1 pstress 1
+element tri31 13 29 26 28 1 pstress 1
+element tri31 14 30 31 32 1 pstress 1
+element tri31 15 33 34 35 1 pstress 1
+element tri31 16 2 36 29 1 pstress 1
+element tri31 17 27 37 38 1 pstress 1
+element tri31 18 18 16 39 1 pstress 1
+element tri31 19 17 13 11 1 pstress 1
+element tri31 20 14 40 41 1 pstress 1
+element tri31 21 14 42 40 1 pstress 1
+element tri31 22 36 2 25 1 pstress 1
+element tri31 23 12 14 41 1 pstress 1
+element tri31 24 42 17 16 1 pstress 1
+element tri31 25 25 12 41 1 pstress 1
+element tri31 26 3 28 21 1 pstress 1
+element tri31 27 4 7 5 1 pstress 1
+element tri31 28 17 14 13 1 pstress 1
+element tri31 29 8 42 7 1 pstress 1
+element tri31 30 8 40 42 1 pstress 1
+element tri31 31 43 15 11 1 pstress 1
+element tri31 32 42 14 17 1 pstress 1
+element tri31 33 16 18 7 1 pstress 1
+element tri31 34 42 16 7 1 pstress 1
+element tri31 35 17 11 15 1 pstress 1
+element tri31 36 39 15 44 1 pstress 1
+element tri31 37 44 15 43 1 pstress 1
+element tri31 38 39 16 15 1 pstress 1
+element tri31 39 43 11 10 1 pstress 1
+element tri31 40 20 45 9 1 pstress 1
+element tri31 41 1 20 9 1 pstress 1
+element tri31 42 45 20 19 1 pstress 1
+element tri31 43 1 9 13 1 pstress 1
+element tri31 44 45 10 9 1 pstress 1
+element tri31 45 12 1 13 1 pstress 1
+element tri31 46 12 2 1 1 pstress 1
+element tri31 47 1 3 20 1 pstress 1
+element tri31 48 30 32 46 1 pstress 1
+element tri31 49 28 30 21 1 pstress 1
+element tri31 50 28 27 30 1 pstress 1
+element tri31 51 32 31 23 1 pstress 1
+element tri31 52 30 27 31 1 pstress 1
+element tri31 53 21 46 19 1 pstress 1
+element tri31 54 21 30 46 1 pstress 1
+element tri31 55 31 24 23 1 pstress 1
+element tri31 56 31 27 38 1 pstress 1
+element tri31 57 35 22 24 1 pstress 1
+element tri31 58 47 48 35 1 pstress 1
+element tri31 59 33 38 49 1 pstress 1
+element tri31 60 24 31 38 1 pstress 1
+element tri31 61 22 35 48 1 pstress 1
+element tri31 62 24 38 33 1 pstress 1
+element tri31 63 48 47 50 1 pstress 1
+element tri31 64 35 34 47 1 pstress 1
+element tri31 65 51 52 37 1 pstress 1
+element tri31 66 52 53 49 1 pstress 1
+element tri31 67 54 33 49 1 pstress 1
+element tri31 68 35 24 33 1 pstress 1
+element tri31 69 20 3 21 1 pstress 1
+element tri31 70 2 29 3 1 pstress 1
+element tri31 71 51 26 55 1 pstress 1
+element tri31 72 37 27 26 1 pstress 1
+element tri31 73 51 37 26 1 pstress 1
+element tri31 74 49 38 37 1 pstress 1
+element tri31 75 55 26 29 1 pstress 1
+element tri31 76 3 29 28 1 pstress 1
+element tri31 77 36 55 29 1 pstress 1
+element tri31 78 52 49 37 1 pstress 1
+element tri31 79 54 34 33 1 pstress 1
+element tri31 80 53 54 49 1 pstress 1
+
+eleload 1  0 -1
+eleload 2  0 -1
+eleload 3  0 -1
+eleload 4  0 -1
+eleload 5  0 -1
+eleload 6  0 -1
+eleload 7  0 -1
+eleload 8  0 -1
+eleload 9  0 -1
+eleload 10 0 -1
+eleload 11 0 -1
+eleload 12 0 -1
+eleload 13 0 -1
+eleload 14 0 -1
+eleload 15 0 -1
+eleload 16 0 -1
+eleload 17 0 -1
+eleload 18 0 -1
+eleload 19 0 -1
+eleload 20 0 -1
+eleload 21 0 -1
+eleload 22 0 -1
+eleload 23 0 -1
+eleload 24 0 -1
+eleload 25 0 -1
+eleload 26 0 -1
+eleload 27 0 -1
+eleload 28 0 -1
+eleload 29 0 -1
+eleload 30 0 -1
+eleload 31 0 -1
+eleload 32 0 -1
+eleload 33 0 -1
+eleload 34 0 -1
+eleload 35 0 -1
+eleload 36 0 -1
+eleload 37 0 -1
+eleload 38 0 -1
+eleload 39 0 -1
+eleload 40 0 -1
+eleload 41 0 -1
+eleload 42 0 -1
+eleload 43 0 -1
+eleload 44 0 -1
+eleload 45 0 -1
+eleload 46 0 -1
+eleload 47 0 -1
+eleload 48 0 -1
+eleload 49 0 -1
+eleload 50 0 -1
+eleload 51 0 -1
+eleload 52 0 -1
+eleload 53 0 -1
+eleload 54 0 -1
+eleload 55 0 -1
+eleload 56 0 -1
+eleload 57 0 -1
+eleload 58 0 -1
+eleload 59 0 -1
+eleload 60 0 -1
+eleload 61 0 -1
+eleload 62 0 -1
+eleload 63 0 -1
+eleload 64 0 -1
+eleload 65 0 -1
+eleload 66 0 -1
+eleload 67 0 -1
+eleload 68 0 -1
+eleload 69 0 -1
+eleload 70 0 -1
+eleload 71 0 -1
+eleload 72 0 -1
+eleload 73 0 -1
+eleload 74 0 -1
+eleload 75 0 -1
+eleload 76 0 -1
+eleload 77 0 -1
+eleload 78 0 -1
+eleload 79 0 -1
+eleload 80 0 -1

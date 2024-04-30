@@ -1,0 +1,11 @@
+units kgf,cm,s
+window -300 800 -300 800
+gridlines auto
+
+mat 1 Steel01 ElasticIsotropic 2e+06 0.25 8.00204e-06
+mat 2 Steel02 ElasticIsotropic 2e+06 0.3 8.00204e-06
+
+section 1 B3040 1 70 16000 11000 50
+section 2 B3041 2 80 20000 5000 50
+
+

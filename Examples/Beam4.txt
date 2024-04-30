@@ -1,0 +1,33 @@
+units kgf,cm,s
+window -500 1500 -500 1000
+gridlines X [-500:250:1500] Y [-500:250:1000]
+
+node 1 0    0
+node 2 0    500
+node 3 500  500
+node 4 1000  0
+
+mat 100 Steel01 ElasticIsotropic 2e6   0.25 0
+mat 101 Steel02 ElasticIsotropic 2.1e6 0.30 0
+
+# Sections (id label type mat values)
+section 1 B3040 100 70 16000 11000 50
+section 2 B3041 100 80 20000 5000  50
+
+
+element elasticBeamColumn 10 1 2 1 0 0   
+element elasticBeamColumn 20 2 3 1 0 0
+element elasticBeamColumn 30 3 4 1 0 0
+
+fix 1 1 1 1
+fix 4 1 1 1
+
+jointcons 3 1   2 1 1
+jointcons 3 2   2 1 1   4 1 -1    4 2 1
+jointcons 2 2   1 2 1
+
+
+jointload 2 100 0 0
+jointload 3 100 0 0
+jointload 1 100 0 0
+jointload 4 100 0 0

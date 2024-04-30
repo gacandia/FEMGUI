@@ -1,0 +1,22 @@
+window -0.5 3.5 -1 1
+gridlines auto
+
+node 1 0 0
+node 2 2 0
+node 3 3 0
+
+mat 1 E ElasticIsotropic 1 0.25 0
+
+section 1 EI=1 1 1e4 1 1 0.1
+
+element elasticBeamColumn 1 1 2  1 0 0 
+element elasticBeamColumn 2 2 3  1 0 0 
+
+fix 1 1 1 0
+fix 2 0 1 0
+
+#set P [expr -7/6]
+#jointload 3 0 $P 1
+
+set P [expr -10/7]
+jointload 3 0 $P 1

@@ -1,0 +1,36 @@
+window -2 10 -2 4
+gridlines X [-2:1:10] Y [-2:1:4]
+
+node 1 0 1 #A
+node 2 1 1 #B
+node 3 2 1 #C
+node 4 3 1 #D1
+node 5 3 1 #D2 (nodo repetido)
+node 6 5 1 #E
+node 7 5 0 #E'
+node 8 6 0 #F
+node 9 8 0 #G (EXTREMO LIBRE)
+
+
+mat     1 E    ElasticIsotropic 1 0.25 0
+section 1 EI=1 1 1e4 1 1 0.1
+
+element elasticBeamColumn 1 1 2  1 0 0  #AB 
+element elasticBeamColumn 2 2 3  1 0 0  #BC 
+element elasticBeamColumn 3 3 4  1 0 0  #CD1 
+element elasticBeamColumn 4 5 6  1 0 0  #D2E 
+element elasticBeamColumn 5 6 7  1 0 0  #EE' 
+element elasticBeamColumn 6 7 8  1 0 0  #E'F 
+element elasticBeamColumn 7 8 9  1 0 0  #FG 
+
+fix 1 1 1 1
+fix 8 0 1 0
+
+equalDOF 4 5 1 2 #(se unen los puntos 4 y 5 con una rotula)
+
+jointload 2 0 -2 0
+jointload 3 0  0 -3
+jointload 6 -3 -3 0
+
+eleload 6 continuous global 0 1 |0 0 | 0 -2
+eleload 7 continuous global 0 1 |0 0 | -2 -6

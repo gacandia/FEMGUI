@@ -1,0 +1,26 @@
+window -0.5 1.5 -0.3 1.2
+gridlines X [-0.5:0.25:1.5] Y [-0.3:0.3:1.2]
+
+node 1 0 0
+node 2 0 0.9
+node 3 1 0.9
+node 4 1 0
+
+mat -10 E  ElasticIsotropic 1 0.25 0
+mat -20 2E ElasticIsotropic 1 0.25 0
+
+section -1  EI -10 1e4 1 1 0.1
+section -2 2EI -20 1e4 2 2 0.1
+element elasticBeamColumn -101 1 2  -1 0 0 
+element elasticBeamColumn -102 2 3  -2 0 0 
+element elasticBeamColumn -103 3 4  -1 0 0 
+
+fix 1 1 1 0
+fix 4 0 1 0
+
+jointload 4 1 0 0
+
+# slave dof master dof factor
+jointcons 2 2 1 2  1
+jointcons 3 1 2 1  1
+jointcons 3 2 4 2  1

@@ -1,0 +1,121 @@
+units kgf,cm,s
+window -600 3000 -450 3150
+gridlines X [-1200 -600 0 600 1200 1800 2400 3000 3600] Y [-800 -400 0 400 800 1200 1600 2000 2400 2800 3200 3600 4000]
+
+mat 100 Steel01 ElasticIsotropic 2e+06 0.25 0
+mat 101 Steel02 ElasticIsotropic 2.1e+06 0.3 0
+
+section 21 Col 100 70 16000 11000 100
+section 22 Beam 101 80 20000 5000 60
+
+node 1 0 0
+node 2 600 0
+node 3 1200 0
+node 4 1800 0
+node 5 2400 0
+node 6 0 800
+node 7 600 800
+node 8 1200 800
+node 9 1800 800
+node 10 2400 800
+node 11 0 1200
+node 12 600 1200
+node 13 1200 1200
+node 14 1800 1200
+node 15 2400 1200
+node 16 0 1600
+node 17 600 1600
+node 18 1200 1600
+node 19 1800 1600
+node 20 2400 1600
+node 21 0 2000
+node 22 600 2000
+node 23 1200 2000
+node 24 1800 2000
+node 25 2400 2000
+node 26 0 2400
+node 27 600 2400
+node 28 1200 2400
+node 29 1800 2400
+node 30 2400 2400
+node 31 0 2800
+node 32 600 2800
+node 33 1200 2800
+node 34 1800 2800
+node 35 2400 2800
+
+fix 1 1 1 1
+fix 2 1 1 1
+fix 3 1 1 1
+fix 4 1 1 1
+fix 5 1 1 1
+
+element elasticBeamColumn 1 6 11 21 0 0
+element elasticBeamColumn 2 7 12 21 0 0
+element elasticBeamColumn 3 8 13 21 0 0
+element elasticBeamColumn 4 9 14 21 0 0
+element elasticBeamColumn 5 10 15 21 0 0
+element elasticBeamColumn 6 11 16 21 0 0
+element elasticBeamColumn 7 12 17 21 0 0
+element elasticBeamColumn 8 13 18 21 0 0
+element elasticBeamColumn 9 14 19 21 0 0
+element elasticBeamColumn 10 15 20 21 0 0
+element elasticBeamColumn 11 16 21 21 0 0
+element elasticBeamColumn 12 17 22 21 0 0
+element elasticBeamColumn 13 18 23 21 0 0
+element elasticBeamColumn 14 19 24 21 0 0
+element elasticBeamColumn 15 20 25 21 0 0
+element elasticBeamColumn 16 21 26 21 0 0
+element elasticBeamColumn 17 22 27 21 0 0
+element elasticBeamColumn 18 23 28 21 0 0
+element elasticBeamColumn 19 24 29 21 0 0
+element elasticBeamColumn 20 25 30 21 0 0
+element elasticBeamColumn 21 26 31 21 0 0
+element elasticBeamColumn 22 27 32 21 0 0
+element elasticBeamColumn 23 28 33 21 0 0
+element elasticBeamColumn 24 29 34 21 0 0
+element elasticBeamColumn 25 30 35 21 0 0
+element elasticBeamColumn 26 6 7 22 0 0
+element elasticBeamColumn 27 7 8 22 0 0
+element elasticBeamColumn 28 8 9 22 0 0
+element elasticBeamColumn 29 9 10 22 0 0
+element elasticBeamColumn 30 11 12 22 0 0
+element elasticBeamColumn 31 12 13 22 0 0
+element elasticBeamColumn 32 13 14 22 0 0
+element elasticBeamColumn 33 14 15 22 0 0
+element elasticBeamColumn 34 16 17 22 0 0
+element elasticBeamColumn 35 17 18 22 0 0
+element elasticBeamColumn 36 18 19 22 0 0
+element elasticBeamColumn 37 19 20 22 0 0
+element elasticBeamColumn 38 21 22 22 0 0
+element elasticBeamColumn 39 22 23 22 0 0
+element elasticBeamColumn 40 23 24 22 0 0
+element elasticBeamColumn 41 24 25 22 0 0
+element elasticBeamColumn 42 26 27 22 0 0
+element elasticBeamColumn 43 27 28 22 0 0
+element elasticBeamColumn 44 28 29 22 0 0
+element elasticBeamColumn 45 29 30 22 0 0
+element elasticBeamColumn 46 31 32 22 0 0
+element elasticBeamColumn 47 32 33 22 0 0
+element elasticBeamColumn 48 33 34 22 0 0
+element elasticBeamColumn 49 34 35 22 0 0
+element elasticBeamColumn 50 1 6 21 0 0
+element elasticBeamColumn 51 2 7 21 0 0
+element elasticBeamColumn 52 3 8 21 0 0
+element elasticBeamColumn 53 4 9 21 0 0
+element elasticBeamColumn 54 5 10 21 0 0
+
+equaldof 1 2 3 4 5 dof 1 2 
+equaldof 6 7 8 9 10 dof 1 2 
+equaldof 11 12 13 14 15 dof 1 2 
+equaldof 16 17 18 19 20 dof 1 2 
+equaldof 21 22 23 24 25 dof 1 2 
+equaldof 26 27 28 29 30 dof 1 2 
+equaldof 31 32 33 34 35 dof 1 2 
+
+jointload 31 1 0 0
+jointload 32 1 0 0
+jointload 33 1 0 0
+jointload 34 1 0 0
+jointload 35 1 0 0
+

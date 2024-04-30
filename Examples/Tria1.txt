@@ -1,0 +1,3960 @@
+units kgf,cm,s
+window -50 250 -50 200
+gridlines X [-50 0 50 100 150 200 250] Y [-50 0 50 100 150 200]
+
+mat 100 Steel01 ElasticIsotropic 2e+06 0.25 0
+mat 101 Steel02 ElasticIsotropic 2.1e+06 0.3 0
+
+section 1 EI=1 100 1000 1 1 0.1
+
+node 1 0 0
+node 2 50 0
+node 3 50 50
+node 4 0 50
+node 5 100 0
+node 6 100 50
+node 7 150 0
+node 8 150 50
+node 9 200 0
+node 10 200 50
+node 11 200 100
+node 12 150 100
+node 13 100 100
+node 14 50 100
+node 15 0 100
+node 16 50 150
+node 17 0 150
+node 18 100 150
+node 19 150 150
+node 20 200 150
+node 21 12.5 37.5
+node 22 0 25
+node 23 12.5 12.5
+node 24 25 0
+node 25 25 25
+node 26 25 50
+node 27 37.5 12.5
+node 28 37.5 37.5
+node 29 50 25
+node 30 62.5 37.5
+node 31 62.5 12.5
+node 32 75 0
+node 33 75 25
+node 34 75 50
+node 35 87.5 12.5
+node 36 87.5 37.5
+node 37 100 25
+node 38 112.5 37.5
+node 39 112.5 12.5
+node 40 125 0
+node 41 125 25
+node 42 125 50
+node 43 137.5 12.5
+node 44 137.5 37.5
+node 45 150 25
+node 46 162.5 37.5
+node 47 162.5 12.5
+node 48 175 0
+node 49 175 25
+node 50 175 50
+node 51 187.5 12.5
+node 52 187.5 37.5
+node 53 200 25
+node 54 162.5 87.5
+node 55 150 75
+node 56 162.5 62.5
+node 57 175 75
+node 58 175 100
+node 59 187.5 62.5
+node 60 187.5 87.5
+node 61 200 75
+node 62 112.5 87.5
+node 63 100 75
+node 64 112.5 62.5
+node 65 125 75
+node 66 125 100
+node 67 137.5 62.5
+node 68 137.5 87.5
+node 69 62.5 87.5
+node 70 50 75
+node 71 62.5 62.5
+node 72 75 75
+node 73 75 100
+node 74 87.5 62.5
+node 75 87.5 87.5
+node 76 12.5 87.5
+node 77 0 75
+node 78 12.5 62.5
+node 79 25 75
+node 80 25 100
+node 81 37.5 62.5
+node 82 37.5 87.5
+node 83 12.5 137.5
+node 84 0 125
+node 85 12.5 112.5
+node 86 25 125
+node 87 25 150
+node 88 37.5 112.5
+node 89 37.5 137.5
+node 90 50 125
+node 91 62.5 137.5
+node 92 62.5 112.5
+node 93 75 125
+node 94 75 150
+node 95 87.5 112.5
+node 96 87.5 137.5
+node 97 100 125
+node 98 112.5 137.5
+node 99 112.5 112.5
+node 100 125 125
+node 101 125 150
+node 102 137.5 112.5
+node 103 137.5 137.5
+node 104 150 125
+node 105 162.5 137.5
+node 106 162.5 112.5
+node 107 175 125
+node 108 175 150
+node 109 187.5 112.5
+node 110 187.5 137.5
+node 111 200 125
+node 112 0 37.5
+node 113 12.5 0
+node 114 0 12.5
+node 115 25 12.5
+node 116 12.5 25
+node 117 12.5 50
+node 118 25 37.5
+node 119 37.5 25
+node 120 37.5 50
+node 121 50 12.5
+node 122 37.5 0
+node 123 50 37.5
+node 124 62.5 0
+node 125 75 12.5
+node 126 62.5 25
+node 127 62.5 50
+node 128 75 37.5
+node 129 87.5 25
+node 130 87.5 50
+node 131 100 12.5
+node 132 87.5 0
+node 133 100 37.5
+node 134 112.5 0
+node 135 125 12.5
+node 136 112.5 25
+node 137 112.5 50
+node 138 125 37.5
+node 139 137.5 25
+node 140 137.5 50
+node 141 150 12.5
+node 142 137.5 0
+node 143 150 37.5
+node 144 162.5 0
+node 145 175 12.5
+node 146 162.5 25
+node 147 162.5 50
+node 148 175 37.5
+node 149 187.5 25
+node 150 187.5 50
+node 151 200 12.5
+node 152 187.5 0
+node 153 200 37.5
+node 154 150 87.5
+node 155 150 62.5
+node 156 175 62.5
+node 157 162.5 75
+node 158 162.5 100
+node 159 175 87.5
+node 160 187.5 75
+node 161 187.5 100
+node 162 200 62.5
+node 163 200 87.5
+node 164 100 87.5
+node 165 100 62.5
+node 166 125 62.5
+node 167 112.5 75
+node 168 112.5 100
+node 169 125 87.5
+node 170 137.5 75
+node 171 137.5 100
+node 172 50 87.5
+node 173 50 62.5
+node 174 75 62.5
+node 175 62.5 75
+node 176 62.5 100
+node 177 75 87.5
+node 178 87.5 75
+node 179 87.5 100
+node 180 0 87.5
+node 181 0 62.5
+node 182 25 62.5
+node 183 12.5 75
+node 184 12.5 100
+node 185 25 87.5
+node 186 37.5 75
+node 187 37.5 100
+node 188 0 137.5
+node 189 0 112.5
+node 190 25 112.5
+node 191 12.5 125
+node 192 12.5 150
+node 193 25 137.5
+node 194 37.5 125
+node 195 37.5 150
+node 196 50 112.5
+node 197 50 137.5
+node 198 75 112.5
+node 199 62.5 125
+node 200 62.5 150
+node 201 75 137.5
+node 202 87.5 125
+node 203 87.5 150
+node 204 100 112.5
+node 205 100 137.5
+node 206 125 112.5
+node 207 112.5 125
+node 208 112.5 150
+node 209 125 137.5
+node 210 137.5 125
+node 211 137.5 150
+node 212 150 112.5
+node 213 150 137.5
+node 214 175 112.5
+node 215 162.5 125
+node 216 162.5 150
+node 217 175 137.5
+node 218 187.5 125
+node 219 187.5 150
+node 220 200 112.5
+node 221 200 137.5
+node 222 6.25 43.75
+node 223 6.25 31.25
+node 224 6.25 6.25
+node 225 18.75 6.25
+node 226 6.25 18.75
+node 227 18.75 18.75
+node 228 18.75 31.25
+node 229 18.75 43.75
+node 230 31.25 18.75
+node 231 31.25 31.25
+node 232 31.25 43.75
+node 233 43.75 43.75
+node 234 43.75 6.25
+node 235 43.75 18.75
+node 236 31.25 6.25
+node 237 43.75 31.25
+node 238 56.25 43.75
+node 239 56.25 31.25
+node 240 56.25 6.25
+node 241 68.75 6.25
+node 242 56.25 18.75
+node 243 68.75 18.75
+node 244 68.75 31.25
+node 245 68.75 43.75
+node 246 81.25 18.75
+node 247 81.25 31.25
+node 248 81.25 43.75
+node 249 93.75 43.75
+node 250 93.75 6.25
+node 251 93.75 18.75
+node 252 81.25 6.25
+node 253 93.75 31.25
+node 254 106.25 43.75
+node 255 106.25 31.25
+node 256 106.25 6.25
+node 257 118.75 6.25
+node 258 106.25 18.75
+node 259 118.75 18.75
+node 260 118.75 31.25
+node 261 118.75 43.75
+node 262 131.25 18.75
+node 263 131.25 31.25
+node 264 131.25 43.75
+node 265 143.75 43.75
+node 266 143.75 6.25
+node 267 143.75 18.75
+node 268 131.25 6.25
+node 269 143.75 31.25
+node 270 156.25 43.75
+node 271 156.25 31.25
+node 272 156.25 6.25
+node 273 168.75 6.25
+node 274 156.25 18.75
+node 275 168.75 18.75
+node 276 168.75 31.25
+node 277 168.75 43.75
+node 278 181.25 18.75
+node 279 181.25 31.25
+node 280 181.25 43.75
+node 281 193.75 43.75
+node 282 193.75 6.25
+node 283 193.75 18.75
+node 284 181.25 6.25
+node 285 193.75 31.25
+node 286 156.25 93.75
+node 287 156.25 81.25
+node 288 156.25 56.25
+node 289 168.75 56.25
+node 290 156.25 68.75
+node 291 168.75 68.75
+node 292 168.75 81.25
+node 293 168.75 93.75
+node 294 181.25 68.75
+node 295 181.25 81.25
+node 296 181.25 93.75
+node 297 193.75 93.75
+node 298 193.75 56.25
+node 299 193.75 68.75
+node 300 181.25 56.25
+node 301 193.75 81.25
+node 302 106.25 93.75
+node 303 106.25 81.25
+node 304 106.25 56.25
+node 305 118.75 56.25
+node 306 106.25 68.75
+node 307 118.75 68.75
+node 308 118.75 81.25
+node 309 118.75 93.75
+node 310 131.25 68.75
+node 311 131.25 81.25
+node 312 131.25 93.75
+node 313 143.75 93.75
+node 314 143.75 56.25
+node 315 143.75 68.75
+node 316 131.25 56.25
+node 317 143.75 81.25
+node 318 56.25 93.75
+node 319 56.25 81.25
+node 320 56.25 56.25
+node 321 68.75 56.25
+node 322 56.25 68.75
+node 323 68.75 68.75
+node 324 68.75 81.25
+node 325 68.75 93.75
+node 326 81.25 68.75
+node 327 81.25 81.25
+node 328 81.25 93.75
+node 329 93.75 93.75
+node 330 93.75 56.25
+node 331 93.75 68.75
+node 332 81.25 56.25
+node 333 93.75 81.25
+node 334 6.25 93.75
+node 335 6.25 81.25
+node 336 6.25 56.25
+node 337 18.75 56.25
+node 338 6.25 68.75
+node 339 18.75 68.75
+node 340 18.75 81.25
+node 341 18.75 93.75
+node 342 31.25 68.75
+node 343 31.25 81.25
+node 344 31.25 93.75
+node 345 43.75 93.75
+node 346 43.75 56.25
+node 347 43.75 68.75
+node 348 31.25 56.25
+node 349 43.75 81.25
+node 350 6.25 143.75
+node 351 6.25 131.25
+node 352 6.25 106.25
+node 353 18.75 106.25
+node 354 6.25 118.75
+node 355 18.75 118.75
+node 356 18.75 131.25
+node 357 18.75 143.75
+node 358 31.25 118.75
+node 359 31.25 131.25
+node 360 31.25 143.75
+node 361 43.75 143.75
+node 362 43.75 106.25
+node 363 43.75 118.75
+node 364 31.25 106.25
+node 365 43.75 131.25
+node 366 56.25 143.75
+node 367 56.25 131.25
+node 368 56.25 106.25
+node 369 68.75 106.25
+node 370 56.25 118.75
+node 371 68.75 118.75
+node 372 68.75 131.25
+node 373 68.75 143.75
+node 374 81.25 118.75
+node 375 81.25 131.25
+node 376 81.25 143.75
+node 377 93.75 143.75
+node 378 93.75 106.25
+node 379 93.75 118.75
+node 380 81.25 106.25
+node 381 93.75 131.25
+node 382 106.25 143.75
+node 383 106.25 131.25
+node 384 106.25 106.25
+node 385 118.75 106.25
+node 386 106.25 118.75
+node 387 118.75 118.75
+node 388 118.75 131.25
+node 389 118.75 143.75
+node 390 131.25 118.75
+node 391 131.25 131.25
+node 392 131.25 143.75
+node 393 143.75 143.75
+node 394 143.75 106.25
+node 395 143.75 118.75
+node 396 131.25 106.25
+node 397 143.75 131.25
+node 398 156.25 143.75
+node 399 156.25 131.25
+node 400 156.25 106.25
+node 401 168.75 106.25
+node 402 156.25 118.75
+node 403 168.75 118.75
+node 404 168.75 131.25
+node 405 168.75 143.75
+node 406 181.25 118.75
+node 407 181.25 131.25
+node 408 181.25 143.75
+node 409 193.75 143.75
+node 410 193.75 106.25
+node 411 193.75 118.75
+node 412 181.25 106.25
+node 413 193.75 131.25
+node 414 0 43.75
+node 415 6.25 37.5
+node 416 0 31.25
+node 417 12.5 6.25
+node 418 6.25 0
+node 419 18.75 0
+node 420 0 18.75
+node 421 6.25 12.5
+node 422 0 6.25
+node 423 25 6.25
+node 424 18.75 12.5
+node 425 25 18.75
+node 426 12.5 18.75
+node 427 6.25 25
+node 428 12.5 31.25
+node 429 18.75 25
+node 430 12.5 43.75
+node 431 6.25 50
+node 432 18.75 50
+node 433 25 31.25
+node 434 18.75 37.5
+node 435 25 43.75
+node 436 37.5 18.75
+node 437 31.25 25
+node 438 37.5 31.25
+node 439 37.5 43.75
+node 440 31.25 50
+node 441 43.75 50
+node 442 50 6.25
+node 443 43.75 12.5
+node 444 50 18.75
+node 445 31.25 12.5
+node 446 31.25 37.5
+node 447 37.5 6.25
+node 448 31.25 0
+node 449 43.75 0
+node 450 50 31.25
+node 451 43.75 37.5
+node 452 50 43.75
+node 453 43.75 25
+node 454 56.25 37.5
+node 455 62.5 6.25
+node 456 56.25 0
+node 457 68.75 0
+node 458 56.25 12.5
+node 459 75 6.25
+node 460 68.75 12.5
+node 461 75 18.75
+node 462 62.5 18.75
+node 463 56.25 25
+node 464 62.5 31.25
+node 465 68.75 25
+node 466 62.5 43.75
+node 467 56.25 50
+node 468 68.75 50
+node 469 75 31.25
+node 470 68.75 37.5
+node 471 75 43.75
+node 472 87.5 18.75
+node 473 81.25 25
+node 474 87.5 31.25
+node 475 87.5 43.75
+node 476 81.25 50
+node 477 93.75 50
+node 478 100 6.25
+node 479 93.75 12.5
+node 480 100 18.75
+node 481 81.25 12.5
+node 482 81.25 37.5
+node 483 87.5 6.25
+node 484 81.25 0
+node 485 93.75 0
+node 486 100 31.25
+node 487 93.75 37.5
+node 488 100 43.75
+node 489 93.75 25
+node 490 106.25 37.5
+node 491 112.5 6.25
+node 492 106.25 0
+node 493 118.75 0
+node 494 106.25 12.5
+node 495 125 6.25
+node 496 118.75 12.5
+node 497 125 18.75
+node 498 112.5 18.75
+node 499 106.25 25
+node 500 112.5 31.25
+node 501 118.75 25
+node 502 112.5 43.75
+node 503 106.25 50
+node 504 118.75 50
+node 505 125 31.25
+node 506 118.75 37.5
+node 507 125 43.75
+node 508 137.5 18.75
+node 509 131.25 25
+node 510 137.5 31.25
+node 511 137.5 43.75
+node 512 131.25 50
+node 513 143.75 50
+node 514 150 6.25
+node 515 143.75 12.5
+node 516 150 18.75
+node 517 131.25 12.5
+node 518 131.25 37.5
+node 519 137.5 6.25
+node 520 131.25 0
+node 521 143.75 0
+node 522 150 31.25
+node 523 143.75 37.5
+node 524 150 43.75
+node 525 143.75 25
+node 526 156.25 37.5
+node 527 162.5 6.25
+node 528 156.25 0
+node 529 168.75 0
+node 530 156.25 12.5
+node 531 175 6.25
+node 532 168.75 12.5
+node 533 175 18.75
+node 534 162.5 18.75
+node 535 156.25 25
+node 536 162.5 31.25
+node 537 168.75 25
+node 538 162.5 43.75
+node 539 156.25 50
+node 540 168.75 50
+node 541 175 31.25
+node 542 168.75 37.5
+node 543 175 43.75
+node 544 187.5 18.75
+node 545 181.25 25
+node 546 187.5 31.25
+node 547 187.5 43.75
+node 548 181.25 50
+node 549 193.75 50
+node 550 200 6.25
+node 551 193.75 12.5
+node 552 200 18.75
+node 553 181.25 12.5
+node 554 181.25 37.5
+node 555 187.5 6.25
+node 556 181.25 0
+node 557 193.75 0
+node 558 200 31.25
+node 559 193.75 37.5
+node 560 200 43.75
+node 561 193.75 25
+node 562 150 93.75
+node 563 156.25 87.5
+node 564 150 81.25
+node 565 162.5 56.25
+node 566 150 68.75
+node 567 156.25 62.5
+node 568 150 56.25
+node 569 175 56.25
+node 570 168.75 62.5
+node 571 175 68.75
+node 572 162.5 68.75
+node 573 156.25 75
+node 574 162.5 81.25
+node 575 168.75 75
+node 576 162.5 93.75
+node 577 156.25 100
+node 578 168.75 100
+node 579 175 81.25
+node 580 168.75 87.5
+node 581 175 93.75
+node 582 187.5 68.75
+node 583 181.25 75
+node 584 187.5 81.25
+node 585 187.5 93.75
+node 586 181.25 100
+node 587 193.75 100
+node 588 200 56.25
+node 589 193.75 62.5
+node 590 200 68.75
+node 591 181.25 62.5
+node 592 181.25 87.5
+node 593 187.5 56.25
+node 594 200 81.25
+node 595 193.75 87.5
+node 596 200 93.75
+node 597 193.75 75
+node 598 100 93.75
+node 599 106.25 87.5
+node 600 100 81.25
+node 601 112.5 56.25
+node 602 100 68.75
+node 603 106.25 62.5
+node 604 100 56.25
+node 605 125 56.25
+node 606 118.75 62.5
+node 607 125 68.75
+node 608 112.5 68.75
+node 609 106.25 75
+node 610 112.5 81.25
+node 611 118.75 75
+node 612 112.5 93.75
+node 613 106.25 100
+node 614 118.75 100
+node 615 125 81.25
+node 616 118.75 87.5
+node 617 125 93.75
+node 618 137.5 68.75
+node 619 131.25 75
+node 620 137.5 81.25
+node 621 137.5 93.75
+node 622 131.25 100
+node 623 143.75 100
+node 624 143.75 62.5
+node 625 131.25 62.5
+node 626 131.25 87.5
+node 627 137.5 56.25
+node 628 143.75 87.5
+node 629 143.75 75
+node 630 50 93.75
+node 631 56.25 87.5
+node 632 50 81.25
+node 633 62.5 56.25
+node 634 50 68.75
+node 635 56.25 62.5
+node 636 50 56.25
+node 637 75 56.25
+node 638 68.75 62.5
+node 639 75 68.75
+node 640 62.5 68.75
+node 641 56.25 75
+node 642 62.5 81.25
+node 643 68.75 75
+node 644 62.5 93.75
+node 645 56.25 100
+node 646 68.75 100
+node 647 75 81.25
+node 648 68.75 87.5
+node 649 75 93.75
+node 650 87.5 68.75
+node 651 81.25 75
+node 652 87.5 81.25
+node 653 87.5 93.75
+node 654 81.25 100
+node 655 93.75 100
+node 656 93.75 62.5
+node 657 81.25 62.5
+node 658 81.25 87.5
+node 659 87.5 56.25
+node 660 93.75 87.5
+node 661 93.75 75
+node 662 0 93.75
+node 663 6.25 87.5
+node 664 0 81.25
+node 665 12.5 56.25
+node 666 0 68.75
+node 667 6.25 62.5
+node 668 0 56.25
+node 669 25 56.25
+node 670 18.75 62.5
+node 671 25 68.75
+node 672 12.5 68.75
+node 673 6.25 75
+node 674 12.5 81.25
+node 675 18.75 75
+node 676 12.5 93.75
+node 677 6.25 100
+node 678 18.75 100
+node 679 25 81.25
+node 680 18.75 87.5
+node 681 25 93.75
+node 682 37.5 68.75
+node 683 31.25 75
+node 684 37.5 81.25
+node 685 37.5 93.75
+node 686 31.25 100
+node 687 43.75 100
+node 688 43.75 62.5
+node 689 31.25 62.5
+node 690 31.25 87.5
+node 691 37.5 56.25
+node 692 43.75 87.5
+node 693 43.75 75
+node 694 0 143.75
+node 695 6.25 137.5
+node 696 0 131.25
+node 697 12.5 106.25
+node 698 0 118.75
+node 699 6.25 112.5
+node 700 0 106.25
+node 701 25 106.25
+node 702 18.75 112.5
+node 703 25 118.75
+node 704 12.5 118.75
+node 705 6.25 125
+node 706 12.5 131.25
+node 707 18.75 125
+node 708 12.5 143.75
+node 709 6.25 150
+node 710 18.75 150
+node 711 25 131.25
+node 712 18.75 137.5
+node 713 25 143.75
+node 714 37.5 118.75
+node 715 31.25 125
+node 716 37.5 131.25
+node 717 37.5 143.75
+node 718 31.25 150
+node 719 43.75 150
+node 720 50 106.25
+node 721 43.75 112.5
+node 722 50 118.75
+node 723 31.25 112.5
+node 724 31.25 137.5
+node 725 37.5 106.25
+node 726 50 131.25
+node 727 43.75 137.5
+node 728 50 143.75
+node 729 43.75 125
+node 730 56.25 137.5
+node 731 62.5 106.25
+node 732 56.25 112.5
+node 733 75 106.25
+node 734 68.75 112.5
+node 735 75 118.75
+node 736 62.5 118.75
+node 737 56.25 125
+node 738 62.5 131.25
+node 739 68.75 125
+node 740 62.5 143.75
+node 741 56.25 150
+node 742 68.75 150
+node 743 75 131.25
+node 744 68.75 137.5
+node 745 75 143.75
+node 746 87.5 118.75
+node 747 81.25 125
+node 748 87.5 131.25
+node 749 87.5 143.75
+node 750 81.25 150
+node 751 93.75 150
+node 752 100 106.25
+node 753 93.75 112.5
+node 754 100 118.75
+node 755 81.25 112.5
+node 756 81.25 137.5
+node 757 87.5 106.25
+node 758 100 131.25
+node 759 93.75 137.5
+node 760 100 143.75
+node 761 93.75 125
+node 762 106.25 137.5
+node 763 112.5 106.25
+node 764 106.25 112.5
+node 765 125 106.25
+node 766 118.75 112.5
+node 767 125 118.75
+node 768 112.5 118.75
+node 769 106.25 125
+node 770 112.5 131.25
+node 771 118.75 125
+node 772 112.5 143.75
+node 773 106.25 150
+node 774 118.75 150
+node 775 125 131.25
+node 776 118.75 137.5
+node 777 125 143.75
+node 778 137.5 118.75
+node 779 131.25 125
+node 780 137.5 131.25
+node 781 137.5 143.75
+node 782 131.25 150
+node 783 143.75 150
+node 784 150 106.25
+node 785 143.75 112.5
+node 786 150 118.75
+node 787 131.25 112.5
+node 788 131.25 137.5
+node 789 137.5 106.25
+node 790 150 131.25
+node 791 143.75 137.5
+node 792 150 143.75
+node 793 143.75 125
+node 794 156.25 137.5
+node 795 162.5 106.25
+node 796 156.25 112.5
+node 797 175 106.25
+node 798 168.75 112.5
+node 799 175 118.75
+node 800 162.5 118.75
+node 801 156.25 125
+node 802 162.5 131.25
+node 803 168.75 125
+node 804 162.5 143.75
+node 805 156.25 150
+node 806 168.75 150
+node 807 175 131.25
+node 808 168.75 137.5
+node 809 175 143.75
+node 810 187.5 118.75
+node 811 181.25 125
+node 812 187.5 131.25
+node 813 187.5 143.75
+node 814 181.25 150
+node 815 193.75 150
+node 816 200 106.25
+node 817 193.75 112.5
+node 818 200 118.75
+node 819 181.25 112.5
+node 820 181.25 137.5
+node 821 187.5 106.25
+node 822 200 131.25
+node 823 193.75 137.5
+node 824 200 143.75
+node 825 193.75 125
+
+fix 1 1 1 1
+fix 4 1 1 1
+fix 9 1 1 1
+fix 10 1 1 1
+fix 11 1 1 1
+fix 15 1 1 1
+fix 17 1 1 1
+fix 20 1 1 1
+fix 22 1 1 1
+fix 53 1 1 1
+fix 61 1 1 1
+fix 77 1 1 1
+fix 84 1 1 1
+fix 111 1 1 1
+fix 112 1 1 1
+fix 114 1 1 1
+fix 151 1 1 1
+fix 153 1 1 1
+fix 162 1 1 1
+fix 163 1 1 1
+fix 180 1 1 1
+fix 181 1 1 1
+fix 188 1 1 1
+fix 189 1 1 1
+fix 220 1 1 1
+fix 221 1 1 1
+fix 414 1 1 1
+fix 416 1 1 1
+fix 420 1 1 1
+fix 422 1 1 1
+fix 550 1 1 1
+fix 552 1 1 1
+fix 558 1 1 1
+fix 560 1 1 1
+fix 588 1 1 1
+fix 590 1 1 1
+fix 594 1 1 1
+fix 596 1 1 1
+fix 662 1 1 1
+fix 664 1 1 1
+fix 666 1 1 1
+fix 668 1 1 1
+fix 694 1 1 1
+fix 696 1 1 1
+fix 698 1 1 1
+fix 700 1 1 1
+fix 816 1 1 1
+fix 818 1 1 1
+fix 822 1 1 1
+fix 824 1 1 1
+
+element tri31 1373 4 414 222 1 pstress 100
+element tri31 1374 414 112 222 1 pstress 100
+element tri31 1375 112 415 222 1 pstress 100
+element tri31 1376 415 21 222 1 pstress 100
+element tri31 1377 112 223 415 1 pstress 100
+element tri31 1378 223 21 415 1 pstress 100
+element tri31 1379 112 416 223 1 pstress 100
+element tri31 1380 416 22 223 1 pstress 100
+element tri31 1381 224 113 417 1 pstress 100
+element tri31 1382 23 224 417 1 pstress 100
+element tri31 1383 1 418 224 1 pstress 100
+element tri31 1384 418 113 224 1 pstress 100
+element tri31 1385 23 417 225 1 pstress 100
+element tri31 1386 417 113 225 1 pstress 100
+element tri31 1387 113 419 225 1 pstress 100
+element tri31 1388 419 24 225 1 pstress 100
+element tri31 1389 22 420 226 1 pstress 100
+element tri31 1390 420 114 226 1 pstress 100
+element tri31 1391 114 421 226 1 pstress 100
+element tri31 1392 421 23 226 1 pstress 100
+element tri31 1393 114 224 421 1 pstress 100
+element tri31 1394 224 23 421 1 pstress 100
+element tri31 1395 114 422 224 1 pstress 100
+element tri31 1396 422 1 224 1 pstress 100
+element tri31 1397 225 24 423 1 pstress 100
+element tri31 1398 115 225 423 1 pstress 100
+element tri31 1399 23 225 424 1 pstress 100
+element tri31 1400 225 115 424 1 pstress 100
+element tri31 1401 227 115 425 1 pstress 100
+element tri31 1402 25 227 425 1 pstress 100
+element tri31 1403 23 424 227 1 pstress 100
+element tri31 1404 424 115 227 1 pstress 100
+element tri31 1405 226 23 426 1 pstress 100
+element tri31 1406 116 226 426 1 pstress 100
+element tri31 1407 22 226 427 1 pstress 100
+element tri31 1408 226 116 427 1 pstress 100
+element tri31 1409 223 116 428 1 pstress 100
+element tri31 1410 21 223 428 1 pstress 100
+element tri31 1411 22 427 223 1 pstress 100
+element tri31 1412 427 116 223 1 pstress 100
+element tri31 1413 21 428 228 1 pstress 100
+element tri31 1414 428 116 228 1 pstress 100
+element tri31 1415 116 429 228 1 pstress 100
+element tri31 1416 429 25 228 1 pstress 100
+element tri31 1417 116 227 429 1 pstress 100
+element tri31 1418 227 25 429 1 pstress 100
+element tri31 1419 116 426 227 1 pstress 100
+element tri31 1420 426 23 227 1 pstress 100
+element tri31 1421 222 21 430 1 pstress 100
+element tri31 1422 117 222 430 1 pstress 100
+element tri31 1423 4 222 431 1 pstress 100
+element tri31 1424 222 117 431 1 pstress 100
+element tri31 1425 117 229 432 1 pstress 100
+element tri31 1426 229 26 432 1 pstress 100
+element tri31 1427 117 430 229 1 pstress 100
+element tri31 1428 430 21 229 1 pstress 100
+element tri31 1429 228 25 433 1 pstress 100
+element tri31 1430 118 228 433 1 pstress 100
+element tri31 1431 21 228 434 1 pstress 100
+element tri31 1432 228 118 434 1 pstress 100
+element tri31 1433 229 118 435 1 pstress 100
+element tri31 1434 26 229 435 1 pstress 100
+element tri31 1435 21 434 229 1 pstress 100
+element tri31 1436 434 118 229 1 pstress 100
+element tri31 1437 230 27 436 1 pstress 100
+element tri31 1438 119 230 436 1 pstress 100
+element tri31 1439 25 230 437 1 pstress 100
+element tri31 1440 230 119 437 1 pstress 100
+element tri31 1441 231 119 438 1 pstress 100
+element tri31 1442 28 231 438 1 pstress 100
+element tri31 1443 25 437 231 1 pstress 100
+element tri31 1444 437 119 231 1 pstress 100
+element tri31 1445 232 28 439 1 pstress 100
+element tri31 1446 120 232 439 1 pstress 100
+element tri31 1447 26 232 440 1 pstress 100
+element tri31 1448 232 120 440 1 pstress 100
+element tri31 1449 120 233 441 1 pstress 100
+element tri31 1450 233 3 441 1 pstress 100
+element tri31 1451 120 439 233 1 pstress 100
+element tri31 1452 439 28 233 1 pstress 100
+element tri31 1453 234 2 442 1 pstress 100
+element tri31 1454 121 234 442 1 pstress 100
+element tri31 1455 27 234 443 1 pstress 100
+element tri31 1456 234 121 443 1 pstress 100
+element tri31 1457 235 121 444 1 pstress 100
+element tri31 1458 29 235 444 1 pstress 100
+element tri31 1459 27 443 235 1 pstress 100
+element tri31 1460 443 121 235 1 pstress 100
+element tri31 1461 25 425 230 1 pstress 100
+element tri31 1462 425 115 230 1 pstress 100
+element tri31 1463 115 445 230 1 pstress 100
+element tri31 1464 445 27 230 1 pstress 100
+element tri31 1465 115 236 445 1 pstress 100
+element tri31 1466 236 27 445 1 pstress 100
+element tri31 1467 115 423 236 1 pstress 100
+element tri31 1468 423 24 236 1 pstress 100
+element tri31 1469 26 435 232 1 pstress 100
+element tri31 1470 435 118 232 1 pstress 100
+element tri31 1471 118 446 232 1 pstress 100
+element tri31 1472 446 28 232 1 pstress 100
+element tri31 1473 118 231 446 1 pstress 100
+element tri31 1474 231 28 446 1 pstress 100
+element tri31 1475 118 433 231 1 pstress 100
+element tri31 1476 433 25 231 1 pstress 100
+element tri31 1477 236 122 447 1 pstress 100
+element tri31 1478 27 236 447 1 pstress 100
+element tri31 1479 24 448 236 1 pstress 100
+element tri31 1480 448 122 236 1 pstress 100
+element tri31 1481 27 447 234 1 pstress 100
+element tri31 1482 447 122 234 1 pstress 100
+element tri31 1483 122 449 234 1 pstress 100
+element tri31 1484 449 2 234 1 pstress 100
+element tri31 1485 237 29 450 1 pstress 100
+element tri31 1486 123 237 450 1 pstress 100
+element tri31 1487 28 237 451 1 pstress 100
+element tri31 1488 237 123 451 1 pstress 100
+element tri31 1489 233 123 452 1 pstress 100
+element tri31 1490 3 233 452 1 pstress 100
+element tri31 1491 28 451 233 1 pstress 100
+element tri31 1492 451 123 233 1 pstress 100
+element tri31 1493 28 438 237 1 pstress 100
+element tri31 1494 438 119 237 1 pstress 100
+element tri31 1495 119 453 237 1 pstress 100
+element tri31 1496 453 29 237 1 pstress 100
+element tri31 1497 119 235 453 1 pstress 100
+element tri31 1498 235 29 453 1 pstress 100
+element tri31 1499 119 436 235 1 pstress 100
+element tri31 1500 436 27 235 1 pstress 100
+element tri31 1501 3 452 238 1 pstress 100
+element tri31 1502 452 123 238 1 pstress 100
+element tri31 1503 123 454 238 1 pstress 100
+element tri31 1504 454 30 238 1 pstress 100
+element tri31 1505 123 239 454 1 pstress 100
+element tri31 1506 239 30 454 1 pstress 100
+element tri31 1507 123 450 239 1 pstress 100
+element tri31 1508 450 29 239 1 pstress 100
+element tri31 1509 240 124 455 1 pstress 100
+element tri31 1510 31 240 455 1 pstress 100
+element tri31 1511 2 456 240 1 pstress 100
+element tri31 1512 456 124 240 1 pstress 100
+element tri31 1513 31 455 241 1 pstress 100
+element tri31 1514 455 124 241 1 pstress 100
+element tri31 1515 124 457 241 1 pstress 100
+element tri31 1516 457 32 241 1 pstress 100
+element tri31 1517 29 444 242 1 pstress 100
+element tri31 1518 444 121 242 1 pstress 100
+element tri31 1519 121 458 242 1 pstress 100
+element tri31 1520 458 31 242 1 pstress 100
+element tri31 1521 121 240 458 1 pstress 100
+element tri31 1522 240 31 458 1 pstress 100
+element tri31 1523 121 442 240 1 pstress 100
+element tri31 1524 442 2 240 1 pstress 100
+element tri31 1525 241 32 459 1 pstress 100
+element tri31 1526 125 241 459 1 pstress 100
+element tri31 1527 31 241 460 1 pstress 100
+element tri31 1528 241 125 460 1 pstress 100
+element tri31 1529 243 125 461 1 pstress 100
+element tri31 1530 33 243 461 1 pstress 100
+element tri31 1531 31 460 243 1 pstress 100
+element tri31 1532 460 125 243 1 pstress 100
+element tri31 1533 242 31 462 1 pstress 100
+element tri31 1534 126 242 462 1 pstress 100
+element tri31 1535 29 242 463 1 pstress 100
+element tri31 1536 242 126 463 1 pstress 100
+element tri31 1537 239 126 464 1 pstress 100
+element tri31 1538 30 239 464 1 pstress 100
+element tri31 1539 29 463 239 1 pstress 100
+element tri31 1540 463 126 239 1 pstress 100
+element tri31 1541 30 464 244 1 pstress 100
+element tri31 1542 464 126 244 1 pstress 100
+element tri31 1543 126 465 244 1 pstress 100
+element tri31 1544 465 33 244 1 pstress 100
+element tri31 1545 126 243 465 1 pstress 100
+element tri31 1546 243 33 465 1 pstress 100
+element tri31 1547 126 462 243 1 pstress 100
+element tri31 1548 462 31 243 1 pstress 100
+element tri31 1549 238 30 466 1 pstress 100
+element tri31 1550 127 238 466 1 pstress 100
+element tri31 1551 3 238 467 1 pstress 100
+element tri31 1552 238 127 467 1 pstress 100
+element tri31 1553 127 245 468 1 pstress 100
+element tri31 1554 245 34 468 1 pstress 100
+element tri31 1555 127 466 245 1 pstress 100
+element tri31 1556 466 30 245 1 pstress 100
+element tri31 1557 244 33 469 1 pstress 100
+element tri31 1558 128 244 469 1 pstress 100
+element tri31 1559 30 244 470 1 pstress 100
+element tri31 1560 244 128 470 1 pstress 100
+element tri31 1561 245 128 471 1 pstress 100
+element tri31 1562 34 245 471 1 pstress 100
+element tri31 1563 30 470 245 1 pstress 100
+element tri31 1564 470 128 245 1 pstress 100
+element tri31 1565 246 35 472 1 pstress 100
+element tri31 1566 129 246 472 1 pstress 100
+element tri31 1567 33 246 473 1 pstress 100
+element tri31 1568 246 129 473 1 pstress 100
+element tri31 1569 247 129 474 1 pstress 100
+element tri31 1570 36 247 474 1 pstress 100
+element tri31 1571 33 473 247 1 pstress 100
+element tri31 1572 473 129 247 1 pstress 100
+element tri31 1573 248 36 475 1 pstress 100
+element tri31 1574 130 248 475 1 pstress 100
+element tri31 1575 34 248 476 1 pstress 100
+element tri31 1576 248 130 476 1 pstress 100
+element tri31 1577 130 249 477 1 pstress 100
+element tri31 1578 249 6 477 1 pstress 100
+element tri31 1579 130 475 249 1 pstress 100
+element tri31 1580 475 36 249 1 pstress 100
+element tri31 1581 250 5 478 1 pstress 100
+element tri31 1582 131 250 478 1 pstress 100
+element tri31 1583 35 250 479 1 pstress 100
+element tri31 1584 250 131 479 1 pstress 100
+element tri31 1585 251 131 480 1 pstress 100
+element tri31 1586 37 251 480 1 pstress 100
+element tri31 1587 35 479 251 1 pstress 100
+element tri31 1588 479 131 251 1 pstress 100
+element tri31 1589 33 461 246 1 pstress 100
+element tri31 1590 461 125 246 1 pstress 100
+element tri31 1591 125 481 246 1 pstress 100
+element tri31 1592 481 35 246 1 pstress 100
+element tri31 1593 125 252 481 1 pstress 100
+element tri31 1594 252 35 481 1 pstress 100
+element tri31 1595 125 459 252 1 pstress 100
+element tri31 1596 459 32 252 1 pstress 100
+element tri31 1597 34 471 248 1 pstress 100
+element tri31 1598 471 128 248 1 pstress 100
+element tri31 1599 128 482 248 1 pstress 100
+element tri31 1600 482 36 248 1 pstress 100
+element tri31 1601 128 247 482 1 pstress 100
+element tri31 1602 247 36 482 1 pstress 100
+element tri31 1603 128 469 247 1 pstress 100
+element tri31 1604 469 33 247 1 pstress 100
+element tri31 1605 252 132 483 1 pstress 100
+element tri31 1606 35 252 483 1 pstress 100
+element tri31 1607 32 484 252 1 pstress 100
+element tri31 1608 484 132 252 1 pstress 100
+element tri31 1609 35 483 250 1 pstress 100
+element tri31 1610 483 132 250 1 pstress 100
+element tri31 1611 132 485 250 1 pstress 100
+element tri31 1612 485 5 250 1 pstress 100
+element tri31 1613 253 37 486 1 pstress 100
+element tri31 1614 133 253 486 1 pstress 100
+element tri31 1615 36 253 487 1 pstress 100
+element tri31 1616 253 133 487 1 pstress 100
+element tri31 1617 249 133 488 1 pstress 100
+element tri31 1618 6 249 488 1 pstress 100
+element tri31 1619 36 487 249 1 pstress 100
+element tri31 1620 487 133 249 1 pstress 100
+element tri31 1621 36 474 253 1 pstress 100
+element tri31 1622 474 129 253 1 pstress 100
+element tri31 1623 129 489 253 1 pstress 100
+element tri31 1624 489 37 253 1 pstress 100
+element tri31 1625 129 251 489 1 pstress 100
+element tri31 1626 251 37 489 1 pstress 100
+element tri31 1627 129 472 251 1 pstress 100
+element tri31 1628 472 35 251 1 pstress 100
+element tri31 1629 6 488 254 1 pstress 100
+element tri31 1630 488 133 254 1 pstress 100
+element tri31 1631 133 490 254 1 pstress 100
+element tri31 1632 490 38 254 1 pstress 100
+element tri31 1633 133 255 490 1 pstress 100
+element tri31 1634 255 38 490 1 pstress 100
+element tri31 1635 133 486 255 1 pstress 100
+element tri31 1636 486 37 255 1 pstress 100
+element tri31 1637 256 134 491 1 pstress 100
+element tri31 1638 39 256 491 1 pstress 100
+element tri31 1639 5 492 256 1 pstress 100
+element tri31 1640 492 134 256 1 pstress 100
+element tri31 1641 39 491 257 1 pstress 100
+element tri31 1642 491 134 257 1 pstress 100
+element tri31 1643 134 493 257 1 pstress 100
+element tri31 1644 493 40 257 1 pstress 100
+element tri31 1645 37 480 258 1 pstress 100
+element tri31 1646 480 131 258 1 pstress 100
+element tri31 1647 131 494 258 1 pstress 100
+element tri31 1648 494 39 258 1 pstress 100
+element tri31 1649 131 256 494 1 pstress 100
+element tri31 1650 256 39 494 1 pstress 100
+element tri31 1651 131 478 256 1 pstress 100
+element tri31 1652 478 5 256 1 pstress 100
+element tri31 1653 257 40 495 1 pstress 100
+element tri31 1654 135 257 495 1 pstress 100
+element tri31 1655 39 257 496 1 pstress 100
+element tri31 1656 257 135 496 1 pstress 100
+element tri31 1657 259 135 497 1 pstress 100
+element tri31 1658 41 259 497 1 pstress 100
+element tri31 1659 39 496 259 1 pstress 100
+element tri31 1660 496 135 259 1 pstress 100
+element tri31 1661 258 39 498 1 pstress 100
+element tri31 1662 136 258 498 1 pstress 100
+element tri31 1663 37 258 499 1 pstress 100
+element tri31 1664 258 136 499 1 pstress 100
+element tri31 1665 255 136 500 1 pstress 100
+element tri31 1666 38 255 500 1 pstress 100
+element tri31 1667 37 499 255 1 pstress 100
+element tri31 1668 499 136 255 1 pstress 100
+element tri31 1669 38 500 260 1 pstress 100
+element tri31 1670 500 136 260 1 pstress 100
+element tri31 1671 136 501 260 1 pstress 100
+element tri31 1672 501 41 260 1 pstress 100
+element tri31 1673 136 259 501 1 pstress 100
+element tri31 1674 259 41 501 1 pstress 100
+element tri31 1675 136 498 259 1 pstress 100
+element tri31 1676 498 39 259 1 pstress 100
+element tri31 1677 254 38 502 1 pstress 100
+element tri31 1678 137 254 502 1 pstress 100
+element tri31 1679 6 254 503 1 pstress 100
+element tri31 1680 254 137 503 1 pstress 100
+element tri31 1681 137 261 504 1 pstress 100
+element tri31 1682 261 42 504 1 pstress 100
+element tri31 1683 137 502 261 1 pstress 100
+element tri31 1684 502 38 261 1 pstress 100
+element tri31 1685 260 41 505 1 pstress 100
+element tri31 1686 138 260 505 1 pstress 100
+element tri31 1687 38 260 506 1 pstress 100
+element tri31 1688 260 138 506 1 pstress 100
+element tri31 1689 261 138 507 1 pstress 100
+element tri31 1690 42 261 507 1 pstress 100
+element tri31 1691 38 506 261 1 pstress 100
+element tri31 1692 506 138 261 1 pstress 100
+element tri31 1693 262 43 508 1 pstress 100
+element tri31 1694 139 262 508 1 pstress 100
+element tri31 1695 41 262 509 1 pstress 100
+element tri31 1696 262 139 509 1 pstress 100
+element tri31 1697 263 139 510 1 pstress 100
+element tri31 1698 44 263 510 1 pstress 100
+element tri31 1699 41 509 263 1 pstress 100
+element tri31 1700 509 139 263 1 pstress 100
+element tri31 1701 264 44 511 1 pstress 100
+element tri31 1702 140 264 511 1 pstress 100
+element tri31 1703 42 264 512 1 pstress 100
+element tri31 1704 264 140 512 1 pstress 100
+element tri31 1705 140 265 513 1 pstress 100
+element tri31 1706 265 8 513 1 pstress 100
+element tri31 1707 140 511 265 1 pstress 100
+element tri31 1708 511 44 265 1 pstress 100
+element tri31 1709 266 7 514 1 pstress 100
+element tri31 1710 141 266 514 1 pstress 100
+element tri31 1711 43 266 515 1 pstress 100
+element tri31 1712 266 141 515 1 pstress 100
+element tri31 1713 267 141 516 1 pstress 100
+element tri31 1714 45 267 516 1 pstress 100
+element tri31 1715 43 515 267 1 pstress 100
+element tri31 1716 515 141 267 1 pstress 100
+element tri31 1717 41 497 262 1 pstress 100
+element tri31 1718 497 135 262 1 pstress 100
+element tri31 1719 135 517 262 1 pstress 100
+element tri31 1720 517 43 262 1 pstress 100
+element tri31 1721 135 268 517 1 pstress 100
+element tri31 1722 268 43 517 1 pstress 100
+element tri31 1723 135 495 268 1 pstress 100
+element tri31 1724 495 40 268 1 pstress 100
+element tri31 1725 42 507 264 1 pstress 100
+element tri31 1726 507 138 264 1 pstress 100
+element tri31 1727 138 518 264 1 pstress 100
+element tri31 1728 518 44 264 1 pstress 100
+element tri31 1729 138 263 518 1 pstress 100
+element tri31 1730 263 44 518 1 pstress 100
+element tri31 1731 138 505 263 1 pstress 100
+element tri31 1732 505 41 263 1 pstress 100
+element tri31 1733 268 142 519 1 pstress 100
+element tri31 1734 43 268 519 1 pstress 100
+element tri31 1735 40 520 268 1 pstress 100
+element tri31 1736 520 142 268 1 pstress 100
+element tri31 1737 43 519 266 1 pstress 100
+element tri31 1738 519 142 266 1 pstress 100
+element tri31 1739 142 521 266 1 pstress 100
+element tri31 1740 521 7 266 1 pstress 100
+element tri31 1741 269 45 522 1 pstress 100
+element tri31 1742 143 269 522 1 pstress 100
+element tri31 1743 44 269 523 1 pstress 100
+element tri31 1744 269 143 523 1 pstress 100
+element tri31 1745 265 143 524 1 pstress 100
+element tri31 1746 8 265 524 1 pstress 100
+element tri31 1747 44 523 265 1 pstress 100
+element tri31 1748 523 143 265 1 pstress 100
+element tri31 1749 44 510 269 1 pstress 100
+element tri31 1750 510 139 269 1 pstress 100
+element tri31 1751 139 525 269 1 pstress 100
+element tri31 1752 525 45 269 1 pstress 100
+element tri31 1753 139 267 525 1 pstress 100
+element tri31 1754 267 45 525 1 pstress 100
+element tri31 1755 139 508 267 1 pstress 100
+element tri31 1756 508 43 267 1 pstress 100
+element tri31 1757 8 524 270 1 pstress 100
+element tri31 1758 524 143 270 1 pstress 100
+element tri31 1759 143 526 270 1 pstress 100
+element tri31 1760 526 46 270 1 pstress 100
+element tri31 1761 143 271 526 1 pstress 100
+element tri31 1762 271 46 526 1 pstress 100
+element tri31 1763 143 522 271 1 pstress 100
+element tri31 1764 522 45 271 1 pstress 100
+element tri31 1765 272 144 527 1 pstress 100
+element tri31 1766 47 272 527 1 pstress 100
+element tri31 1767 7 528 272 1 pstress 100
+element tri31 1768 528 144 272 1 pstress 100
+element tri31 1769 47 527 273 1 pstress 100
+element tri31 1770 527 144 273 1 pstress 100
+element tri31 1771 144 529 273 1 pstress 100
+element tri31 1772 529 48 273 1 pstress 100
+element tri31 1773 45 516 274 1 pstress 100
+element tri31 1774 516 141 274 1 pstress 100
+element tri31 1775 141 530 274 1 pstress 100
+element tri31 1776 530 47 274 1 pstress 100
+element tri31 1777 141 272 530 1 pstress 100
+element tri31 1778 272 47 530 1 pstress 100
+element tri31 1779 141 514 272 1 pstress 100
+element tri31 1780 514 7 272 1 pstress 100
+element tri31 1781 273 48 531 1 pstress 100
+element tri31 1782 145 273 531 1 pstress 100
+element tri31 1783 47 273 532 1 pstress 100
+element tri31 1784 273 145 532 1 pstress 100
+element tri31 1785 275 145 533 1 pstress 100
+element tri31 1786 49 275 533 1 pstress 100
+element tri31 1787 47 532 275 1 pstress 100
+element tri31 1788 532 145 275 1 pstress 100
+element tri31 1789 274 47 534 1 pstress 100
+element tri31 1790 146 274 534 1 pstress 100
+element tri31 1791 45 274 535 1 pstress 100
+element tri31 1792 274 146 535 1 pstress 100
+element tri31 1793 271 146 536 1 pstress 100
+element tri31 1794 46 271 536 1 pstress 100
+element tri31 1795 45 535 271 1 pstress 100
+element tri31 1796 535 146 271 1 pstress 100
+element tri31 1797 46 536 276 1 pstress 100
+element tri31 1798 536 146 276 1 pstress 100
+element tri31 1799 146 537 276 1 pstress 100
+element tri31 1800 537 49 276 1 pstress 100
+element tri31 1801 146 275 537 1 pstress 100
+element tri31 1802 275 49 537 1 pstress 100
+element tri31 1803 146 534 275 1 pstress 100
+element tri31 1804 534 47 275 1 pstress 100
+element tri31 1805 270 46 538 1 pstress 100
+element tri31 1806 147 270 538 1 pstress 100
+element tri31 1807 8 270 539 1 pstress 100
+element tri31 1808 270 147 539 1 pstress 100
+element tri31 1809 147 277 540 1 pstress 100
+element tri31 1810 277 50 540 1 pstress 100
+element tri31 1811 147 538 277 1 pstress 100
+element tri31 1812 538 46 277 1 pstress 100
+element tri31 1813 276 49 541 1 pstress 100
+element tri31 1814 148 276 541 1 pstress 100
+element tri31 1815 46 276 542 1 pstress 100
+element tri31 1816 276 148 542 1 pstress 100
+element tri31 1817 277 148 543 1 pstress 100
+element tri31 1818 50 277 543 1 pstress 100
+element tri31 1819 46 542 277 1 pstress 100
+element tri31 1820 542 148 277 1 pstress 100
+element tri31 1821 278 51 544 1 pstress 100
+element tri31 1822 149 278 544 1 pstress 100
+element tri31 1823 49 278 545 1 pstress 100
+element tri31 1824 278 149 545 1 pstress 100
+element tri31 1825 279 149 546 1 pstress 100
+element tri31 1826 52 279 546 1 pstress 100
+element tri31 1827 49 545 279 1 pstress 100
+element tri31 1828 545 149 279 1 pstress 100
+element tri31 1829 280 52 547 1 pstress 100
+element tri31 1830 150 280 547 1 pstress 100
+element tri31 1831 50 280 548 1 pstress 100
+element tri31 1832 280 150 548 1 pstress 100
+element tri31 1833 150 281 549 1 pstress 100
+element tri31 1834 281 10 549 1 pstress 100
+element tri31 1835 150 547 281 1 pstress 100
+element tri31 1836 547 52 281 1 pstress 100
+element tri31 1837 282 9 550 1 pstress 100
+element tri31 1838 151 282 550 1 pstress 100
+element tri31 1839 51 282 551 1 pstress 100
+element tri31 1840 282 151 551 1 pstress 100
+element tri31 1841 283 151 552 1 pstress 100
+element tri31 1842 53 283 552 1 pstress 100
+element tri31 1843 51 551 283 1 pstress 100
+element tri31 1844 551 151 283 1 pstress 100
+element tri31 1845 49 533 278 1 pstress 100
+element tri31 1846 533 145 278 1 pstress 100
+element tri31 1847 145 553 278 1 pstress 100
+element tri31 1848 553 51 278 1 pstress 100
+element tri31 1849 145 284 553 1 pstress 100
+element tri31 1850 284 51 553 1 pstress 100
+element tri31 1851 145 531 284 1 pstress 100
+element tri31 1852 531 48 284 1 pstress 100
+element tri31 1853 50 543 280 1 pstress 100
+element tri31 1854 543 148 280 1 pstress 100
+element tri31 1855 148 554 280 1 pstress 100
+element tri31 1856 554 52 280 1 pstress 100
+element tri31 1857 148 279 554 1 pstress 100
+element tri31 1858 279 52 554 1 pstress 100
+element tri31 1859 148 541 279 1 pstress 100
+element tri31 1860 541 49 279 1 pstress 100
+element tri31 1861 284 152 555 1 pstress 100
+element tri31 1862 51 284 555 1 pstress 100
+element tri31 1863 48 556 284 1 pstress 100
+element tri31 1864 556 152 284 1 pstress 100
+element tri31 1865 51 555 282 1 pstress 100
+element tri31 1866 555 152 282 1 pstress 100
+element tri31 1867 152 557 282 1 pstress 100
+element tri31 1868 557 9 282 1 pstress 100
+element tri31 1869 285 53 558 1 pstress 100
+element tri31 1870 153 285 558 1 pstress 100
+element tri31 1871 52 285 559 1 pstress 100
+element tri31 1872 285 153 559 1 pstress 100
+element tri31 1873 281 153 560 1 pstress 100
+element tri31 1874 10 281 560 1 pstress 100
+element tri31 1875 52 559 281 1 pstress 100
+element tri31 1876 559 153 281 1 pstress 100
+element tri31 1877 52 546 285 1 pstress 100
+element tri31 1878 546 149 285 1 pstress 100
+element tri31 1879 149 561 285 1 pstress 100
+element tri31 1880 561 53 285 1 pstress 100
+element tri31 1881 149 283 561 1 pstress 100
+element tri31 1882 283 53 561 1 pstress 100
+element tri31 1883 149 544 283 1 pstress 100
+element tri31 1884 544 51 283 1 pstress 100
+element tri31 1885 12 562 286 1 pstress 100
+element tri31 1886 562 154 286 1 pstress 100
+element tri31 1887 154 563 286 1 pstress 100
+element tri31 1888 563 54 286 1 pstress 100
+element tri31 1889 154 287 563 1 pstress 100
+element tri31 1890 287 54 563 1 pstress 100
+element tri31 1891 154 564 287 1 pstress 100
+element tri31 1892 564 55 287 1 pstress 100
+element tri31 1893 288 147 565 1 pstress 100
+element tri31 1894 56 288 565 1 pstress 100
+element tri31 1895 8 539 288 1 pstress 100
+element tri31 1896 539 147 288 1 pstress 100
+element tri31 1897 56 565 289 1 pstress 100
+element tri31 1898 565 147 289 1 pstress 100
+element tri31 1899 147 540 289 1 pstress 100
+element tri31 1900 540 50 289 1 pstress 100
+element tri31 1901 55 566 290 1 pstress 100
+element tri31 1902 566 155 290 1 pstress 100
+element tri31 1903 155 567 290 1 pstress 100
+element tri31 1904 567 56 290 1 pstress 100
+element tri31 1905 155 288 567 1 pstress 100
+element tri31 1906 288 56 567 1 pstress 100
+element tri31 1907 155 568 288 1 pstress 100
+element tri31 1908 568 8 288 1 pstress 100
+element tri31 1909 289 50 569 1 pstress 100
+element tri31 1910 156 289 569 1 pstress 100
+element tri31 1911 56 289 570 1 pstress 100
+element tri31 1912 289 156 570 1 pstress 100
+element tri31 1913 291 156 571 1 pstress 100
+element tri31 1914 57 291 571 1 pstress 100
+element tri31 1915 56 570 291 1 pstress 100
+element tri31 1916 570 156 291 1 pstress 100
+element tri31 1917 290 56 572 1 pstress 100
+element tri31 1918 157 290 572 1 pstress 100
+element tri31 1919 55 290 573 1 pstress 100
+element tri31 1920 290 157 573 1 pstress 100
+element tri31 1921 287 157 574 1 pstress 100
+element tri31 1922 54 287 574 1 pstress 100
+element tri31 1923 55 573 287 1 pstress 100
+element tri31 1924 573 157 287 1 pstress 100
+element tri31 1925 54 574 292 1 pstress 100
+element tri31 1926 574 157 292 1 pstress 100
+element tri31 1927 157 575 292 1 pstress 100
+element tri31 1928 575 57 292 1 pstress 100
+element tri31 1929 157 291 575 1 pstress 100
+element tri31 1930 291 57 575 1 pstress 100
+element tri31 1931 157 572 291 1 pstress 100
+element tri31 1932 572 56 291 1 pstress 100
+element tri31 1933 286 54 576 1 pstress 100
+element tri31 1934 158 286 576 1 pstress 100
+element tri31 1935 12 286 577 1 pstress 100
+element tri31 1936 286 158 577 1 pstress 100
+element tri31 1937 158 293 578 1 pstress 100
+element tri31 1938 293 58 578 1 pstress 100
+element tri31 1939 158 576 293 1 pstress 100
+element tri31 1940 576 54 293 1 pstress 100
+element tri31 1941 292 57 579 1 pstress 100
+element tri31 1942 159 292 579 1 pstress 100
+element tri31 1943 54 292 580 1 pstress 100
+element tri31 1944 292 159 580 1 pstress 100
+element tri31 1945 293 159 581 1 pstress 100
+element tri31 1946 58 293 581 1 pstress 100
+element tri31 1947 54 580 293 1 pstress 100
+element tri31 1948 580 159 293 1 pstress 100
+element tri31 1949 294 59 582 1 pstress 100
+element tri31 1950 160 294 582 1 pstress 100
+element tri31 1951 57 294 583 1 pstress 100
+element tri31 1952 294 160 583 1 pstress 100
+element tri31 1953 295 160 584 1 pstress 100
+element tri31 1954 60 295 584 1 pstress 100
+element tri31 1955 57 583 295 1 pstress 100
+element tri31 1956 583 160 295 1 pstress 100
+element tri31 1957 296 60 585 1 pstress 100
+element tri31 1958 161 296 585 1 pstress 100
+element tri31 1959 58 296 586 1 pstress 100
+element tri31 1960 296 161 586 1 pstress 100
+element tri31 1961 161 297 587 1 pstress 100
+element tri31 1962 297 11 587 1 pstress 100
+element tri31 1963 161 585 297 1 pstress 100
+element tri31 1964 585 60 297 1 pstress 100
+element tri31 1965 298 10 588 1 pstress 100
+element tri31 1966 162 298 588 1 pstress 100
+element tri31 1967 59 298 589 1 pstress 100
+element tri31 1968 298 162 589 1 pstress 100
+element tri31 1969 299 162 590 1 pstress 100
+element tri31 1970 61 299 590 1 pstress 100
+element tri31 1971 59 589 299 1 pstress 100
+element tri31 1972 589 162 299 1 pstress 100
+element tri31 1973 57 571 294 1 pstress 100
+element tri31 1974 571 156 294 1 pstress 100
+element tri31 1975 156 591 294 1 pstress 100
+element tri31 1976 591 59 294 1 pstress 100
+element tri31 1977 156 300 591 1 pstress 100
+element tri31 1978 300 59 591 1 pstress 100
+element tri31 1979 156 569 300 1 pstress 100
+element tri31 1980 569 50 300 1 pstress 100
+element tri31 1981 58 581 296 1 pstress 100
+element tri31 1982 581 159 296 1 pstress 100
+element tri31 1983 159 592 296 1 pstress 100
+element tri31 1984 592 60 296 1 pstress 100
+element tri31 1985 159 295 592 1 pstress 100
+element tri31 1986 295 60 592 1 pstress 100
+element tri31 1987 159 579 295 1 pstress 100
+element tri31 1988 579 57 295 1 pstress 100
+element tri31 1989 300 150 593 1 pstress 100
+element tri31 1990 59 300 593 1 pstress 100
+element tri31 1991 50 548 300 1 pstress 100
+element tri31 1992 548 150 300 1 pstress 100
+element tri31 1993 59 593 298 1 pstress 100
+element tri31 1994 593 150 298 1 pstress 100
+element tri31 1995 150 549 298 1 pstress 100
+element tri31 1996 549 10 298 1 pstress 100
+element tri31 1997 301 61 594 1 pstress 100
+element tri31 1998 163 301 594 1 pstress 100
+element tri31 1999 60 301 595 1 pstress 100
+element tri31 2000 301 163 595 1 pstress 100
+element tri31 2001 297 163 596 1 pstress 100
+element tri31 2002 11 297 596 1 pstress 100
+element tri31 2003 60 595 297 1 pstress 100
+element tri31 2004 595 163 297 1 pstress 100
+element tri31 2005 60 584 301 1 pstress 100
+element tri31 2006 584 160 301 1 pstress 100
+element tri31 2007 160 597 301 1 pstress 100
+element tri31 2008 597 61 301 1 pstress 100
+element tri31 2009 160 299 597 1 pstress 100
+element tri31 2010 299 61 597 1 pstress 100
+element tri31 2011 160 582 299 1 pstress 100
+element tri31 2012 582 59 299 1 pstress 100
+element tri31 2013 13 598 302 1 pstress 100
+element tri31 2014 598 164 302 1 pstress 100
+element tri31 2015 164 599 302 1 pstress 100
+element tri31 2016 599 62 302 1 pstress 100
+element tri31 2017 164 303 599 1 pstress 100
+element tri31 2018 303 62 599 1 pstress 100
+element tri31 2019 164 600 303 1 pstress 100
+element tri31 2020 600 63 303 1 pstress 100
+element tri31 2021 304 137 601 1 pstress 100
+element tri31 2022 64 304 601 1 pstress 100
+element tri31 2023 6 503 304 1 pstress 100
+element tri31 2024 503 137 304 1 pstress 100
+element tri31 2025 64 601 305 1 pstress 100
+element tri31 2026 601 137 305 1 pstress 100
+element tri31 2027 137 504 305 1 pstress 100
+element tri31 2028 504 42 305 1 pstress 100
+element tri31 2029 63 602 306 1 pstress 100
+element tri31 2030 602 165 306 1 pstress 100
+element tri31 2031 165 603 306 1 pstress 100
+element tri31 2032 603 64 306 1 pstress 100
+element tri31 2033 165 304 603 1 pstress 100
+element tri31 2034 304 64 603 1 pstress 100
+element tri31 2035 165 604 304 1 pstress 100
+element tri31 2036 604 6 304 1 pstress 100
+element tri31 2037 305 42 605 1 pstress 100
+element tri31 2038 166 305 605 1 pstress 100
+element tri31 2039 64 305 606 1 pstress 100
+element tri31 2040 305 166 606 1 pstress 100
+element tri31 2041 307 166 607 1 pstress 100
+element tri31 2042 65 307 607 1 pstress 100
+element tri31 2043 64 606 307 1 pstress 100
+element tri31 2044 606 166 307 1 pstress 100
+element tri31 2045 306 64 608 1 pstress 100
+element tri31 2046 167 306 608 1 pstress 100
+element tri31 2047 63 306 609 1 pstress 100
+element tri31 2048 306 167 609 1 pstress 100
+element tri31 2049 303 167 610 1 pstress 100
+element tri31 2050 62 303 610 1 pstress 100
+element tri31 2051 63 609 303 1 pstress 100
+element tri31 2052 609 167 303 1 pstress 100
+element tri31 2053 62 610 308 1 pstress 100
+element tri31 2054 610 167 308 1 pstress 100
+element tri31 2055 167 611 308 1 pstress 100
+element tri31 2056 611 65 308 1 pstress 100
+element tri31 2057 167 307 611 1 pstress 100
+element tri31 2058 307 65 611 1 pstress 100
+element tri31 2059 167 608 307 1 pstress 100
+element tri31 2060 608 64 307 1 pstress 100
+element tri31 2061 302 62 612 1 pstress 100
+element tri31 2062 168 302 612 1 pstress 100
+element tri31 2063 13 302 613 1 pstress 100
+element tri31 2064 302 168 613 1 pstress 100
+element tri31 2065 168 309 614 1 pstress 100
+element tri31 2066 309 66 614 1 pstress 100
+element tri31 2067 168 612 309 1 pstress 100
+element tri31 2068 612 62 309 1 pstress 100
+element tri31 2069 308 65 615 1 pstress 100
+element tri31 2070 169 308 615 1 pstress 100
+element tri31 2071 62 308 616 1 pstress 100
+element tri31 2072 308 169 616 1 pstress 100
+element tri31 2073 309 169 617 1 pstress 100
+element tri31 2074 66 309 617 1 pstress 100
+element tri31 2075 62 616 309 1 pstress 100
+element tri31 2076 616 169 309 1 pstress 100
+element tri31 2077 310 67 618 1 pstress 100
+element tri31 2078 170 310 618 1 pstress 100
+element tri31 2079 65 310 619 1 pstress 100
+element tri31 2080 310 170 619 1 pstress 100
+element tri31 2081 311 170 620 1 pstress 100
+element tri31 2082 68 311 620 1 pstress 100
+element tri31 2083 65 619 311 1 pstress 100
+element tri31 2084 619 170 311 1 pstress 100
+element tri31 2085 312 68 621 1 pstress 100
+element tri31 2086 171 312 621 1 pstress 100
+element tri31 2087 66 312 622 1 pstress 100
+element tri31 2088 312 171 622 1 pstress 100
+element tri31 2089 171 313 623 1 pstress 100
+element tri31 2090 313 12 623 1 pstress 100
+element tri31 2091 171 621 313 1 pstress 100
+element tri31 2092 621 68 313 1 pstress 100
+element tri31 2093 314 8 568 1 pstress 100
+element tri31 2094 155 314 568 1 pstress 100
+element tri31 2095 67 314 624 1 pstress 100
+element tri31 2096 314 155 624 1 pstress 100
+element tri31 2097 315 155 566 1 pstress 100
+element tri31 2098 55 315 566 1 pstress 100
+element tri31 2099 67 624 315 1 pstress 100
+element tri31 2100 624 155 315 1 pstress 100
+element tri31 2101 65 607 310 1 pstress 100
+element tri31 2102 607 166 310 1 pstress 100
+element tri31 2103 166 625 310 1 pstress 100
+element tri31 2104 625 67 310 1 pstress 100
+element tri31 2105 166 316 625 1 pstress 100
+element tri31 2106 316 67 625 1 pstress 100
+element tri31 2107 166 605 316 1 pstress 100
+element tri31 2108 605 42 316 1 pstress 100
+element tri31 2109 66 617 312 1 pstress 100
+element tri31 2110 617 169 312 1 pstress 100
+element tri31 2111 169 626 312 1 pstress 100
+element tri31 2112 626 68 312 1 pstress 100
+element tri31 2113 169 311 626 1 pstress 100
+element tri31 2114 311 68 626 1 pstress 100
+element tri31 2115 169 615 311 1 pstress 100
+element tri31 2116 615 65 311 1 pstress 100
+element tri31 2117 316 140 627 1 pstress 100
+element tri31 2118 67 316 627 1 pstress 100
+element tri31 2119 42 512 316 1 pstress 100
+element tri31 2120 512 140 316 1 pstress 100
+element tri31 2121 67 627 314 1 pstress 100
+element tri31 2122 627 140 314 1 pstress 100
+element tri31 2123 140 513 314 1 pstress 100
+element tri31 2124 513 8 314 1 pstress 100
+element tri31 2125 317 55 564 1 pstress 100
+element tri31 2126 154 317 564 1 pstress 100
+element tri31 2127 68 317 628 1 pstress 100
+element tri31 2128 317 154 628 1 pstress 100
+element tri31 2129 313 154 562 1 pstress 100
+element tri31 2130 12 313 562 1 pstress 100
+element tri31 2131 68 628 313 1 pstress 100
+element tri31 2132 628 154 313 1 pstress 100
+element tri31 2133 68 620 317 1 pstress 100
+element tri31 2134 620 170 317 1 pstress 100
+element tri31 2135 170 629 317 1 pstress 100
+element tri31 2136 629 55 317 1 pstress 100
+element tri31 2137 170 315 629 1 pstress 100
+element tri31 2138 315 55 629 1 pstress 100
+element tri31 2139 170 618 315 1 pstress 100
+element tri31 2140 618 67 315 1 pstress 100
+element tri31 2141 14 630 318 1 pstress 100
+element tri31 2142 630 172 318 1 pstress 100
+element tri31 2143 172 631 318 1 pstress 100
+element tri31 2144 631 69 318 1 pstress 100
+element tri31 2145 172 319 631 1 pstress 100
+element tri31 2146 319 69 631 1 pstress 100
+element tri31 2147 172 632 319 1 pstress 100
+element tri31 2148 632 70 319 1 pstress 100
+element tri31 2149 320 127 633 1 pstress 100
+element tri31 2150 71 320 633 1 pstress 100
+element tri31 2151 3 467 320 1 pstress 100
+element tri31 2152 467 127 320 1 pstress 100
+element tri31 2153 71 633 321 1 pstress 100
+element tri31 2154 633 127 321 1 pstress 100
+element tri31 2155 127 468 321 1 pstress 100
+element tri31 2156 468 34 321 1 pstress 100
+element tri31 2157 70 634 322 1 pstress 100
+element tri31 2158 634 173 322 1 pstress 100
+element tri31 2159 173 635 322 1 pstress 100
+element tri31 2160 635 71 322 1 pstress 100
+element tri31 2161 173 320 635 1 pstress 100
+element tri31 2162 320 71 635 1 pstress 100
+element tri31 2163 173 636 320 1 pstress 100
+element tri31 2164 636 3 320 1 pstress 100
+element tri31 2165 321 34 637 1 pstress 100
+element tri31 2166 174 321 637 1 pstress 100
+element tri31 2167 71 321 638 1 pstress 100
+element tri31 2168 321 174 638 1 pstress 100
+element tri31 2169 323 174 639 1 pstress 100
+element tri31 2170 72 323 639 1 pstress 100
+element tri31 2171 71 638 323 1 pstress 100
+element tri31 2172 638 174 323 1 pstress 100
+element tri31 2173 322 71 640 1 pstress 100
+element tri31 2174 175 322 640 1 pstress 100
+element tri31 2175 70 322 641 1 pstress 100
+element tri31 2176 322 175 641 1 pstress 100
+element tri31 2177 319 175 642 1 pstress 100
+element tri31 2178 69 319 642 1 pstress 100
+element tri31 2179 70 641 319 1 pstress 100
+element tri31 2180 641 175 319 1 pstress 100
+element tri31 2181 69 642 324 1 pstress 100
+element tri31 2182 642 175 324 1 pstress 100
+element tri31 2183 175 643 324 1 pstress 100
+element tri31 2184 643 72 324 1 pstress 100
+element tri31 2185 175 323 643 1 pstress 100
+element tri31 2186 323 72 643 1 pstress 100
+element tri31 2187 175 640 323 1 pstress 100
+element tri31 2188 640 71 323 1 pstress 100
+element tri31 2189 318 69 644 1 pstress 100
+element tri31 2190 176 318 644 1 pstress 100
+element tri31 2191 14 318 645 1 pstress 100
+element tri31 2192 318 176 645 1 pstress 100
+element tri31 2193 176 325 646 1 pstress 100
+element tri31 2194 325 73 646 1 pstress 100
+element tri31 2195 176 644 325 1 pstress 100
+element tri31 2196 644 69 325 1 pstress 100
+element tri31 2197 324 72 647 1 pstress 100
+element tri31 2198 177 324 647 1 pstress 100
+element tri31 2199 69 324 648 1 pstress 100
+element tri31 2200 324 177 648 1 pstress 100
+element tri31 2201 325 177 649 1 pstress 100
+element tri31 2202 73 325 649 1 pstress 100
+element tri31 2203 69 648 325 1 pstress 100
+element tri31 2204 648 177 325 1 pstress 100
+element tri31 2205 326 74 650 1 pstress 100
+element tri31 2206 178 326 650 1 pstress 100
+element tri31 2207 72 326 651 1 pstress 100
+element tri31 2208 326 178 651 1 pstress 100
+element tri31 2209 327 178 652 1 pstress 100
+element tri31 2210 75 327 652 1 pstress 100
+element tri31 2211 72 651 327 1 pstress 100
+element tri31 2212 651 178 327 1 pstress 100
+element tri31 2213 328 75 653 1 pstress 100
+element tri31 2214 179 328 653 1 pstress 100
+element tri31 2215 73 328 654 1 pstress 100
+element tri31 2216 328 179 654 1 pstress 100
+element tri31 2217 179 329 655 1 pstress 100
+element tri31 2218 329 13 655 1 pstress 100
+element tri31 2219 179 653 329 1 pstress 100
+element tri31 2220 653 75 329 1 pstress 100
+element tri31 2221 330 6 604 1 pstress 100
+element tri31 2222 165 330 604 1 pstress 100
+element tri31 2223 74 330 656 1 pstress 100
+element tri31 2224 330 165 656 1 pstress 100
+element tri31 2225 331 165 602 1 pstress 100
+element tri31 2226 63 331 602 1 pstress 100
+element tri31 2227 74 656 331 1 pstress 100
+element tri31 2228 656 165 331 1 pstress 100
+element tri31 2229 72 639 326 1 pstress 100
+element tri31 2230 639 174 326 1 pstress 100
+element tri31 2231 174 657 326 1 pstress 100
+element tri31 2232 657 74 326 1 pstress 100
+element tri31 2233 174 332 657 1 pstress 100
+element tri31 2234 332 74 657 1 pstress 100
+element tri31 2235 174 637 332 1 pstress 100
+element tri31 2236 637 34 332 1 pstress 100
+element tri31 2237 73 649 328 1 pstress 100
+element tri31 2238 649 177 328 1 pstress 100
+element tri31 2239 177 658 328 1 pstress 100
+element tri31 2240 658 75 328 1 pstress 100
+element tri31 2241 177 327 658 1 pstress 100
+element tri31 2242 327 75 658 1 pstress 100
+element tri31 2243 177 647 327 1 pstress 100
+element tri31 2244 647 72 327 1 pstress 100
+element tri31 2245 332 130 659 1 pstress 100
+element tri31 2246 74 332 659 1 pstress 100
+element tri31 2247 34 476 332 1 pstress 100
+element tri31 2248 476 130 332 1 pstress 100
+element tri31 2249 74 659 330 1 pstress 100
+element tri31 2250 659 130 330 1 pstress 100
+element tri31 2251 130 477 330 1 pstress 100
+element tri31 2252 477 6 330 1 pstress 100
+element tri31 2253 333 63 600 1 pstress 100
+element tri31 2254 164 333 600 1 pstress 100
+element tri31 2255 75 333 660 1 pstress 100
+element tri31 2256 333 164 660 1 pstress 100
+element tri31 2257 329 164 598 1 pstress 100
+element tri31 2258 13 329 598 1 pstress 100
+element tri31 2259 75 660 329 1 pstress 100
+element tri31 2260 660 164 329 1 pstress 100
+element tri31 2261 75 652 333 1 pstress 100
+element tri31 2262 652 178 333 1 pstress 100
+element tri31 2263 178 661 333 1 pstress 100
+element tri31 2264 661 63 333 1 pstress 100
+element tri31 2265 178 331 661 1 pstress 100
+element tri31 2266 331 63 661 1 pstress 100
+element tri31 2267 178 650 331 1 pstress 100
+element tri31 2268 650 74 331 1 pstress 100
+element tri31 2269 15 662 334 1 pstress 100
+element tri31 2270 662 180 334 1 pstress 100
+element tri31 2271 180 663 334 1 pstress 100
+element tri31 2272 663 76 334 1 pstress 100
+element tri31 2273 180 335 663 1 pstress 100
+element tri31 2274 335 76 663 1 pstress 100
+element tri31 2275 180 664 335 1 pstress 100
+element tri31 2276 664 77 335 1 pstress 100
+element tri31 2277 336 117 665 1 pstress 100
+element tri31 2278 78 336 665 1 pstress 100
+element tri31 2279 4 431 336 1 pstress 100
+element tri31 2280 431 117 336 1 pstress 100
+element tri31 2281 78 665 337 1 pstress 100
+element tri31 2282 665 117 337 1 pstress 100
+element tri31 2283 117 432 337 1 pstress 100
+element tri31 2284 432 26 337 1 pstress 100
+element tri31 2285 77 666 338 1 pstress 100
+element tri31 2286 666 181 338 1 pstress 100
+element tri31 2287 181 667 338 1 pstress 100
+element tri31 2288 667 78 338 1 pstress 100
+element tri31 2289 181 336 667 1 pstress 100
+element tri31 2290 336 78 667 1 pstress 100
+element tri31 2291 181 668 336 1 pstress 100
+element tri31 2292 668 4 336 1 pstress 100
+element tri31 2293 337 26 669 1 pstress 100
+element tri31 2294 182 337 669 1 pstress 100
+element tri31 2295 78 337 670 1 pstress 100
+element tri31 2296 337 182 670 1 pstress 100
+element tri31 2297 339 182 671 1 pstress 100
+element tri31 2298 79 339 671 1 pstress 100
+element tri31 2299 78 670 339 1 pstress 100
+element tri31 2300 670 182 339 1 pstress 100
+element tri31 2301 338 78 672 1 pstress 100
+element tri31 2302 183 338 672 1 pstress 100
+element tri31 2303 77 338 673 1 pstress 100
+element tri31 2304 338 183 673 1 pstress 100
+element tri31 2305 335 183 674 1 pstress 100
+element tri31 2306 76 335 674 1 pstress 100
+element tri31 2307 77 673 335 1 pstress 100
+element tri31 2308 673 183 335 1 pstress 100
+element tri31 2309 76 674 340 1 pstress 100
+element tri31 2310 674 183 340 1 pstress 100
+element tri31 2311 183 675 340 1 pstress 100
+element tri31 2312 675 79 340 1 pstress 100
+element tri31 2313 183 339 675 1 pstress 100
+element tri31 2314 339 79 675 1 pstress 100
+element tri31 2315 183 672 339 1 pstress 100
+element tri31 2316 672 78 339 1 pstress 100
+element tri31 2317 334 76 676 1 pstress 100
+element tri31 2318 184 334 676 1 pstress 100
+element tri31 2319 15 334 677 1 pstress 100
+element tri31 2320 334 184 677 1 pstress 100
+element tri31 2321 184 341 678 1 pstress 100
+element tri31 2322 341 80 678 1 pstress 100
+element tri31 2323 184 676 341 1 pstress 100
+element tri31 2324 676 76 341 1 pstress 100
+element tri31 2325 340 79 679 1 pstress 100
+element tri31 2326 185 340 679 1 pstress 100
+element tri31 2327 76 340 680 1 pstress 100
+element tri31 2328 340 185 680 1 pstress 100
+element tri31 2329 341 185 681 1 pstress 100
+element tri31 2330 80 341 681 1 pstress 100
+element tri31 2331 76 680 341 1 pstress 100
+element tri31 2332 680 185 341 1 pstress 100
+element tri31 2333 342 81 682 1 pstress 100
+element tri31 2334 186 342 682 1 pstress 100
+element tri31 2335 79 342 683 1 pstress 100
+element tri31 2336 342 186 683 1 pstress 100
+element tri31 2337 343 186 684 1 pstress 100
+element tri31 2338 82 343 684 1 pstress 100
+element tri31 2339 79 683 343 1 pstress 100
+element tri31 2340 683 186 343 1 pstress 100
+element tri31 2341 344 82 685 1 pstress 100
+element tri31 2342 187 344 685 1 pstress 100
+element tri31 2343 80 344 686 1 pstress 100
+element tri31 2344 344 187 686 1 pstress 100
+element tri31 2345 187 345 687 1 pstress 100
+element tri31 2346 345 14 687 1 pstress 100
+element tri31 2347 187 685 345 1 pstress 100
+element tri31 2348 685 82 345 1 pstress 100
+element tri31 2349 346 3 636 1 pstress 100
+element tri31 2350 173 346 636 1 pstress 100
+element tri31 2351 81 346 688 1 pstress 100
+element tri31 2352 346 173 688 1 pstress 100
+element tri31 2353 347 173 634 1 pstress 100
+element tri31 2354 70 347 634 1 pstress 100
+element tri31 2355 81 688 347 1 pstress 100
+element tri31 2356 688 173 347 1 pstress 100
+element tri31 2357 79 671 342 1 pstress 100
+element tri31 2358 671 182 342 1 pstress 100
+element tri31 2359 182 689 342 1 pstress 100
+element tri31 2360 689 81 342 1 pstress 100
+element tri31 2361 182 348 689 1 pstress 100
+element tri31 2362 348 81 689 1 pstress 100
+element tri31 2363 182 669 348 1 pstress 100
+element tri31 2364 669 26 348 1 pstress 100
+element tri31 2365 80 681 344 1 pstress 100
+element tri31 2366 681 185 344 1 pstress 100
+element tri31 2367 185 690 344 1 pstress 100
+element tri31 2368 690 82 344 1 pstress 100
+element tri31 2369 185 343 690 1 pstress 100
+element tri31 2370 343 82 690 1 pstress 100
+element tri31 2371 185 679 343 1 pstress 100
+element tri31 2372 679 79 343 1 pstress 100
+element tri31 2373 348 120 691 1 pstress 100
+element tri31 2374 81 348 691 1 pstress 100
+element tri31 2375 26 440 348 1 pstress 100
+element tri31 2376 440 120 348 1 pstress 100
+element tri31 2377 81 691 346 1 pstress 100
+element tri31 2378 691 120 346 1 pstress 100
+element tri31 2379 120 441 346 1 pstress 100
+element tri31 2380 441 3 346 1 pstress 100
+element tri31 2381 349 70 632 1 pstress 100
+element tri31 2382 172 349 632 1 pstress 100
+element tri31 2383 82 349 692 1 pstress 100
+element tri31 2384 349 172 692 1 pstress 100
+element tri31 2385 345 172 630 1 pstress 100
+element tri31 2386 14 345 630 1 pstress 100
+element tri31 2387 82 692 345 1 pstress 100
+element tri31 2388 692 172 345 1 pstress 100
+element tri31 2389 82 684 349 1 pstress 100
+element tri31 2390 684 186 349 1 pstress 100
+element tri31 2391 186 693 349 1 pstress 100
+element tri31 2392 693 70 349 1 pstress 100
+element tri31 2393 186 347 693 1 pstress 100
+element tri31 2394 347 70 693 1 pstress 100
+element tri31 2395 186 682 347 1 pstress 100
+element tri31 2396 682 81 347 1 pstress 100
+element tri31 2397 17 694 350 1 pstress 100
+element tri31 2398 694 188 350 1 pstress 100
+element tri31 2399 188 695 350 1 pstress 100
+element tri31 2400 695 83 350 1 pstress 100
+element tri31 2401 188 351 695 1 pstress 100
+element tri31 2402 351 83 695 1 pstress 100
+element tri31 2403 188 696 351 1 pstress 100
+element tri31 2404 696 84 351 1 pstress 100
+element tri31 2405 352 184 697 1 pstress 100
+element tri31 2406 85 352 697 1 pstress 100
+element tri31 2407 15 677 352 1 pstress 100
+element tri31 2408 677 184 352 1 pstress 100
+element tri31 2409 85 697 353 1 pstress 100
+element tri31 2410 697 184 353 1 pstress 100
+element tri31 2411 184 678 353 1 pstress 100
+element tri31 2412 678 80 353 1 pstress 100
+element tri31 2413 84 698 354 1 pstress 100
+element tri31 2414 698 189 354 1 pstress 100
+element tri31 2415 189 699 354 1 pstress 100
+element tri31 2416 699 85 354 1 pstress 100
+element tri31 2417 189 352 699 1 pstress 100
+element tri31 2418 352 85 699 1 pstress 100
+element tri31 2419 189 700 352 1 pstress 100
+element tri31 2420 700 15 352 1 pstress 100
+element tri31 2421 353 80 701 1 pstress 100
+element tri31 2422 190 353 701 1 pstress 100
+element tri31 2423 85 353 702 1 pstress 100
+element tri31 2424 353 190 702 1 pstress 100
+element tri31 2425 355 190 703 1 pstress 100
+element tri31 2426 86 355 703 1 pstress 100
+element tri31 2427 85 702 355 1 pstress 100
+element tri31 2428 702 190 355 1 pstress 100
+element tri31 2429 354 85 704 1 pstress 100
+element tri31 2430 191 354 704 1 pstress 100
+element tri31 2431 84 354 705 1 pstress 100
+element tri31 2432 354 191 705 1 pstress 100
+element tri31 2433 351 191 706 1 pstress 100
+element tri31 2434 83 351 706 1 pstress 100
+element tri31 2435 84 705 351 1 pstress 100
+element tri31 2436 705 191 351 1 pstress 100
+element tri31 2437 83 706 356 1 pstress 100
+element tri31 2438 706 191 356 1 pstress 100
+element tri31 2439 191 707 356 1 pstress 100
+element tri31 2440 707 86 356 1 pstress 100
+element tri31 2441 191 355 707 1 pstress 100
+element tri31 2442 355 86 707 1 pstress 100
+element tri31 2443 191 704 355 1 pstress 100
+element tri31 2444 704 85 355 1 pstress 100
+element tri31 2445 350 83 708 1 pstress 100
+element tri31 2446 192 350 708 1 pstress 100
+element tri31 2447 17 350 709 1 pstress 100
+element tri31 2448 350 192 709 1 pstress 100
+element tri31 2449 192 357 710 1 pstress 100
+element tri31 2450 357 87 710 1 pstress 100
+element tri31 2451 192 708 357 1 pstress 100
+element tri31 2452 708 83 357 1 pstress 100
+element tri31 2453 356 86 711 1 pstress 100
+element tri31 2454 193 356 711 1 pstress 100
+element tri31 2455 83 356 712 1 pstress 100
+element tri31 2456 356 193 712 1 pstress 100
+element tri31 2457 357 193 713 1 pstress 100
+element tri31 2458 87 357 713 1 pstress 100
+element tri31 2459 83 712 357 1 pstress 100
+element tri31 2460 712 193 357 1 pstress 100
+element tri31 2461 358 88 714 1 pstress 100
+element tri31 2462 194 358 714 1 pstress 100
+element tri31 2463 86 358 715 1 pstress 100
+element tri31 2464 358 194 715 1 pstress 100
+element tri31 2465 359 194 716 1 pstress 100
+element tri31 2466 89 359 716 1 pstress 100
+element tri31 2467 86 715 359 1 pstress 100
+element tri31 2468 715 194 359 1 pstress 100
+element tri31 2469 360 89 717 1 pstress 100
+element tri31 2470 195 360 717 1 pstress 100
+element tri31 2471 87 360 718 1 pstress 100
+element tri31 2472 360 195 718 1 pstress 100
+element tri31 2473 195 361 719 1 pstress 100
+element tri31 2474 361 16 719 1 pstress 100
+element tri31 2475 195 717 361 1 pstress 100
+element tri31 2476 717 89 361 1 pstress 100
+element tri31 2477 362 14 720 1 pstress 100
+element tri31 2478 196 362 720 1 pstress 100
+element tri31 2479 88 362 721 1 pstress 100
+element tri31 2480 362 196 721 1 pstress 100
+element tri31 2481 363 196 722 1 pstress 100
+element tri31 2482 90 363 722 1 pstress 100
+element tri31 2483 88 721 363 1 pstress 100
+element tri31 2484 721 196 363 1 pstress 100
+element tri31 2485 86 703 358 1 pstress 100
+element tri31 2486 703 190 358 1 pstress 100
+element tri31 2487 190 723 358 1 pstress 100
+element tri31 2488 723 88 358 1 pstress 100
+element tri31 2489 190 364 723 1 pstress 100
+element tri31 2490 364 88 723 1 pstress 100
+element tri31 2491 190 701 364 1 pstress 100
+element tri31 2492 701 80 364 1 pstress 100
+element tri31 2493 87 713 360 1 pstress 100
+element tri31 2494 713 193 360 1 pstress 100
+element tri31 2495 193 724 360 1 pstress 100
+element tri31 2496 724 89 360 1 pstress 100
+element tri31 2497 193 359 724 1 pstress 100
+element tri31 2498 359 89 724 1 pstress 100
+element tri31 2499 193 711 359 1 pstress 100
+element tri31 2500 711 86 359 1 pstress 100
+element tri31 2501 364 187 725 1 pstress 100
+element tri31 2502 88 364 725 1 pstress 100
+element tri31 2503 80 686 364 1 pstress 100
+element tri31 2504 686 187 364 1 pstress 100
+element tri31 2505 88 725 362 1 pstress 100
+element tri31 2506 725 187 362 1 pstress 100
+element tri31 2507 187 687 362 1 pstress 100
+element tri31 2508 687 14 362 1 pstress 100
+element tri31 2509 365 90 726 1 pstress 100
+element tri31 2510 197 365 726 1 pstress 100
+element tri31 2511 89 365 727 1 pstress 100
+element tri31 2512 365 197 727 1 pstress 100
+element tri31 2513 361 197 728 1 pstress 100
+element tri31 2514 16 361 728 1 pstress 100
+element tri31 2515 89 727 361 1 pstress 100
+element tri31 2516 727 197 361 1 pstress 100
+element tri31 2517 89 716 365 1 pstress 100
+element tri31 2518 716 194 365 1 pstress 100
+element tri31 2519 194 729 365 1 pstress 100
+element tri31 2520 729 90 365 1 pstress 100
+element tri31 2521 194 363 729 1 pstress 100
+element tri31 2522 363 90 729 1 pstress 100
+element tri31 2523 194 714 363 1 pstress 100
+element tri31 2524 714 88 363 1 pstress 100
+element tri31 2525 16 728 366 1 pstress 100
+element tri31 2526 728 197 366 1 pstress 100
+element tri31 2527 197 730 366 1 pstress 100
+element tri31 2528 730 91 366 1 pstress 100
+element tri31 2529 197 367 730 1 pstress 100
+element tri31 2530 367 91 730 1 pstress 100
+element tri31 2531 197 726 367 1 pstress 100
+element tri31 2532 726 90 367 1 pstress 100
+element tri31 2533 368 176 731 1 pstress 100
+element tri31 2534 92 368 731 1 pstress 100
+element tri31 2535 14 645 368 1 pstress 100
+element tri31 2536 645 176 368 1 pstress 100
+element tri31 2537 92 731 369 1 pstress 100
+element tri31 2538 731 176 369 1 pstress 100
+element tri31 2539 176 646 369 1 pstress 100
+element tri31 2540 646 73 369 1 pstress 100
+element tri31 2541 90 722 370 1 pstress 100
+element tri31 2542 722 196 370 1 pstress 100
+element tri31 2543 196 732 370 1 pstress 100
+element tri31 2544 732 92 370 1 pstress 100
+element tri31 2545 196 368 732 1 pstress 100
+element tri31 2546 368 92 732 1 pstress 100
+element tri31 2547 196 720 368 1 pstress 100
+element tri31 2548 720 14 368 1 pstress 100
+element tri31 2549 369 73 733 1 pstress 100
+element tri31 2550 198 369 733 1 pstress 100
+element tri31 2551 92 369 734 1 pstress 100
+element tri31 2552 369 198 734 1 pstress 100
+element tri31 2553 371 198 735 1 pstress 100
+element tri31 2554 93 371 735 1 pstress 100
+element tri31 2555 92 734 371 1 pstress 100
+element tri31 2556 734 198 371 1 pstress 100
+element tri31 2557 370 92 736 1 pstress 100
+element tri31 2558 199 370 736 1 pstress 100
+element tri31 2559 90 370 737 1 pstress 100
+element tri31 2560 370 199 737 1 pstress 100
+element tri31 2561 367 199 738 1 pstress 100
+element tri31 2562 91 367 738 1 pstress 100
+element tri31 2563 90 737 367 1 pstress 100
+element tri31 2564 737 199 367 1 pstress 100
+element tri31 2565 91 738 372 1 pstress 100
+element tri31 2566 738 199 372 1 pstress 100
+element tri31 2567 199 739 372 1 pstress 100
+element tri31 2568 739 93 372 1 pstress 100
+element tri31 2569 199 371 739 1 pstress 100
+element tri31 2570 371 93 739 1 pstress 100
+element tri31 2571 199 736 371 1 pstress 100
+element tri31 2572 736 92 371 1 pstress 100
+element tri31 2573 366 91 740 1 pstress 100
+element tri31 2574 200 366 740 1 pstress 100
+element tri31 2575 16 366 741 1 pstress 100
+element tri31 2576 366 200 741 1 pstress 100
+element tri31 2577 200 373 742 1 pstress 100
+element tri31 2578 373 94 742 1 pstress 100
+element tri31 2579 200 740 373 1 pstress 100
+element tri31 2580 740 91 373 1 pstress 100
+element tri31 2581 372 93 743 1 pstress 100
+element tri31 2582 201 372 743 1 pstress 100
+element tri31 2583 91 372 744 1 pstress 100
+element tri31 2584 372 201 744 1 pstress 100
+element tri31 2585 373 201 745 1 pstress 100
+element tri31 2586 94 373 745 1 pstress 100
+element tri31 2587 91 744 373 1 pstress 100
+element tri31 2588 744 201 373 1 pstress 100
+element tri31 2589 374 95 746 1 pstress 100
+element tri31 2590 202 374 746 1 pstress 100
+element tri31 2591 93 374 747 1 pstress 100
+element tri31 2592 374 202 747 1 pstress 100
+element tri31 2593 375 202 748 1 pstress 100
+element tri31 2594 96 375 748 1 pstress 100
+element tri31 2595 93 747 375 1 pstress 100
+element tri31 2596 747 202 375 1 pstress 100
+element tri31 2597 376 96 749 1 pstress 100
+element tri31 2598 203 376 749 1 pstress 100
+element tri31 2599 94 376 750 1 pstress 100
+element tri31 2600 376 203 750 1 pstress 100
+element tri31 2601 203 377 751 1 pstress 100
+element tri31 2602 377 18 751 1 pstress 100
+element tri31 2603 203 749 377 1 pstress 100
+element tri31 2604 749 96 377 1 pstress 100
+element tri31 2605 378 13 752 1 pstress 100
+element tri31 2606 204 378 752 1 pstress 100
+element tri31 2607 95 378 753 1 pstress 100
+element tri31 2608 378 204 753 1 pstress 100
+element tri31 2609 379 204 754 1 pstress 100
+element tri31 2610 97 379 754 1 pstress 100
+element tri31 2611 95 753 379 1 pstress 100
+element tri31 2612 753 204 379 1 pstress 100
+element tri31 2613 93 735 374 1 pstress 100
+element tri31 2614 735 198 374 1 pstress 100
+element tri31 2615 198 755 374 1 pstress 100
+element tri31 2616 755 95 374 1 pstress 100
+element tri31 2617 198 380 755 1 pstress 100
+element tri31 2618 380 95 755 1 pstress 100
+element tri31 2619 198 733 380 1 pstress 100
+element tri31 2620 733 73 380 1 pstress 100
+element tri31 2621 94 745 376 1 pstress 100
+element tri31 2622 745 201 376 1 pstress 100
+element tri31 2623 201 756 376 1 pstress 100
+element tri31 2624 756 96 376 1 pstress 100
+element tri31 2625 201 375 756 1 pstress 100
+element tri31 2626 375 96 756 1 pstress 100
+element tri31 2627 201 743 375 1 pstress 100
+element tri31 2628 743 93 375 1 pstress 100
+element tri31 2629 380 179 757 1 pstress 100
+element tri31 2630 95 380 757 1 pstress 100
+element tri31 2631 73 654 380 1 pstress 100
+element tri31 2632 654 179 380 1 pstress 100
+element tri31 2633 95 757 378 1 pstress 100
+element tri31 2634 757 179 378 1 pstress 100
+element tri31 2635 179 655 378 1 pstress 100
+element tri31 2636 655 13 378 1 pstress 100
+element tri31 2637 381 97 758 1 pstress 100
+element tri31 2638 205 381 758 1 pstress 100
+element tri31 2639 96 381 759 1 pstress 100
+element tri31 2640 381 205 759 1 pstress 100
+element tri31 2641 377 205 760 1 pstress 100
+element tri31 2642 18 377 760 1 pstress 100
+element tri31 2643 96 759 377 1 pstress 100
+element tri31 2644 759 205 377 1 pstress 100
+element tri31 2645 96 748 381 1 pstress 100
+element tri31 2646 748 202 381 1 pstress 100
+element tri31 2647 202 761 381 1 pstress 100
+element tri31 2648 761 97 381 1 pstress 100
+element tri31 2649 202 379 761 1 pstress 100
+element tri31 2650 379 97 761 1 pstress 100
+element tri31 2651 202 746 379 1 pstress 100
+element tri31 2652 746 95 379 1 pstress 100
+element tri31 2653 18 760 382 1 pstress 100
+element tri31 2654 760 205 382 1 pstress 100
+element tri31 2655 205 762 382 1 pstress 100
+element tri31 2656 762 98 382 1 pstress 100
+element tri31 2657 205 383 762 1 pstress 100
+element tri31 2658 383 98 762 1 pstress 100
+element tri31 2659 205 758 383 1 pstress 100
+element tri31 2660 758 97 383 1 pstress 100
+element tri31 2661 384 168 763 1 pstress 100
+element tri31 2662 99 384 763 1 pstress 100
+element tri31 2663 13 613 384 1 pstress 100
+element tri31 2664 613 168 384 1 pstress 100
+element tri31 2665 99 763 385 1 pstress 100
+element tri31 2666 763 168 385 1 pstress 100
+element tri31 2667 168 614 385 1 pstress 100
+element tri31 2668 614 66 385 1 pstress 100
+element tri31 2669 97 754 386 1 pstress 100
+element tri31 2670 754 204 386 1 pstress 100
+element tri31 2671 204 764 386 1 pstress 100
+element tri31 2672 764 99 386 1 pstress 100
+element tri31 2673 204 384 764 1 pstress 100
+element tri31 2674 384 99 764 1 pstress 100
+element tri31 2675 204 752 384 1 pstress 100
+element tri31 2676 752 13 384 1 pstress 100
+element tri31 2677 385 66 765 1 pstress 100
+element tri31 2678 206 385 765 1 pstress 100
+element tri31 2679 99 385 766 1 pstress 100
+element tri31 2680 385 206 766 1 pstress 100
+element tri31 2681 387 206 767 1 pstress 100
+element tri31 2682 100 387 767 1 pstress 100
+element tri31 2683 99 766 387 1 pstress 100
+element tri31 2684 766 206 387 1 pstress 100
+element tri31 2685 386 99 768 1 pstress 100
+element tri31 2686 207 386 768 1 pstress 100
+element tri31 2687 97 386 769 1 pstress 100
+element tri31 2688 386 207 769 1 pstress 100
+element tri31 2689 383 207 770 1 pstress 100
+element tri31 2690 98 383 770 1 pstress 100
+element tri31 2691 97 769 383 1 pstress 100
+element tri31 2692 769 207 383 1 pstress 100
+element tri31 2693 98 770 388 1 pstress 100
+element tri31 2694 770 207 388 1 pstress 100
+element tri31 2695 207 771 388 1 pstress 100
+element tri31 2696 771 100 388 1 pstress 100
+element tri31 2697 207 387 771 1 pstress 100
+element tri31 2698 387 100 771 1 pstress 100
+element tri31 2699 207 768 387 1 pstress 100
+element tri31 2700 768 99 387 1 pstress 100
+element tri31 2701 382 98 772 1 pstress 100
+element tri31 2702 208 382 772 1 pstress 100
+element tri31 2703 18 382 773 1 pstress 100
+element tri31 2704 382 208 773 1 pstress 100
+element tri31 2705 208 389 774 1 pstress 100
+element tri31 2706 389 101 774 1 pstress 100
+element tri31 2707 208 772 389 1 pstress 100
+element tri31 2708 772 98 389 1 pstress 100
+element tri31 2709 388 100 775 1 pstress 100
+element tri31 2710 209 388 775 1 pstress 100
+element tri31 2711 98 388 776 1 pstress 100
+element tri31 2712 388 209 776 1 pstress 100
+element tri31 2713 389 209 777 1 pstress 100
+element tri31 2714 101 389 777 1 pstress 100
+element tri31 2715 98 776 389 1 pstress 100
+element tri31 2716 776 209 389 1 pstress 100
+element tri31 2717 390 102 778 1 pstress 100
+element tri31 2718 210 390 778 1 pstress 100
+element tri31 2719 100 390 779 1 pstress 100
+element tri31 2720 390 210 779 1 pstress 100
+element tri31 2721 391 210 780 1 pstress 100
+element tri31 2722 103 391 780 1 pstress 100
+element tri31 2723 100 779 391 1 pstress 100
+element tri31 2724 779 210 391 1 pstress 100
+element tri31 2725 392 103 781 1 pstress 100
+element tri31 2726 211 392 781 1 pstress 100
+element tri31 2727 101 392 782 1 pstress 100
+element tri31 2728 392 211 782 1 pstress 100
+element tri31 2729 211 393 783 1 pstress 100
+element tri31 2730 393 19 783 1 pstress 100
+element tri31 2731 211 781 393 1 pstress 100
+element tri31 2732 781 103 393 1 pstress 100
+element tri31 2733 394 12 784 1 pstress 100
+element tri31 2734 212 394 784 1 pstress 100
+element tri31 2735 102 394 785 1 pstress 100
+element tri31 2736 394 212 785 1 pstress 100
+element tri31 2737 395 212 786 1 pstress 100
+element tri31 2738 104 395 786 1 pstress 100
+element tri31 2739 102 785 395 1 pstress 100
+element tri31 2740 785 212 395 1 pstress 100
+element tri31 2741 100 767 390 1 pstress 100
+element tri31 2742 767 206 390 1 pstress 100
+element tri31 2743 206 787 390 1 pstress 100
+element tri31 2744 787 102 390 1 pstress 100
+element tri31 2745 206 396 787 1 pstress 100
+element tri31 2746 396 102 787 1 pstress 100
+element tri31 2747 206 765 396 1 pstress 100
+element tri31 2748 765 66 396 1 pstress 100
+element tri31 2749 101 777 392 1 pstress 100
+element tri31 2750 777 209 392 1 pstress 100
+element tri31 2751 209 788 392 1 pstress 100
+element tri31 2752 788 103 392 1 pstress 100
+element tri31 2753 209 391 788 1 pstress 100
+element tri31 2754 391 103 788 1 pstress 100
+element tri31 2755 209 775 391 1 pstress 100
+element tri31 2756 775 100 391 1 pstress 100
+element tri31 2757 396 171 789 1 pstress 100
+element tri31 2758 102 396 789 1 pstress 100
+element tri31 2759 66 622 396 1 pstress 100
+element tri31 2760 622 171 396 1 pstress 100
+element tri31 2761 102 789 394 1 pstress 100
+element tri31 2762 789 171 394 1 pstress 100
+element tri31 2763 171 623 394 1 pstress 100
+element tri31 2764 623 12 394 1 pstress 100
+element tri31 2765 397 104 790 1 pstress 100
+element tri31 2766 213 397 790 1 pstress 100
+element tri31 2767 103 397 791 1 pstress 100
+element tri31 2768 397 213 791 1 pstress 100
+element tri31 2769 393 213 792 1 pstress 100
+element tri31 2770 19 393 792 1 pstress 100
+element tri31 2771 103 791 393 1 pstress 100
+element tri31 2772 791 213 393 1 pstress 100
+element tri31 2773 103 780 397 1 pstress 100
+element tri31 2774 780 210 397 1 pstress 100
+element tri31 2775 210 793 397 1 pstress 100
+element tri31 2776 793 104 397 1 pstress 100
+element tri31 2777 210 395 793 1 pstress 100
+element tri31 2778 395 104 793 1 pstress 100
+element tri31 2779 210 778 395 1 pstress 100
+element tri31 2780 778 102 395 1 pstress 100
+element tri31 2781 19 792 398 1 pstress 100
+element tri31 2782 792 213 398 1 pstress 100
+element tri31 2783 213 794 398 1 pstress 100
+element tri31 2784 794 105 398 1 pstress 100
+element tri31 2785 213 399 794 1 pstress 100
+element tri31 2786 399 105 794 1 pstress 100
+element tri31 2787 213 790 399 1 pstress 100
+element tri31 2788 790 104 399 1 pstress 100
+element tri31 2789 400 158 795 1 pstress 100
+element tri31 2790 106 400 795 1 pstress 100
+element tri31 2791 12 577 400 1 pstress 100
+element tri31 2792 577 158 400 1 pstress 100
+element tri31 2793 106 795 401 1 pstress 100
+element tri31 2794 795 158 401 1 pstress 100
+element tri31 2795 158 578 401 1 pstress 100
+element tri31 2796 578 58 401 1 pstress 100
+element tri31 2797 104 786 402 1 pstress 100
+element tri31 2798 786 212 402 1 pstress 100
+element tri31 2799 212 796 402 1 pstress 100
+element tri31 2800 796 106 402 1 pstress 100
+element tri31 2801 212 400 796 1 pstress 100
+element tri31 2802 400 106 796 1 pstress 100
+element tri31 2803 212 784 400 1 pstress 100
+element tri31 2804 784 12 400 1 pstress 100
+element tri31 2805 401 58 797 1 pstress 100
+element tri31 2806 214 401 797 1 pstress 100
+element tri31 2807 106 401 798 1 pstress 100
+element tri31 2808 401 214 798 1 pstress 100
+element tri31 2809 403 214 799 1 pstress 100
+element tri31 2810 107 403 799 1 pstress 100
+element tri31 2811 106 798 403 1 pstress 100
+element tri31 2812 798 214 403 1 pstress 100
+element tri31 2813 402 106 800 1 pstress 100
+element tri31 2814 215 402 800 1 pstress 100
+element tri31 2815 104 402 801 1 pstress 100
+element tri31 2816 402 215 801 1 pstress 100
+element tri31 2817 399 215 802 1 pstress 100
+element tri31 2818 105 399 802 1 pstress 100
+element tri31 2819 104 801 399 1 pstress 100
+element tri31 2820 801 215 399 1 pstress 100
+element tri31 2821 105 802 404 1 pstress 100
+element tri31 2822 802 215 404 1 pstress 100
+element tri31 2823 215 803 404 1 pstress 100
+element tri31 2824 803 107 404 1 pstress 100
+element tri31 2825 215 403 803 1 pstress 100
+element tri31 2826 403 107 803 1 pstress 100
+element tri31 2827 215 800 403 1 pstress 100
+element tri31 2828 800 106 403 1 pstress 100
+element tri31 2829 398 105 804 1 pstress 100
+element tri31 2830 216 398 804 1 pstress 100
+element tri31 2831 19 398 805 1 pstress 100
+element tri31 2832 398 216 805 1 pstress 100
+element tri31 2833 216 405 806 1 pstress 100
+element tri31 2834 405 108 806 1 pstress 100
+element tri31 2835 216 804 405 1 pstress 100
+element tri31 2836 804 105 405 1 pstress 100
+element tri31 2837 404 107 807 1 pstress 100
+element tri31 2838 217 404 807 1 pstress 100
+element tri31 2839 105 404 808 1 pstress 100
+element tri31 2840 404 217 808 1 pstress 100
+element tri31 2841 405 217 809 1 pstress 100
+element tri31 2842 108 405 809 1 pstress 100
+element tri31 2843 105 808 405 1 pstress 100
+element tri31 2844 808 217 405 1 pstress 100
+element tri31 2845 406 109 810 1 pstress 100
+element tri31 2846 218 406 810 1 pstress 100
+element tri31 2847 107 406 811 1 pstress 100
+element tri31 2848 406 218 811 1 pstress 100
+element tri31 2849 407 218 812 1 pstress 100
+element tri31 2850 110 407 812 1 pstress 100
+element tri31 2851 107 811 407 1 pstress 100
+element tri31 2852 811 218 407 1 pstress 100
+element tri31 2853 408 110 813 1 pstress 100
+element tri31 2854 219 408 813 1 pstress 100
+element tri31 2855 108 408 814 1 pstress 100
+element tri31 2856 408 219 814 1 pstress 100
+element tri31 2857 219 409 815 1 pstress 100
+element tri31 2858 409 20 815 1 pstress 100
+element tri31 2859 219 813 409 1 pstress 100
+element tri31 2860 813 110 409 1 pstress 100
+element tri31 2861 410 11 816 1 pstress 100
+element tri31 2862 220 410 816 1 pstress 100
+element tri31 2863 109 410 817 1 pstress 100
+element tri31 2864 410 220 817 1 pstress 100
+element tri31 2865 411 220 818 1 pstress 100
+element tri31 2866 111 411 818 1 pstress 100
+element tri31 2867 109 817 411 1 pstress 100
+element tri31 2868 817 220 411 1 pstress 100
+element tri31 2869 107 799 406 1 pstress 100
+element tri31 2870 799 214 406 1 pstress 100
+element tri31 2871 214 819 406 1 pstress 100
+element tri31 2872 819 109 406 1 pstress 100
+element tri31 2873 214 412 819 1 pstress 100
+element tri31 2874 412 109 819 1 pstress 100
+element tri31 2875 214 797 412 1 pstress 100
+element tri31 2876 797 58 412 1 pstress 100
+element tri31 2877 108 809 408 1 pstress 100
+element tri31 2878 809 217 408 1 pstress 100
+element tri31 2879 217 820 408 1 pstress 100
+element tri31 2880 820 110 408 1 pstress 100
+element tri31 2881 217 407 820 1 pstress 100
+element tri31 2882 407 110 820 1 pstress 100
+element tri31 2883 217 807 407 1 pstress 100
+element tri31 2884 807 107 407 1 pstress 100
+element tri31 2885 412 161 821 1 pstress 100
+element tri31 2886 109 412 821 1 pstress 100
+element tri31 2887 58 586 412 1 pstress 100
+element tri31 2888 586 161 412 1 pstress 100
+element tri31 2889 109 821 410 1 pstress 100
+element tri31 2890 821 161 410 1 pstress 100
+element tri31 2891 161 587 410 1 pstress 100
+element tri31 2892 587 11 410 1 pstress 100
+element tri31 2893 413 111 822 1 pstress 100
+element tri31 2894 221 413 822 1 pstress 100
+element tri31 2895 110 413 823 1 pstress 100
+element tri31 2896 413 221 823 1 pstress 100
+element tri31 2897 409 221 824 1 pstress 100
+element tri31 2898 20 409 824 1 pstress 100
+element tri31 2899 110 823 409 1 pstress 100
+element tri31 2900 823 221 409 1 pstress 100
+element tri31 2901 110 812 413 1 pstress 100
+element tri31 2902 812 218 413 1 pstress 100
+element tri31 2903 218 825 413 1 pstress 100
+element tri31 2904 825 111 413 1 pstress 100
+element tri31 2905 218 411 825 1 pstress 100
+element tri31 2906 411 111 825 1 pstress 100
+element tri31 2907 218 810 411 1 pstress 100
+element tri31 2908 810 109 411 1 pstress 100
+
+eleload 1373 0 10
+eleload 1374 0 10
+eleload 1375 0 10
+eleload 1376 0 10
+eleload 1377 0 10
+eleload 1378 0 10
+eleload 1379 0 10
+eleload 1380 0 10
+eleload 1381 0 10
+eleload 1382 0 10
+eleload 1383 0 10
+eleload 1384 0 10
+eleload 1385 0 10
+eleload 1386 0 10
+eleload 1387 0 10
+eleload 1388 0 10
+eleload 1389 0 10
+eleload 1390 0 10
+eleload 1391 0 10
+eleload 1392 0 10
+eleload 1393 0 10
+eleload 1394 0 10
+eleload 1395 0 10
+eleload 1396 0 10
+eleload 1397 0 10
+eleload 1398 0 10
+eleload 1399 0 10
+eleload 1400 0 10
+eleload 1401 0 10
+eleload 1402 0 10
+eleload 1403 0 10
+eleload 1404 0 10
+eleload 1405 0 10
+eleload 1406 0 10
+eleload 1407 0 10
+eleload 1408 0 10
+eleload 1409 0 10
+eleload 1410 0 10
+eleload 1411 0 10
+eleload 1412 0 10
+eleload 1413 0 10
+eleload 1414 0 10
+eleload 1415 0 10
+eleload 1416 0 10
+eleload 1417 0 10
+eleload 1418 0 10
+eleload 1419 0 10
+eleload 1420 0 10
+eleload 1421 0 10
+eleload 1422 0 10
+eleload 1423 0 10
+eleload 1424 0 10
+eleload 1425 0 10
+eleload 1426 0 10
+eleload 1427 0 10
+eleload 1428 0 10
+eleload 1429 0 10
+eleload 1430 0 10
+eleload 1431 0 10
+eleload 1432 0 10
+eleload 1433 0 10
+eleload 1434 0 10
+eleload 1435 0 10
+eleload 1436 0 10
+eleload 1437 0 10
+eleload 1438 0 10
+eleload 1439 0 10
+eleload 1440 0 10
+eleload 1441 0 10
+eleload 1442 0 10
+eleload 1443 0 10
+eleload 1444 0 10
+eleload 1445 0 10
+eleload 1446 0 10
+eleload 1447 0 10
+eleload 1448 0 10
+eleload 1449 0 10
+eleload 1450 0 10
+eleload 1451 0 10
+eleload 1452 0 10
+eleload 1453 0 10
+eleload 1454 0 10
+eleload 1455 0 10
+eleload 1456 0 10
+eleload 1457 0 10
+eleload 1458 0 10
+eleload 1459 0 10
+eleload 1460 0 10
+eleload 1461 0 10
+eleload 1462 0 10
+eleload 1463 0 10
+eleload 1464 0 10
+eleload 1465 0 10
+eleload 1466 0 10
+eleload 1467 0 10
+eleload 1468 0 10
+eleload 1469 0 10
+eleload 1470 0 10
+eleload 1471 0 10
+eleload 1472 0 10
+eleload 1473 0 10
+eleload 1474 0 10
+eleload 1475 0 10
+eleload 1476 0 10
+eleload 1477 0 10
+eleload 1478 0 10
+eleload 1479 0 10
+eleload 1480 0 10
+eleload 1481 0 10
+eleload 1482 0 10
+eleload 1483 0 10
+eleload 1484 0 10
+eleload 1485 0 10
+eleload 1486 0 10
+eleload 1487 0 10
+eleload 1488 0 10
+eleload 1489 0 10
+eleload 1490 0 10
+eleload 1491 0 10
+eleload 1492 0 10
+eleload 1493 0 10
+eleload 1494 0 10
+eleload 1495 0 10
+eleload 1496 0 10
+eleload 1497 0 10
+eleload 1498 0 10
+eleload 1499 0 10
+eleload 1500 0 10
+eleload 1501 0 10
+eleload 1502 0 10
+eleload 1503 0 10
+eleload 1504 0 10
+eleload 1505 0 10
+eleload 1506 0 10
+eleload 1507 0 10
+eleload 1508 0 10
+eleload 1509 0 10
+eleload 1510 0 10
+eleload 1511 0 10
+eleload 1512 0 10
+eleload 1513 0 10
+eleload 1514 0 10
+eleload 1515 0 10
+eleload 1516 0 10
+eleload 1517 0 10
+eleload 1518 0 10
+eleload 1519 0 10
+eleload 1520 0 10
+eleload 1521 0 10
+eleload 1522 0 10
+eleload 1523 0 10
+eleload 1524 0 10
+eleload 1525 0 10
+eleload 1526 0 10
+eleload 1527 0 10
+eleload 1528 0 10
+eleload 1529 0 10
+eleload 1530 0 10
+eleload 1531 0 10
+eleload 1532 0 10
+eleload 1533 0 10
+eleload 1534 0 10
+eleload 1535 0 10
+eleload 1536 0 10
+eleload 1537 0 10
+eleload 1538 0 10
+eleload 1539 0 10
+eleload 1540 0 10
+eleload 1541 0 10
+eleload 1542 0 10
+eleload 1543 0 10
+eleload 1544 0 10
+eleload 1545 0 10
+eleload 1546 0 10
+eleload 1547 0 10
+eleload 1548 0 10
+eleload 1549 0 10
+eleload 1550 0 10
+eleload 1551 0 10
+eleload 1552 0 10
+eleload 1553 0 10
+eleload 1554 0 10
+eleload 1555 0 10
+eleload 1556 0 10
+eleload 1557 0 10
+eleload 1558 0 10
+eleload 1559 0 10
+eleload 1560 0 10
+eleload 1561 0 10
+eleload 1562 0 10
+eleload 1563 0 10
+eleload 1564 0 10
+eleload 1565 0 10
+eleload 1566 0 10
+eleload 1567 0 10
+eleload 1568 0 10
+eleload 1569 0 10
+eleload 1570 0 10
+eleload 1571 0 10
+eleload 1572 0 10
+eleload 1573 0 10
+eleload 1574 0 10
+eleload 1575 0 10
+eleload 1576 0 10
+eleload 1577 0 10
+eleload 1578 0 10
+eleload 1579 0 10
+eleload 1580 0 10
+eleload 1581 0 10
+eleload 1582 0 10
+eleload 1583 0 10
+eleload 1584 0 10
+eleload 1585 0 10
+eleload 1586 0 10
+eleload 1587 0 10
+eleload 1588 0 10
+eleload 1589 0 10
+eleload 1590 0 10
+eleload 1591 0 10
+eleload 1592 0 10
+eleload 1593 0 10
+eleload 1594 0 10
+eleload 1595 0 10
+eleload 1596 0 10
+eleload 1597 0 10
+eleload 1598 0 10
+eleload 1599 0 10
+eleload 1600 0 10
+eleload 1601 0 10
+eleload 1602 0 10
+eleload 1603 0 10
+eleload 1604 0 10
+eleload 1605 0 10
+eleload 1606 0 10
+eleload 1607 0 10
+eleload 1608 0 10
+eleload 1609 0 10
+eleload 1610 0 10
+eleload 1611 0 10
+eleload 1612 0 10
+eleload 1613 0 10
+eleload 1614 0 10
+eleload 1615 0 10
+eleload 1616 0 10
+eleload 1617 0 10
+eleload 1618 0 10
+eleload 1619 0 10
+eleload 1620 0 10
+eleload 1621 0 10
+eleload 1622 0 10
+eleload 1623 0 10
+eleload 1624 0 10
+eleload 1625 0 10
+eleload 1626 0 10
+eleload 1627 0 10
+eleload 1628 0 10
+eleload 1629 0 10
+eleload 1630 0 10
+eleload 1631 0 10
+eleload 1632 0 10
+eleload 1633 0 10
+eleload 1634 0 10
+eleload 1635 0 10
+eleload 1636 0 10
+eleload 1637 0 10
+eleload 1638 0 10
+eleload 1639 0 10
+eleload 1640 0 10
+eleload 1641 0 10
+eleload 1642 0 10
+eleload 1643 0 10
+eleload 1644 0 10
+eleload 1645 0 10
+eleload 1646 0 10
+eleload 1647 0 10
+eleload 1648 0 10
+eleload 1649 0 10
+eleload 1650 0 10
+eleload 1651 0 10
+eleload 1652 0 10
+eleload 1653 0 10
+eleload 1654 0 10
+eleload 1655 0 10
+eleload 1656 0 10
+eleload 1657 0 10
+eleload 1658 0 10
+eleload 1659 0 10
+eleload 1660 0 10
+eleload 1661 0 10
+eleload 1662 0 10
+eleload 1663 0 10
+eleload 1664 0 10
+eleload 1665 0 10
+eleload 1666 0 10
+eleload 1667 0 10
+eleload 1668 0 10
+eleload 1669 0 10
+eleload 1670 0 10
+eleload 1671 0 10
+eleload 1672 0 10
+eleload 1673 0 10
+eleload 1674 0 10
+eleload 1675 0 10
+eleload 1676 0 10
+eleload 1677 0 10
+eleload 1678 0 10
+eleload 1679 0 10
+eleload 1680 0 10
+eleload 1681 0 10
+eleload 1682 0 10
+eleload 1683 0 10
+eleload 1684 0 10
+eleload 1685 0 10
+eleload 1686 0 10
+eleload 1687 0 10
+eleload 1688 0 10
+eleload 1689 0 10
+eleload 1690 0 10
+eleload 1691 0 10
+eleload 1692 0 10
+eleload 1693 0 10
+eleload 1694 0 10
+eleload 1695 0 10
+eleload 1696 0 10
+eleload 1697 0 10
+eleload 1698 0 10
+eleload 1699 0 10
+eleload 1700 0 10
+eleload 1701 0 10
+eleload 1702 0 10
+eleload 1703 0 10
+eleload 1704 0 10
+eleload 1705 0 10
+eleload 1706 0 10
+eleload 1707 0 10
+eleload 1708 0 10
+eleload 1709 0 10
+eleload 1710 0 10
+eleload 1711 0 10
+eleload 1712 0 10
+eleload 1713 0 10
+eleload 1714 0 10
+eleload 1715 0 10
+eleload 1716 0 10
+eleload 1717 0 10
+eleload 1718 0 10
+eleload 1719 0 10
+eleload 1720 0 10
+eleload 1721 0 10
+eleload 1722 0 10
+eleload 1723 0 10
+eleload 1724 0 10
+eleload 1725 0 10
+eleload 1726 0 10
+eleload 1727 0 10
+eleload 1728 0 10
+eleload 1729 0 10
+eleload 1730 0 10
+eleload 1731 0 10
+eleload 1732 0 10
+eleload 1733 0 10
+eleload 1734 0 10
+eleload 1735 0 10
+eleload 1736 0 10
+eleload 1737 0 10
+eleload 1738 0 10
+eleload 1739 0 10
+eleload 1740 0 10
+eleload 1741 0 10
+eleload 1742 0 10
+eleload 1743 0 10
+eleload 1744 0 10
+eleload 1745 0 10
+eleload 1746 0 10
+eleload 1747 0 10
+eleload 1748 0 10
+eleload 1749 0 10
+eleload 1750 0 10
+eleload 1751 0 10
+eleload 1752 0 10
+eleload 1753 0 10
+eleload 1754 0 10
+eleload 1755 0 10
+eleload 1756 0 10
+eleload 1757 0 10
+eleload 1758 0 10
+eleload 1759 0 10
+eleload 1760 0 10
+eleload 1761 0 10
+eleload 1762 0 10
+eleload 1763 0 10
+eleload 1764 0 10
+eleload 1765 0 10
+eleload 1766 0 10
+eleload 1767 0 10
+eleload 1768 0 10
+eleload 1769 0 10
+eleload 1770 0 10
+eleload 1771 0 10
+eleload 1772 0 10
+eleload 1773 0 10
+eleload 1774 0 10
+eleload 1775 0 10
+eleload 1776 0 10
+eleload 1777 0 10
+eleload 1778 0 10
+eleload 1779 0 10
+eleload 1780 0 10
+eleload 1781 0 10
+eleload 1782 0 10
+eleload 1783 0 10
+eleload 1784 0 10
+eleload 1785 0 10
+eleload 1786 0 10
+eleload 1787 0 10
+eleload 1788 0 10
+eleload 1789 0 10
+eleload 1790 0 10
+eleload 1791 0 10
+eleload 1792 0 10
+eleload 1793 0 10
+eleload 1794 0 10
+eleload 1795 0 10
+eleload 1796 0 10
+eleload 1797 0 10
+eleload 1798 0 10
+eleload 1799 0 10
+eleload 1800 0 10
+eleload 1801 0 10
+eleload 1802 0 10
+eleload 1803 0 10
+eleload 1804 0 10
+eleload 1805 0 10
+eleload 1806 0 10
+eleload 1807 0 10
+eleload 1808 0 10
+eleload 1809 0 10
+eleload 1810 0 10
+eleload 1811 0 10
+eleload 1812 0 10
+eleload 1813 0 10
+eleload 1814 0 10
+eleload 1815 0 10
+eleload 1816 0 10
+eleload 1817 0 10
+eleload 1818 0 10
+eleload 1819 0 10
+eleload 1820 0 10
+eleload 1821 0 10
+eleload 1822 0 10
+eleload 1823 0 10
+eleload 1824 0 10
+eleload 1825 0 10
+eleload 1826 0 10
+eleload 1827 0 10
+eleload 1828 0 10
+eleload 1829 0 10
+eleload 1830 0 10
+eleload 1831 0 10
+eleload 1832 0 10
+eleload 1833 0 10
+eleload 1834 0 10
+eleload 1835 0 10
+eleload 1836 0 10
+eleload 1837 0 10
+eleload 1838 0 10
+eleload 1839 0 10
+eleload 1840 0 10
+eleload 1841 0 10
+eleload 1842 0 10
+eleload 1843 0 10
+eleload 1844 0 10
+eleload 1845 0 10
+eleload 1846 0 10
+eleload 1847 0 10
+eleload 1848 0 10
+eleload 1849 0 10
+eleload 1850 0 10
+eleload 1851 0 10
+eleload 1852 0 10
+eleload 1853 0 10
+eleload 1854 0 10
+eleload 1855 0 10
+eleload 1856 0 10
+eleload 1857 0 10
+eleload 1858 0 10
+eleload 1859 0 10
+eleload 1860 0 10
+eleload 1861 0 10
+eleload 1862 0 10
+eleload 1863 0 10
+eleload 1864 0 10
+eleload 1865 0 10
+eleload 1866 0 10
+eleload 1867 0 10
+eleload 1868 0 10
+eleload 1869 0 10
+eleload 1870 0 10
+eleload 1871 0 10
+eleload 1872 0 10
+eleload 1873 0 10
+eleload 1874 0 10
+eleload 1875 0 10
+eleload 1876 0 10
+eleload 1877 0 10
+eleload 1878 0 10
+eleload 1879 0 10
+eleload 1880 0 10
+eleload 1881 0 10
+eleload 1882 0 10
+eleload 1883 0 10
+eleload 1884 0 10
+eleload 1885 0 10
+eleload 1886 0 10
+eleload 1887 0 10
+eleload 1888 0 10
+eleload 1889 0 10
+eleload 1890 0 10
+eleload 1891 0 10
+eleload 1892 0 10
+eleload 1893 0 10
+eleload 1894 0 10
+eleload 1895 0 10
+eleload 1896 0 10
+eleload 1897 0 10
+eleload 1898 0 10
+eleload 1899 0 10
+eleload 1900 0 10
+eleload 1901 0 10
+eleload 1902 0 10
+eleload 1903 0 10
+eleload 1904 0 10
+eleload 1905 0 10
+eleload 1906 0 10
+eleload 1907 0 10
+eleload 1908 0 10
+eleload 1909 0 10
+eleload 1910 0 10
+eleload 1911 0 10
+eleload 1912 0 10
+eleload 1913 0 10
+eleload 1914 0 10
+eleload 1915 0 10
+eleload 1916 0 10
+eleload 1917 0 10
+eleload 1918 0 10
+eleload 1919 0 10
+eleload 1920 0 10
+eleload 1921 0 10
+eleload 1922 0 10
+eleload 1923 0 10
+eleload 1924 0 10
+eleload 1925 0 10
+eleload 1926 0 10
+eleload 1927 0 10
+eleload 1928 0 10
+eleload 1929 0 10
+eleload 1930 0 10
+eleload 1931 0 10
+eleload 1932 0 10
+eleload 1933 0 10
+eleload 1934 0 10
+eleload 1935 0 10
+eleload 1936 0 10
+eleload 1937 0 10
+eleload 1938 0 10
+eleload 1939 0 10
+eleload 1940 0 10
+eleload 1941 0 10
+eleload 1942 0 10
+eleload 1943 0 10
+eleload 1944 0 10
+eleload 1945 0 10
+eleload 1946 0 10
+eleload 1947 0 10
+eleload 1948 0 10
+eleload 1949 0 10
+eleload 1950 0 10
+eleload 1951 0 10
+eleload 1952 0 10
+eleload 1953 0 10
+eleload 1954 0 10
+eleload 1955 0 10
+eleload 1956 0 10
+eleload 1957 0 10
+eleload 1958 0 10
+eleload 1959 0 10
+eleload 1960 0 10
+eleload 1961 0 10
+eleload 1962 0 10
+eleload 1963 0 10
+eleload 1964 0 10
+eleload 1965 0 10
+eleload 1966 0 10
+eleload 1967 0 10
+eleload 1968 0 10
+eleload 1969 0 10
+eleload 1970 0 10
+eleload 1971 0 10
+eleload 1972 0 10
+eleload 1973 0 10
+eleload 1974 0 10
+eleload 1975 0 10
+eleload 1976 0 10
+eleload 1977 0 10
+eleload 1978 0 10
+eleload 1979 0 10
+eleload 1980 0 10
+eleload 1981 0 10
+eleload 1982 0 10
+eleload 1983 0 10
+eleload 1984 0 10
+eleload 1985 0 10
+eleload 1986 0 10
+eleload 1987 0 10
+eleload 1988 0 10
+eleload 1989 0 10
+eleload 1990 0 10
+eleload 1991 0 10
+eleload 1992 0 10
+eleload 1993 0 10
+eleload 1994 0 10
+eleload 1995 0 10
+eleload 1996 0 10
+eleload 1997 0 10
+eleload 1998 0 10
+eleload 1999 0 10
+eleload 2000 0 10
+eleload 2001 0 10
+eleload 2002 0 10
+eleload 2003 0 10
+eleload 2004 0 10
+eleload 2005 0 10
+eleload 2006 0 10
+eleload 2007 0 10
+eleload 2008 0 10
+eleload 2009 0 10
+eleload 2010 0 10
+eleload 2011 0 10
+eleload 2012 0 10
+eleload 2013 0 10
+eleload 2014 0 10
+eleload 2015 0 10
+eleload 2016 0 10
+eleload 2017 0 10
+eleload 2018 0 10
+eleload 2019 0 10
+eleload 2020 0 10
+eleload 2021 0 10
+eleload 2022 0 10
+eleload 2023 0 10
+eleload 2024 0 10
+eleload 2025 0 10
+eleload 2026 0 10
+eleload 2027 0 10
+eleload 2028 0 10
+eleload 2029 0 10
+eleload 2030 0 10
+eleload 2031 0 10
+eleload 2032 0 10
+eleload 2033 0 10
+eleload 2034 0 10
+eleload 2035 0 10
+eleload 2036 0 10
+eleload 2037 0 10
+eleload 2038 0 10
+eleload 2039 0 10
+eleload 2040 0 10
+eleload 2041 0 10
+eleload 2042 0 10
+eleload 2043 0 10
+eleload 2044 0 10
+eleload 2045 0 10
+eleload 2046 0 10
+eleload 2047 0 10
+eleload 2048 0 10
+eleload 2049 0 10
+eleload 2050 0 10
+eleload 2051 0 10
+eleload 2052 0 10
+eleload 2053 0 10
+eleload 2054 0 10
+eleload 2055 0 10
+eleload 2056 0 10
+eleload 2057 0 10
+eleload 2058 0 10
+eleload 2059 0 10
+eleload 2060 0 10
+eleload 2061 0 10
+eleload 2062 0 10
+eleload 2063 0 10
+eleload 2064 0 10
+eleload 2065 0 10
+eleload 2066 0 10
+eleload 2067 0 10
+eleload 2068 0 10
+eleload 2069 0 10
+eleload 2070 0 10
+eleload 2071 0 10
+eleload 2072 0 10
+eleload 2073 0 10
+eleload 2074 0 10
+eleload 2075 0 10
+eleload 2076 0 10
+eleload 2077 0 10
+eleload 2078 0 10
+eleload 2079 0 10
+eleload 2080 0 10
+eleload 2081 0 10
+eleload 2082 0 10
+eleload 2083 0 10
+eleload 2084 0 10
+eleload 2085 0 10
+eleload 2086 0 10
+eleload 2087 0 10
+eleload 2088 0 10
+eleload 2089 0 10
+eleload 2090 0 10
+eleload 2091 0 10
+eleload 2092 0 10
+eleload 2093 0 10
+eleload 2094 0 10
+eleload 2095 0 10
+eleload 2096 0 10
+eleload 2097 0 10
+eleload 2098 0 10
+eleload 2099 0 10
+eleload 2100 0 10
+eleload 2101 0 10
+eleload 2102 0 10
+eleload 2103 0 10
+eleload 2104 0 10
+eleload 2105 0 10
+eleload 2106 0 10
+eleload 2107 0 10
+eleload 2108 0 10
+eleload 2109 0 10
+eleload 2110 0 10
+eleload 2111 0 10
+eleload 2112 0 10
+eleload 2113 0 10
+eleload 2114 0 10
+eleload 2115 0 10
+eleload 2116 0 10
+eleload 2117 0 10
+eleload 2118 0 10
+eleload 2119 0 10
+eleload 2120 0 10
+eleload 2121 0 10
+eleload 2122 0 10
+eleload 2123 0 10
+eleload 2124 0 10
+eleload 2125 0 10
+eleload 2126 0 10
+eleload 2127 0 10
+eleload 2128 0 10
+eleload 2129 0 10
+eleload 2130 0 10
+eleload 2131 0 10
+eleload 2132 0 10
+eleload 2133 0 10
+eleload 2134 0 10
+eleload 2135 0 10
+eleload 2136 0 10
+eleload 2137 0 10
+eleload 2138 0 10
+eleload 2139 0 10
+eleload 2140 0 10
+eleload 2141 0 10
+eleload 2142 0 10
+eleload 2143 0 10
+eleload 2144 0 10
+eleload 2145 0 10
+eleload 2146 0 10
+eleload 2147 0 10
+eleload 2148 0 10
+eleload 2149 0 10
+eleload 2150 0 10
+eleload 2151 0 10
+eleload 2152 0 10
+eleload 2153 0 10
+eleload 2154 0 10
+eleload 2155 0 10
+eleload 2156 0 10
+eleload 2157 0 10
+eleload 2158 0 10
+eleload 2159 0 10
+eleload 2160 0 10
+eleload 2161 0 10
+eleload 2162 0 10
+eleload 2163 0 10
+eleload 2164 0 10
+eleload 2165 0 10
+eleload 2166 0 10
+eleload 2167 0 10
+eleload 2168 0 10
+eleload 2169 0 10
+eleload 2170 0 10
+eleload 2171 0 10
+eleload 2172 0 10
+eleload 2173 0 10
+eleload 2174 0 10
+eleload 2175 0 10
+eleload 2176 0 10
+eleload 2177 0 10
+eleload 2178 0 10
+eleload 2179 0 10
+eleload 2180 0 10
+eleload 2181 0 10
+eleload 2182 0 10
+eleload 2183 0 10
+eleload 2184 0 10
+eleload 2185 0 10
+eleload 2186 0 10
+eleload 2187 0 10
+eleload 2188 0 10
+eleload 2189 0 10
+eleload 2190 0 10
+eleload 2191 0 10
+eleload 2192 0 10
+eleload 2193 0 10
+eleload 2194 0 10
+eleload 2195 0 10
+eleload 2196 0 10
+eleload 2197 0 10
+eleload 2198 0 10
+eleload 2199 0 10
+eleload 2200 0 10
+eleload 2201 0 10
+eleload 2202 0 10
+eleload 2203 0 10
+eleload 2204 0 10
+eleload 2205 0 10
+eleload 2206 0 10
+eleload 2207 0 10
+eleload 2208 0 10
+eleload 2209 0 10
+eleload 2210 0 10
+eleload 2211 0 10
+eleload 2212 0 10
+eleload 2213 0 10
+eleload 2214 0 10
+eleload 2215 0 10
+eleload 2216 0 10
+eleload 2217 0 10
+eleload 2218 0 10
+eleload 2219 0 10
+eleload 2220 0 10
+eleload 2221 0 10
+eleload 2222 0 10
+eleload 2223 0 10
+eleload 2224 0 10
+eleload 2225 0 10
+eleload 2226 0 10
+eleload 2227 0 10
+eleload 2228 0 10
+eleload 2229 0 10
+eleload 2230 0 10
+eleload 2231 0 10
+eleload 2232 0 10
+eleload 2233 0 10
+eleload 2234 0 10
+eleload 2235 0 10
+eleload 2236 0 10
+eleload 2237 0 10
+eleload 2238 0 10
+eleload 2239 0 10
+eleload 2240 0 10
+eleload 2241 0 10
+eleload 2242 0 10
+eleload 2243 0 10
+eleload 2244 0 10
+eleload 2245 0 10
+eleload 2246 0 10
+eleload 2247 0 10
+eleload 2248 0 10
+eleload 2249 0 10
+eleload 2250 0 10
+eleload 2251 0 10
+eleload 2252 0 10
+eleload 2253 0 10
+eleload 2254 0 10
+eleload 2255 0 10
+eleload 2256 0 10
+eleload 2257 0 10
+eleload 2258 0 10
+eleload 2259 0 10
+eleload 2260 0 10
+eleload 2261 0 10
+eleload 2262 0 10
+eleload 2263 0 10
+eleload 2264 0 10
+eleload 2265 0 10
+eleload 2266 0 10
+eleload 2267 0 10
+eleload 2268 0 10
+eleload 2269 0 10
+eleload 2270 0 10
+eleload 2271 0 10
+eleload 2272 0 10
+eleload 2273 0 10
+eleload 2274 0 10
+eleload 2275 0 10
+eleload 2276 0 10
+eleload 2277 0 10
+eleload 2278 0 10
+eleload 2279 0 10
+eleload 2280 0 10
+eleload 2281 0 10
+eleload 2282 0 10
+eleload 2283 0 10
+eleload 2284 0 10
+eleload 2285 0 10
+eleload 2286 0 10
+eleload 2287 0 10
+eleload 2288 0 10
+eleload 2289 0 10
+eleload 2290 0 10
+eleload 2291 0 10
+eleload 2292 0 10
+eleload 2293 0 10
+eleload 2294 0 10
+eleload 2295 0 10
+eleload 2296 0 10
+eleload 2297 0 10
+eleload 2298 0 10
+eleload 2299 0 10
+eleload 2300 0 10
+eleload 2301 0 10
+eleload 2302 0 10
+eleload 2303 0 10
+eleload 2304 0 10
+eleload 2305 0 10
+eleload 2306 0 10
+eleload 2307 0 10
+eleload 2308 0 10
+eleload 2309 0 10
+eleload 2310 0 10
+eleload 2311 0 10
+eleload 2312 0 10
+eleload 2313 0 10
+eleload 2314 0 10
+eleload 2315 0 10
+eleload 2316 0 10
+eleload 2317 0 10
+eleload 2318 0 10
+eleload 2319 0 10
+eleload 2320 0 10
+eleload 2321 0 10
+eleload 2322 0 10
+eleload 2323 0 10
+eleload 2324 0 10
+eleload 2325 0 10
+eleload 2326 0 10
+eleload 2327 0 10
+eleload 2328 0 10
+eleload 2329 0 10
+eleload 2330 0 10
+eleload 2331 0 10
+eleload 2332 0 10
+eleload 2333 0 10
+eleload 2334 0 10
+eleload 2335 0 10
+eleload 2336 0 10
+eleload 2337 0 10
+eleload 2338 0 10
+eleload 2339 0 10
+eleload 2340 0 10
+eleload 2341 0 10
+eleload 2342 0 10
+eleload 2343 0 10
+eleload 2344 0 10
+eleload 2345 0 10
+eleload 2346 0 10
+eleload 2347 0 10
+eleload 2348 0 10
+eleload 2349 0 10
+eleload 2350 0 10
+eleload 2351 0 10
+eleload 2352 0 10
+eleload 2353 0 10
+eleload 2354 0 10
+eleload 2355 0 10
+eleload 2356 0 10
+eleload 2357 0 10
+eleload 2358 0 10
+eleload 2359 0 10
+eleload 2360 0 10
+eleload 2361 0 10
+eleload 2362 0 10
+eleload 2363 0 10
+eleload 2364 0 10
+eleload 2365 0 10
+eleload 2366 0 10
+eleload 2367 0 10
+eleload 2368 0 10
+eleload 2369 0 10
+eleload 2370 0 10
+eleload 2371 0 10
+eleload 2372 0 10
+eleload 2373 0 10
+eleload 2374 0 10
+eleload 2375 0 10
+eleload 2376 0 10
+eleload 2377 0 10
+eleload 2378 0 10
+eleload 2379 0 10
+eleload 2380 0 10
+eleload 2381 0 10
+eleload 2382 0 10
+eleload 2383 0 10
+eleload 2384 0 10
+eleload 2385 0 10
+eleload 2386 0 10
+eleload 2387 0 10
+eleload 2388 0 10
+eleload 2389 0 10
+eleload 2390 0 10
+eleload 2391 0 10
+eleload 2392 0 10
+eleload 2393 0 10
+eleload 2394 0 10
+eleload 2395 0 10
+eleload 2396 0 10
+eleload 2397 0 10
+eleload 2398 0 10
+eleload 2399 0 10
+eleload 2400 0 10
+eleload 2401 0 10
+eleload 2402 0 10
+eleload 2403 0 10
+eleload 2404 0 10
+eleload 2405 0 10
+eleload 2406 0 10
+eleload 2407 0 10
+eleload 2408 0 10
+eleload 2409 0 10
+eleload 2410 0 10
+eleload 2411 0 10
+eleload 2412 0 10
+eleload 2413 0 10
+eleload 2414 0 10
+eleload 2415 0 10
+eleload 2416 0 10
+eleload 2417 0 10
+eleload 2418 0 10
+eleload 2419 0 10
+eleload 2420 0 10
+eleload 2421 0 10
+eleload 2422 0 10
+eleload 2423 0 10
+eleload 2424 0 10
+eleload 2425 0 10
+eleload 2426 0 10
+eleload 2427 0 10
+eleload 2428 0 10
+eleload 2429 0 10
+eleload 2430 0 10
+eleload 2431 0 10
+eleload 2432 0 10
+eleload 2433 0 10
+eleload 2434 0 10
+eleload 2435 0 10
+eleload 2436 0 10
+eleload 2437 0 10
+eleload 2438 0 10
+eleload 2439 0 10
+eleload 2440 0 10
+eleload 2441 0 10
+eleload 2442 0 10
+eleload 2443 0 10
+eleload 2444 0 10
+eleload 2445 0 10
+eleload 2446 0 10
+eleload 2447 0 10
+eleload 2448 0 10
+eleload 2449 0 10
+eleload 2450 0 10
+eleload 2451 0 10
+eleload 2452 0 10
+eleload 2453 0 10
+eleload 2454 0 10
+eleload 2455 0 10
+eleload 2456 0 10
+eleload 2457 0 10
+eleload 2458 0 10
+eleload 2459 0 10
+eleload 2460 0 10
+eleload 2461 0 10
+eleload 2462 0 10
+eleload 2463 0 10
+eleload 2464 0 10
+eleload 2465 0 10
+eleload 2466 0 10
+eleload 2467 0 10
+eleload 2468 0 10
+eleload 2469 0 10
+eleload 2470 0 10
+eleload 2471 0 10
+eleload 2472 0 10
+eleload 2473 0 10
+eleload 2474 0 10
+eleload 2475 0 10
+eleload 2476 0 10
+eleload 2477 0 10
+eleload 2478 0 10
+eleload 2479 0 10
+eleload 2480 0 10
+eleload 2481 0 10
+eleload 2482 0 10
+eleload 2483 0 10
+eleload 2484 0 10
+eleload 2485 0 10
+eleload 2486 0 10
+eleload 2487 0 10
+eleload 2488 0 10
+eleload 2489 0 10
+eleload 2490 0 10
+eleload 2491 0 10
+eleload 2492 0 10
+eleload 2493 0 10
+eleload 2494 0 10
+eleload 2495 0 10
+eleload 2496 0 10
+eleload 2497 0 10
+eleload 2498 0 10
+eleload 2499 0 10
+eleload 2500 0 10
+eleload 2501 0 10
+eleload 2502 0 10
+eleload 2503 0 10
+eleload 2504 0 10
+eleload 2505 0 10
+eleload 2506 0 10
+eleload 2507 0 10
+eleload 2508 0 10
+eleload 2509 0 10
+eleload 2510 0 10
+eleload 2511 0 10
+eleload 2512 0 10
+eleload 2513 0 10
+eleload 2514 0 10
+eleload 2515 0 10
+eleload 2516 0 10
+eleload 2517 0 10
+eleload 2518 0 10
+eleload 2519 0 10
+eleload 2520 0 10
+eleload 2521 0 10
+eleload 2522 0 10
+eleload 2523 0 10
+eleload 2524 0 10
+eleload 2525 0 10
+eleload 2526 0 10
+eleload 2527 0 10
+eleload 2528 0 10
+eleload 2529 0 10
+eleload 2530 0 10
+eleload 2531 0 10
+eleload 2532 0 10
+eleload 2533 0 10
+eleload 2534 0 10
+eleload 2535 0 10
+eleload 2536 0 10
+eleload 2537 0 10
+eleload 2538 0 10
+eleload 2539 0 10
+eleload 2540 0 10
+eleload 2541 0 10
+eleload 2542 0 10
+eleload 2543 0 10
+eleload 2544 0 10
+eleload 2545 0 10
+eleload 2546 0 10
+eleload 2547 0 10
+eleload 2548 0 10
+eleload 2549 0 10
+eleload 2550 0 10
+eleload 2551 0 10
+eleload 2552 0 10
+eleload 2553 0 10
+eleload 2554 0 10
+eleload 2555 0 10
+eleload 2556 0 10
+eleload 2557 0 10
+eleload 2558 0 10
+eleload 2559 0 10
+eleload 2560 0 10
+eleload 2561 0 10
+eleload 2562 0 10
+eleload 2563 0 10
+eleload 2564 0 10
+eleload 2565 0 10
+eleload 2566 0 10
+eleload 2567 0 10
+eleload 2568 0 10
+eleload 2569 0 10
+eleload 2570 0 10
+eleload 2571 0 10
+eleload 2572 0 10
+eleload 2573 0 10
+eleload 2574 0 10
+eleload 2575 0 10
+eleload 2576 0 10
+eleload 2577 0 10
+eleload 2578 0 10
+eleload 2579 0 10
+eleload 2580 0 10
+eleload 2581 0 10
+eleload 2582 0 10
+eleload 2583 0 10
+eleload 2584 0 10
+eleload 2585 0 10
+eleload 2586 0 10
+eleload 2587 0 10
+eleload 2588 0 10
+eleload 2589 0 10
+eleload 2590 0 10
+eleload 2591 0 10
+eleload 2592 0 10
+eleload 2593 0 10
+eleload 2594 0 10
+eleload 2595 0 10
+eleload 2596 0 10
+eleload 2597 0 10
+eleload 2598 0 10
+eleload 2599 0 10
+eleload 2600 0 10
+eleload 2601 0 10
+eleload 2602 0 10
+eleload 2603 0 10
+eleload 2604 0 10
+eleload 2605 0 10
+eleload 2606 0 10
+eleload 2607 0 10
+eleload 2608 0 10
+eleload 2609 0 10
+eleload 2610 0 10
+eleload 2611 0 10
+eleload 2612 0 10
+eleload 2613 0 10
+eleload 2614 0 10
+eleload 2615 0 10
+eleload 2616 0 10
+eleload 2617 0 10
+eleload 2618 0 10
+eleload 2619 0 10
+eleload 2620 0 10
+eleload 2621 0 10
+eleload 2622 0 10
+eleload 2623 0 10
+eleload 2624 0 10
+eleload 2625 0 10
+eleload 2626 0 10
+eleload 2627 0 10
+eleload 2628 0 10
+eleload 2629 0 10
+eleload 2630 0 10
+eleload 2631 0 10
+eleload 2632 0 10
+eleload 2633 0 10
+eleload 2634 0 10
+eleload 2635 0 10
+eleload 2636 0 10
+eleload 2637 0 10
+eleload 2638 0 10
+eleload 2639 0 10
+eleload 2640 0 10
+eleload 2641 0 10
+eleload 2642 0 10
+eleload 2643 0 10
+eleload 2644 0 10
+eleload 2645 0 10
+eleload 2646 0 10
+eleload 2647 0 10
+eleload 2648 0 10
+eleload 2649 0 10
+eleload 2650 0 10
+eleload 2651 0 10
+eleload 2652 0 10
+eleload 2653 0 10
+eleload 2654 0 10
+eleload 2655 0 10
+eleload 2656 0 10
+eleload 2657 0 10
+eleload 2658 0 10
+eleload 2659 0 10
+eleload 2660 0 10
+eleload 2661 0 10
+eleload 2662 0 10
+eleload 2663 0 10
+eleload 2664 0 10
+eleload 2665 0 10
+eleload 2666 0 10
+eleload 2667 0 10
+eleload 2668 0 10
+eleload 2669 0 10
+eleload 2670 0 10
+eleload 2671 0 10
+eleload 2672 0 10
+eleload 2673 0 10
+eleload 2674 0 10
+eleload 2675 0 10
+eleload 2676 0 10
+eleload 2677 0 10
+eleload 2678 0 10
+eleload 2679 0 10
+eleload 2680 0 10
+eleload 2681 0 10
+eleload 2682 0 10
+eleload 2683 0 10
+eleload 2684 0 10
+eleload 2685 0 10
+eleload 2686 0 10
+eleload 2687 0 10
+eleload 2688 0 10
+eleload 2689 0 10
+eleload 2690 0 10
+eleload 2691 0 10
+eleload 2692 0 10
+eleload 2693 0 10
+eleload 2694 0 10
+eleload 2695 0 10
+eleload 2696 0 10
+eleload 2697 0 10
+eleload 2698 0 10
+eleload 2699 0 10
+eleload 2700 0 10
+eleload 2701 0 10
+eleload 2702 0 10
+eleload 2703 0 10
+eleload 2704 0 10
+eleload 2705 0 10
+eleload 2706 0 10
+eleload 2707 0 10
+eleload 2708 0 10
+eleload 2709 0 10
+eleload 2710 0 10
+eleload 2711 0 10
+eleload 2712 0 10
+eleload 2713 0 10
+eleload 2714 0 10
+eleload 2715 0 10
+eleload 2716 0 10
+eleload 2717 0 10
+eleload 2718 0 10
+eleload 2719 0 10
+eleload 2720 0 10
+eleload 2721 0 10
+eleload 2722 0 10
+eleload 2723 0 10
+eleload 2724 0 10
+eleload 2725 0 10
+eleload 2726 0 10
+eleload 2727 0 10
+eleload 2728 0 10
+eleload 2729 0 10
+eleload 2730 0 10
+eleload 2731 0 10
+eleload 2732 0 10
+eleload 2733 0 10
+eleload 2734 0 10
+eleload 2735 0 10
+eleload 2736 0 10
+eleload 2737 0 10
+eleload 2738 0 10
+eleload 2739 0 10
+eleload 2740 0 10
+eleload 2741 0 10
+eleload 2742 0 10
+eleload 2743 0 10
+eleload 2744 0 10
+eleload 2745 0 10
+eleload 2746 0 10
+eleload 2747 0 10
+eleload 2748 0 10
+eleload 2749 0 10
+eleload 2750 0 10
+eleload 2751 0 10
+eleload 2752 0 10
+eleload 2753 0 10
+eleload 2754 0 10
+eleload 2755 0 10
+eleload 2756 0 10
+eleload 2757 0 10
+eleload 2758 0 10
+eleload 2759 0 10
+eleload 2760 0 10
+eleload 2761 0 10
+eleload 2762 0 10
+eleload 2763 0 10
+eleload 2764 0 10
+eleload 2765 0 10
+eleload 2766 0 10
+eleload 2767 0 10
+eleload 2768 0 10
+eleload 2769 0 10
+eleload 2770 0 10
+eleload 2771 0 10
+eleload 2772 0 10
+eleload 2773 0 10
+eleload 2774 0 10
+eleload 2775 0 10
+eleload 2776 0 10
+eleload 2777 0 10
+eleload 2778 0 10
+eleload 2779 0 10
+eleload 2780 0 10
+eleload 2781 0 10
+eleload 2782 0 10
+eleload 2783 0 10
+eleload 2784 0 10
+eleload 2785 0 10
+eleload 2786 0 10
+eleload 2787 0 10
+eleload 2788 0 10
+eleload 2789 0 10
+eleload 2790 0 10
+eleload 2791 0 10
+eleload 2792 0 10
+eleload 2793 0 10
+eleload 2794 0 10
+eleload 2795 0 10
+eleload 2796 0 10
+eleload 2797 0 10
+eleload 2798 0 10
+eleload 2799 0 10
+eleload 2800 0 10
+eleload 2801 0 10
+eleload 2802 0 10
+eleload 2803 0 10
+eleload 2804 0 10
+eleload 2805 0 10
+eleload 2806 0 10
+eleload 2807 0 10
+eleload 2808 0 10
+eleload 2809 0 10
+eleload 2810 0 10
+eleload 2811 0 10
+eleload 2812 0 10
+eleload 2813 0 10
+eleload 2814 0 10
+eleload 2815 0 10
+eleload 2816 0 10
+eleload 2817 0 10
+eleload 2818 0 10
+eleload 2819 0 10
+eleload 2820 0 10
+eleload 2821 0 10
+eleload 2822 0 10
+eleload 2823 0 10
+eleload 2824 0 10
+eleload 2825 0 10
+eleload 2826 0 10
+eleload 2827 0 10
+eleload 2828 0 10
+eleload 2829 0 10
+eleload 2830 0 10
+eleload 2831 0 10
+eleload 2832 0 10
+eleload 2833 0 10
+eleload 2834 0 10
+eleload 2835 0 10
+eleload 2836 0 10
+eleload 2837 0 10
+eleload 2838 0 10
+eleload 2839 0 10
+eleload 2840 0 10
+eleload 2841 0 10
+eleload 2842 0 10
+eleload 2843 0 10
+eleload 2844 0 10
+eleload 2845 0 10
+eleload 2846 0 10
+eleload 2847 0 10
+eleload 2848 0 10
+eleload 2849 0 10
+eleload 2850 0 10
+eleload 2851 0 10
+eleload 2852 0 10
+eleload 2853 0 10
+eleload 2854 0 10
+eleload 2855 0 10
+eleload 2856 0 10
+eleload 2857 0 10
+eleload 2858 0 10
+eleload 2859 0 10
+eleload 2860 0 10
+eleload 2861 0 10
+eleload 2862 0 10
+eleload 2863 0 10
+eleload 2864 0 10
+eleload 2865 0 10
+eleload 2866 0 10
+eleload 2867 0 10
+eleload 2868 0 10
+eleload 2869 0 10
+eleload 2870 0 10
+eleload 2871 0 10
+eleload 2872 0 10
+eleload 2873 0 10
+eleload 2874 0 10
+eleload 2875 0 10
+eleload 2876 0 10
+eleload 2877 0 10
+eleload 2878 0 10
+eleload 2879 0 10
+eleload 2880 0 10
+eleload 2881 0 10
+eleload 2882 0 10
+eleload 2883 0 10
+eleload 2884 0 10
+eleload 2885 0 10
+eleload 2886 0 10
+eleload 2887 0 10
+eleload 2888 0 10
+eleload 2889 0 10
+eleload 2890 0 10
+eleload 2891 0 10
+eleload 2892 0 10
+eleload 2893 0 10
+eleload 2894 0 10
+eleload 2895 0 10
+eleload 2896 0 10
+eleload 2897 0 10
+eleload 2898 0 10
+eleload 2899 0 10
+eleload 2900 0 10
+eleload 2901 0 10
+eleload 2902 0 10
+eleload 2903 0 10
+eleload 2904 0 10
+eleload 2905 0 10
+eleload 2906 0 10
+eleload 2907 0 10
+eleload 2908 0 10
+

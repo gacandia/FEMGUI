@@ -1,0 +1,27 @@
+units kgf,cm,s
+window -0.5 1.5 -0.5 1                    
+gridlines X [-0.5:0.5:1.5] Y [-0.5:0.25:1]
+
+node 1 0    0
+node 2 1    0
+node 3 0    0.5
+node 4 1    0.5
+
+
+# Materials
+mat 10 Steel ElasticIsotropic 1 0.25 0
+
+# Sections
+section 100 EA1 10 1e5 1 1  0.1
+
+
+element elasticBeamColumn  10 1 2 100 0 0    
+element elasticBeamColumn  20 3 4 100 0 0
+
+fix 1 1 1 0
+fix 2 0 1 0
+fix 3 1 1 0
+fix 4 0 1 0
+
+eleload 10 discrete   global | 0.1 0.2 0.5 0.7 |  0 0 0 0  |  -1 -1 -1 -1
+eleload 20 continuous global 0 1

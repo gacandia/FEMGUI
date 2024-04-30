@@ -1,0 +1,636 @@
+units kgf,cm,s
+window -300 800 -300 800
+gridlines auto
+
+mat 1 Steel01 ElasticIsotropic 2e+06 0.25 8.00204e-06
+mat 2 Steel02 ElasticIsotropic 2e+06 0.3 8.00204e-06
+
+section 1 B3040 1 70 16000 11000 50
+section 2 B3041 2 80 20000 5000 50
+
+node 1 -100 500
+node 2 600 500
+node 3 600 0
+node 4 -100 0
+node 5 -66.6667 0
+node 6 -66.6667 71.4286
+node 7 -100 71.4286
+node 8 -66.6667 142.857
+node 9 -100 142.857
+node 10 -66.6667 214.286
+node 11 -100 214.286
+node 12 -66.6667 285.714
+node 13 -100 285.714
+node 14 -66.6667 357.143
+node 15 -100 357.143
+node 16 -66.6667 428.571
+node 17 -100 428.571
+node 18 -66.6667 500
+node 19 -33.3333 0
+node 20 -33.3333 71.4286
+node 21 -33.3333 142.857
+node 22 -33.3333 214.286
+node 23 -33.3333 285.714
+node 24 -33.3333 357.143
+node 25 -33.3333 428.571
+node 26 -33.3333 500
+node 27 0 0
+node 28 0 71.4286
+node 29 0 142.857
+node 30 0 214.286
+node 31 0 285.714
+node 32 0 357.143
+node 33 0 428.571
+node 34 0 500
+node 35 33.3333 0
+node 36 33.3333 71.4286
+node 37 33.3333 142.857
+node 38 33.3333 214.286
+node 39 33.3333 285.714
+node 40 33.3333 357.143
+node 41 33.3333 428.571
+node 42 33.3333 500
+node 43 66.6667 0
+node 44 66.6667 71.4286
+node 45 66.6667 142.857
+node 46 66.6667 214.286
+node 47 66.6667 285.714
+node 48 66.6667 357.143
+node 49 66.6667 428.571
+node 50 66.6667 500
+node 51 100 0
+node 52 100 71.4286
+node 53 100 142.857
+node 54 100 214.286
+node 55 100 285.714
+node 56 100 357.143
+node 57 100 428.571
+node 58 100 500
+node 59 133.333 0
+node 60 133.333 71.4286
+node 61 133.333 142.857
+node 62 133.333 214.286
+node 63 133.333 285.714
+node 64 133.333 357.143
+node 65 133.333 428.571
+node 66 133.333 500
+node 67 166.667 0
+node 68 166.667 71.4286
+node 69 166.667 142.857
+node 70 166.667 214.286
+node 71 166.667 285.714
+node 72 166.667 357.143
+node 73 166.667 428.571
+node 74 166.667 500
+node 75 200 0
+node 76 200 71.4286
+node 77 200 142.857
+node 78 200 214.286
+node 79 200 285.714
+node 80 200 357.143
+node 81 200 428.571
+node 82 200 500
+node 83 233.333 0
+node 84 233.333 71.4286
+node 85 233.333 142.857
+node 86 233.333 214.286
+node 87 233.333 285.714
+node 88 233.333 357.143
+node 89 233.333 428.571
+node 90 233.333 500
+node 91 266.667 0
+node 92 266.667 71.4286
+node 93 266.667 142.857
+node 94 266.667 214.286
+node 95 266.667 285.714
+node 96 266.667 357.143
+node 97 266.667 428.571
+node 98 266.667 500
+node 99 300 0
+node 100 300 71.4286
+node 101 300 142.857
+node 102 300 214.286
+node 103 300 285.714
+node 104 300 357.143
+node 105 300 428.571
+node 106 300 500
+node 107 333.333 0
+node 108 333.333 71.4286
+node 109 333.333 142.857
+node 110 333.333 214.286
+node 111 333.333 285.714
+node 112 333.333 357.143
+node 113 333.333 428.571
+node 114 333.333 500
+node 115 366.667 0
+node 116 366.667 71.4286
+node 117 366.667 142.857
+node 118 366.667 214.286
+node 119 366.667 285.714
+node 120 366.667 357.143
+node 121 366.667 428.571
+node 122 366.667 500
+node 123 400 0
+node 124 400 71.4286
+node 125 400 142.857
+node 126 400 214.286
+node 127 400 285.714
+node 128 400 357.143
+node 129 400 428.571
+node 130 400 500
+node 131 433.333 0
+node 132 433.333 71.4286
+node 133 433.333 142.857
+node 134 433.333 214.286
+node 135 433.333 285.714
+node 136 433.333 357.143
+node 137 433.333 428.571
+node 138 433.333 500
+node 139 466.667 0
+node 140 466.667 71.4286
+node 141 466.667 142.857
+node 142 466.667 214.286
+node 143 466.667 285.714
+node 144 466.667 357.143
+node 145 466.667 428.571
+node 146 466.667 500
+node 147 500 0
+node 148 500 71.4286
+node 149 500 142.857
+node 150 500 214.286
+node 151 500 285.714
+node 152 500 357.143
+node 153 500 428.571
+node 154 500 500
+node 155 533.333 0
+node 156 533.333 71.4286
+node 157 533.333 142.857
+node 158 533.333 214.286
+node 159 533.333 285.714
+node 160 533.333 357.143
+node 161 533.333 428.571
+node 162 533.333 500
+node 163 566.667 0
+node 164 566.667 71.4286
+node 165 566.667 142.857
+node 166 566.667 214.286
+node 167 566.667 285.714
+node 168 566.667 357.143
+node 169 566.667 428.571
+node 170 566.667 500
+node 171 600 71.4286
+node 172 600 142.857
+node 173 600 214.286
+node 174 600 285.714
+node 175 600 357.143
+node 176 600 428.571
+node 177 -66.6667 35.7143
+node 178 -100 35.7143
+node 179 -66.6667 107.143
+node 180 -100 107.143
+node 181 -66.6667 178.571
+node 182 -100 178.571
+node 183 -66.6667 250
+node 184 -100 250
+node 185 -66.6667 321.429
+node 186 -100 321.429
+node 187 -66.6667 392.857
+node 188 -100 392.857
+node 189 -66.6667 464.286
+node 190 -100 464.286
+node 191 -33.3333 35.7143
+node 192 -33.3333 107.143
+node 193 -33.3333 178.571
+node 194 -33.3333 250
+node 195 -33.3333 321.429
+node 196 -33.3333 392.857
+node 197 -33.3333 464.286
+node 198 0 35.7143
+node 199 0 107.143
+node 200 0 178.571
+node 201 0 250
+node 202 0 321.429
+node 203 0 392.857
+node 204 0 464.286
+node 205 33.3333 35.7143
+node 206 33.3333 107.143
+node 207 33.3333 178.571
+node 208 33.3333 250
+node 209 33.3333 321.429
+node 210 33.3333 392.857
+node 211 33.3333 464.286
+node 212 66.6667 35.7143
+node 213 66.6667 107.143
+node 214 66.6667 178.571
+node 215 66.6667 250
+node 216 66.6667 321.429
+node 217 66.6667 392.857
+node 218 66.6667 464.286
+node 219 100 35.7143
+node 220 100 107.143
+node 221 100 178.571
+node 222 100 250
+node 223 100 321.429
+node 224 100 392.857
+node 225 100 464.286
+node 226 133.333 35.7143
+node 227 133.333 107.143
+node 228 133.333 178.571
+node 229 133.333 250
+node 230 133.333 321.429
+node 231 133.333 392.857
+node 232 133.333 464.286
+node 233 166.667 35.7143
+node 234 166.667 107.143
+node 235 166.667 178.571
+node 236 166.667 250
+node 237 166.667 321.429
+node 238 166.667 392.857
+node 239 166.667 464.286
+node 240 200 35.7143
+node 241 200 107.143
+node 242 200 178.571
+node 243 200 250
+node 244 200 321.429
+node 245 200 392.857
+node 246 200 464.286
+node 247 233.333 35.7143
+node 248 233.333 107.143
+node 249 233.333 178.571
+node 250 233.333 250
+node 251 233.333 321.429
+node 252 233.333 392.857
+node 253 233.333 464.286
+node 254 266.667 35.7143
+node 255 266.667 107.143
+node 256 266.667 178.571
+node 257 266.667 250
+node 258 266.667 321.429
+node 259 266.667 392.857
+node 260 266.667 464.286
+node 261 300 35.7143
+node 262 300 107.143
+node 263 300 178.571
+node 264 300 250
+node 265 300 321.429
+node 266 300 392.857
+node 267 300 464.286
+node 268 333.333 35.7143
+node 269 333.333 107.143
+node 270 333.333 178.571
+node 271 333.333 250
+node 272 333.333 321.429
+node 273 333.333 392.857
+node 274 333.333 464.286
+node 275 366.667 35.7143
+node 276 366.667 107.143
+node 277 366.667 178.571
+node 278 366.667 250
+node 279 366.667 321.429
+node 280 366.667 392.857
+node 281 366.667 464.286
+node 282 400 35.7143
+node 283 400 107.143
+node 284 400 178.571
+node 285 400 250
+node 286 400 321.429
+node 287 400 392.857
+node 288 400 464.286
+node 289 433.333 35.7143
+node 290 433.333 107.143
+node 291 433.333 178.571
+node 292 433.333 250
+node 293 433.333 321.429
+node 294 433.333 392.857
+node 295 433.333 464.286
+node 296 466.667 35.7143
+node 297 466.667 107.143
+node 298 466.667 178.571
+node 299 466.667 250
+node 300 466.667 321.429
+node 301 466.667 392.857
+node 302 466.667 464.286
+node 303 500 35.7143
+node 304 500 107.143
+node 305 500 178.571
+node 306 500 250
+node 307 500 321.429
+node 308 500 392.857
+node 309 500 464.286
+node 310 533.333 35.7143
+node 311 533.333 107.143
+node 312 533.333 178.571
+node 313 533.333 250
+node 314 533.333 321.429
+node 315 533.333 392.857
+node 316 533.333 464.286
+node 317 566.667 35.7143
+node 318 566.667 107.143
+node 319 566.667 178.571
+node 320 566.667 250
+node 321 566.667 321.429
+node 322 566.667 392.857
+node 323 566.667 464.286
+node 324 600 35.7143
+node 325 600 107.143
+node 326 600 178.571
+node 327 600 250
+node 328 600 321.429
+node 329 600 392.857
+node 330 600 464.286
+
+element quad 149 4 5 177 178 1 pstress 1
+element quad 150 178 177 6 7 1 pstress 1
+element quad 151 7 6 179 180 1 pstress 1
+element quad 152 180 179 8 9 1 pstress 1
+element quad 153 9 8 181 182 1 pstress 1
+element quad 154 182 181 10 11 1 pstress 1
+element quad 155 11 10 183 184 1 pstress 1
+element quad 156 184 183 12 13 1 pstress 1
+element quad 157 13 12 185 186 1 pstress 1
+element quad 158 186 185 14 15 1 pstress 1
+element quad 159 15 14 187 188 1 pstress 1
+element quad 160 188 187 16 17 1 pstress 1
+element quad 161 17 16 189 190 1 pstress 1
+element quad 162 190 189 18 1 1 pstress 1
+element quad 163 5 19 191 177 1 pstress 1
+element quad 164 177 191 20 6 1 pstress 1
+element quad 165 6 20 192 179 1 pstress 1
+element quad 166 179 192 21 8 1 pstress 1
+element quad 167 8 21 193 181 1 pstress 1
+element quad 168 181 193 22 10 1 pstress 1
+element quad 169 10 22 194 183 1 pstress 1
+element quad 170 183 194 23 12 1 pstress 1
+element quad 171 12 23 195 185 1 pstress 1
+element quad 172 185 195 24 14 1 pstress 1
+element quad 173 14 24 196 187 1 pstress 1
+element quad 174 187 196 25 16 1 pstress 1
+element quad 175 16 25 197 189 1 pstress 1
+element quad 176 189 197 26 18 1 pstress 1
+element quad 177 19 27 198 191 1 pstress 1
+element quad 178 191 198 28 20 1 pstress 1
+element quad 179 20 28 199 192 1 pstress 1
+element quad 180 192 199 29 21 1 pstress 1
+element quad 181 21 29 200 193 1 pstress 1
+element quad 182 193 200 30 22 1 pstress 1
+element quad 183 22 30 201 194 1 pstress 1
+element quad 184 194 201 31 23 1 pstress 1
+element quad 185 23 31 202 195 1 pstress 1
+element quad 186 195 202 32 24 1 pstress 1
+element quad 187 24 32 203 196 1 pstress 1
+element quad 188 196 203 33 25 1 pstress 1
+element quad 189 25 33 204 197 1 pstress 1
+element quad 190 197 204 34 26 1 pstress 1
+element quad 191 27 35 205 198 1 pstress 1
+element quad 192 198 205 36 28 1 pstress 1
+element quad 193 28 36 206 199 1 pstress 1
+element quad 194 199 206 37 29 1 pstress 1
+element quad 195 29 37 207 200 1 pstress 1
+element quad 196 200 207 38 30 1 pstress 1
+element quad 197 30 38 208 201 1 pstress 1
+element quad 198 201 208 39 31 1 pstress 1
+element quad 199 31 39 209 202 1 pstress 1
+element quad 200 202 209 40 32 1 pstress 1
+element quad 201 32 40 210 203 1 pstress 1
+element quad 202 203 210 41 33 1 pstress 1
+element quad 203 33 41 211 204 1 pstress 1
+element quad 204 204 211 42 34 1 pstress 1
+element quad 205 35 43 212 205 1 pstress 1
+element quad 206 205 212 44 36 1 pstress 1
+element quad 207 36 44 213 206 1 pstress 1
+element quad 208 206 213 45 37 1 pstress 1
+element quad 209 37 45 214 207 1 pstress 1
+element quad 210 207 214 46 38 1 pstress 1
+element quad 211 38 46 215 208 1 pstress 1
+element quad 212 208 215 47 39 1 pstress 1
+element quad 213 39 47 216 209 1 pstress 1
+element quad 214 209 216 48 40 1 pstress 1
+element quad 215 40 48 217 210 1 pstress 1
+element quad 216 210 217 49 41 1 pstress 1
+element quad 217 41 49 218 211 1 pstress 1
+element quad 218 211 218 50 42 1 pstress 1
+element quad 219 43 51 219 212 1 pstress 1
+element quad 220 212 219 52 44 1 pstress 1
+element quad 221 44 52 220 213 1 pstress 1
+element quad 222 213 220 53 45 1 pstress 1
+element quad 223 45 53 221 214 1 pstress 1
+element quad 224 214 221 54 46 1 pstress 1
+element quad 225 46 54 222 215 1 pstress 1
+element quad 226 215 222 55 47 1 pstress 1
+element quad 227 47 55 223 216 1 pstress 1
+element quad 228 216 223 56 48 1 pstress 1
+element quad 229 48 56 224 217 1 pstress 1
+element quad 230 217 224 57 49 1 pstress 1
+element quad 231 49 57 225 218 1 pstress 1
+element quad 232 218 225 58 50 1 pstress 1
+element quad 233 51 59 226 219 1 pstress 1
+element quad 234 219 226 60 52 1 pstress 1
+element quad 235 52 60 227 220 1 pstress 1
+element quad 236 220 227 61 53 1 pstress 1
+element quad 237 53 61 228 221 1 pstress 1
+element quad 238 221 228 62 54 1 pstress 1
+element quad 239 54 62 229 222 1 pstress 1
+element quad 240 222 229 63 55 1 pstress 1
+element quad 241 55 63 230 223 1 pstress 1
+element quad 242 223 230 64 56 1 pstress 1
+element quad 243 56 64 231 224 1 pstress 1
+element quad 244 224 231 65 57 1 pstress 1
+element quad 245 57 65 232 225 1 pstress 1
+element quad 246 225 232 66 58 1 pstress 1
+element quad 247 59 67 233 226 1 pstress 1
+element quad 248 226 233 68 60 1 pstress 1
+element quad 249 60 68 234 227 1 pstress 1
+element quad 250 227 234 69 61 1 pstress 1
+element quad 251 61 69 235 228 1 pstress 1
+element quad 252 228 235 70 62 1 pstress 1
+element quad 253 62 70 236 229 1 pstress 1
+element quad 254 229 236 71 63 1 pstress 1
+element quad 255 63 71 237 230 1 pstress 1
+element quad 256 230 237 72 64 1 pstress 1
+element quad 257 64 72 238 231 1 pstress 1
+element quad 258 231 238 73 65 1 pstress 1
+element quad 259 65 73 239 232 1 pstress 1
+element quad 260 232 239 74 66 1 pstress 1
+element quad 261 67 75 240 233 1 pstress 1
+element quad 262 233 240 76 68 1 pstress 1
+element quad 263 68 76 241 234 1 pstress 1
+element quad 264 234 241 77 69 1 pstress 1
+element quad 265 69 77 242 235 1 pstress 1
+element quad 266 235 242 78 70 1 pstress 1
+element quad 267 70 78 243 236 1 pstress 1
+element quad 268 236 243 79 71 1 pstress 1
+element quad 269 71 79 244 237 1 pstress 1
+element quad 270 237 244 80 72 1 pstress 1
+element quad 271 72 80 245 238 1 pstress 1
+element quad 272 238 245 81 73 1 pstress 1
+element quad 273 73 81 246 239 1 pstress 1
+element quad 274 239 246 82 74 1 pstress 1
+element quad 275 75 83 247 240 1 pstress 1
+element quad 276 240 247 84 76 1 pstress 1
+element quad 277 76 84 248 241 1 pstress 1
+element quad 278 241 248 85 77 1 pstress 1
+element quad 279 77 85 249 242 1 pstress 1
+element quad 280 242 249 86 78 1 pstress 1
+element quad 281 78 86 250 243 1 pstress 1
+element quad 282 243 250 87 79 1 pstress 1
+element quad 283 79 87 251 244 1 pstress 1
+element quad 284 244 251 88 80 1 pstress 1
+element quad 285 80 88 252 245 1 pstress 1
+element quad 286 245 252 89 81 1 pstress 1
+element quad 287 81 89 253 246 1 pstress 1
+element quad 288 246 253 90 82 1 pstress 1
+element quad 289 83 91 254 247 1 pstress 1
+element quad 290 247 254 92 84 1 pstress 1
+element quad 291 84 92 255 248 1 pstress 1
+element quad 292 248 255 93 85 1 pstress 1
+element quad 293 85 93 256 249 1 pstress 1
+element quad 294 249 256 94 86 1 pstress 1
+element quad 295 86 94 257 250 1 pstress 1
+element quad 296 250 257 95 87 1 pstress 1
+element quad 297 87 95 258 251 1 pstress 1
+element quad 298 251 258 96 88 1 pstress 1
+element quad 299 88 96 259 252 1 pstress 1
+element quad 300 252 259 97 89 1 pstress 1
+element quad 301 89 97 260 253 1 pstress 1
+element quad 302 253 260 98 90 1 pstress 1
+element quad 303 91 99 261 254 1 pstress 1
+element quad 304 254 261 100 92 1 pstress 1
+element quad 305 92 100 262 255 1 pstress 1
+element quad 306 255 262 101 93 1 pstress 1
+element quad 307 93 101 263 256 1 pstress 1
+element quad 308 256 263 102 94 1 pstress 1
+element quad 309 94 102 264 257 1 pstress 1
+element quad 310 257 264 103 95 1 pstress 1
+element quad 311 95 103 265 258 1 pstress 1
+element quad 312 258 265 104 96 1 pstress 1
+element quad 313 96 104 266 259 1 pstress 1
+element quad 314 259 266 105 97 1 pstress 1
+element quad 315 97 105 267 260 1 pstress 1
+element quad 316 260 267 106 98 1 pstress 1
+element quad 317 99 107 268 261 1 pstress 1
+element quad 318 261 268 108 100 1 pstress 1
+element quad 319 100 108 269 262 1 pstress 1
+element quad 320 262 269 109 101 1 pstress 1
+element quad 321 101 109 270 263 1 pstress 1
+element quad 322 263 270 110 102 1 pstress 1
+element quad 323 102 110 271 264 1 pstress 1
+element quad 324 264 271 111 103 1 pstress 1
+element quad 325 103 111 272 265 1 pstress 1
+element quad 326 265 272 112 104 1 pstress 1
+element quad 327 104 112 273 266 1 pstress 1
+element quad 328 266 273 113 105 1 pstress 1
+element quad 329 105 113 274 267 1 pstress 1
+element quad 330 267 274 114 106 1 pstress 1
+element quad 331 107 115 275 268 1 pstress 1
+element quad 332 268 275 116 108 1 pstress 1
+element quad 333 108 116 276 269 1 pstress 1
+element quad 334 269 276 117 109 1 pstress 1
+element quad 335 109 117 277 270 1 pstress 1
+element quad 336 270 277 118 110 1 pstress 1
+element quad 337 110 118 278 271 1 pstress 1
+element quad 338 271 278 119 111 1 pstress 1
+element quad 339 111 119 279 272 1 pstress 1
+element quad 340 272 279 120 112 1 pstress 1
+element quad 341 112 120 280 273 1 pstress 1
+element quad 342 273 280 121 113 1 pstress 1
+element quad 343 113 121 281 274 1 pstress 1
+element quad 344 274 281 122 114 1 pstress 1
+element quad 345 115 123 282 275 1 pstress 1
+element quad 346 275 282 124 116 1 pstress 1
+element quad 347 116 124 283 276 1 pstress 1
+element quad 348 276 283 125 117 1 pstress 1
+element quad 349 117 125 284 277 1 pstress 1
+element quad 350 277 284 126 118 1 pstress 1
+element quad 351 118 126 285 278 1 pstress 1
+element quad 352 278 285 127 119 1 pstress 1
+element quad 353 119 127 286 279 1 pstress 1
+element quad 354 279 286 128 120 1 pstress 1
+element quad 355 120 128 287 280 1 pstress 1
+element quad 356 280 287 129 121 1 pstress 1
+element quad 357 121 129 288 281 1 pstress 1
+element quad 358 281 288 130 122 1 pstress 1
+element quad 359 123 131 289 282 1 pstress 1
+element quad 360 282 289 132 124 1 pstress 1
+element quad 361 124 132 290 283 1 pstress 1
+element quad 362 283 290 133 125 1 pstress 1
+element quad 363 125 133 291 284 1 pstress 1
+element quad 364 284 291 134 126 1 pstress 1
+element quad 365 126 134 292 285 1 pstress 1
+element quad 366 285 292 135 127 1 pstress 1
+element quad 367 127 135 293 286 1 pstress 1
+element quad 368 286 293 136 128 1 pstress 1
+element quad 369 128 136 294 287 1 pstress 1
+element quad 370 287 294 137 129 1 pstress 1
+element quad 371 129 137 295 288 1 pstress 1
+element quad 372 288 295 138 130 1 pstress 1
+element quad 373 131 139 296 289 1 pstress 1
+element quad 374 289 296 140 132 1 pstress 1
+element quad 375 132 140 297 290 1 pstress 1
+element quad 376 290 297 141 133 1 pstress 1
+element quad 377 133 141 298 291 1 pstress 1
+element quad 378 291 298 142 134 1 pstress 1
+element quad 379 134 142 299 292 1 pstress 1
+element quad 380 292 299 143 135 1 pstress 1
+element quad 381 135 143 300 293 1 pstress 1
+element quad 382 293 300 144 136 1 pstress 1
+element quad 383 136 144 301 294 1 pstress 1
+element quad 384 294 301 145 137 1 pstress 1
+element quad 385 137 145 302 295 1 pstress 1
+element quad 386 295 302 146 138 1 pstress 1
+element quad 387 139 147 303 296 1 pstress 1
+element quad 388 296 303 148 140 1 pstress 1
+element quad 389 140 148 304 297 1 pstress 1
+element quad 390 297 304 149 141 1 pstress 1
+element quad 391 141 149 305 298 1 pstress 1
+element quad 392 298 305 150 142 1 pstress 1
+element quad 393 142 150 306 299 1 pstress 1
+element quad 394 299 306 151 143 1 pstress 1
+element quad 395 143 151 307 300 1 pstress 1
+element quad 396 300 307 152 144 1 pstress 1
+element quad 397 144 152 308 301 1 pstress 1
+element quad 398 301 308 153 145 1 pstress 1
+element quad 399 145 153 309 302 1 pstress 1
+element quad 400 302 309 154 146 1 pstress 1
+element quad 401 147 155 310 303 1 pstress 1
+element quad 402 303 310 156 148 1 pstress 1
+element quad 403 148 156 311 304 1 pstress 1
+element quad 404 304 311 157 149 1 pstress 1
+element quad 405 149 157 312 305 1 pstress 1
+element quad 406 305 312 158 150 1 pstress 1
+element quad 407 150 158 313 306 1 pstress 1
+element quad 408 306 313 159 151 1 pstress 1
+element quad 409 151 159 314 307 1 pstress 1
+element quad 410 307 314 160 152 1 pstress 1
+element quad 411 152 160 315 308 1 pstress 1
+element quad 412 308 315 161 153 1 pstress 1
+element quad 413 153 161 316 309 1 pstress 1
+element quad 414 309 316 162 154 1 pstress 1
+element quad 415 155 163 317 310 1 pstress 1
+element quad 416 310 317 164 156 1 pstress 1
+element quad 417 156 164 318 311 1 pstress 1
+element quad 418 311 318 165 157 1 pstress 1
+element quad 419 157 165 319 312 1 pstress 1
+element quad 420 312 319 166 158 1 pstress 1
+element quad 421 158 166 320 313 1 pstress 1
+element quad 422 313 320 167 159 1 pstress 1
+element quad 423 159 167 321 314 1 pstress 1
+element quad 424 314 321 168 160 1 pstress 1
+element quad 425 160 168 322 315 1 pstress 1
+element quad 426 315 322 169 161 1 pstress 1
+element quad 427 161 169 323 316 1 pstress 1
+element quad 428 316 323 170 162 1 pstress 1
+element quad 429 163 3 324 317 1 pstress 1
+element quad 430 317 324 171 164 1 pstress 1
+element quad 431 164 171 325 318 1 pstress 1
+element quad 432 318 325 172 165 1 pstress 1
+element quad 433 165 172 326 319 1 pstress 1
+element quad 434 319 326 173 166 1 pstress 1
+element quad 435 166 173 327 320 1 pstress 1
+element quad 436 320 327 174 167 1 pstress 1
+element quad 437 167 174 328 321 1 pstress 1
+element quad 438 321 328 175 168 1 pstress 1
+element quad 439 168 175 329 322 1 pstress 1
+element quad 440 322 329 176 169 1 pstress 1
+element quad 441 169 176 330 323 1 pstress 1
+element quad 442 323 330 2 170 1 pstress 1
+

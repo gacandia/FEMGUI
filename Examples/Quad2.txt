@@ -1,0 +1,93 @@
+window -100 300 -50 200
+gridlines X [-100:50:300] Y [-50:50:200]
+
+mat 100 Steel01 ElasticIsotropic 2.0e6 0.25 0
+mat 101 Steel02 ElasticIsotropic 2.1e6 0.30 0
+
+section 1 B3040 100 70 16000 11000 50
+section 2 B3041 100 80 20000 5000  50
+
+node 1 0 0      
+node 2 100 0    
+node 3 200 0    
+node 4 0 100    
+node 5 100 100  
+node 6 200 100  
+node 7 50 0     
+node 8 50 50    
+node 9 0 50     
+node 10 50 100  
+node 11 100 50  
+node 12 150 0   
+node 13 150 50  
+node 14 150 100 
+node 15 200 50  
+node 16 25 0    
+node 17 25 25   
+node 18 0 25    
+node 19 25 50   
+node 20 50 25   
+node 21 25 75   
+node 22 0 75    
+node 23 25 100  
+node 24 50 75   
+node 25 75 0    
+node 26 75 25   
+node 27 75 50   
+node 28 100 25  
+node 29 75 75   
+node 30 75 100  
+node 31 100 75  
+node 32 125 0   
+node 33 125 25  
+node 34 125 50  
+node 35 150 25  
+node 36 125 75  
+node 37 125 100 
+node 38 150 75  
+node 39 175 0   
+node 40 175 25  
+node 41 175 50  
+node 42 200 25  
+node 43 175 75  
+node 44 175 100 
+node 45 200 75  
+
+element quad 10011 1 16 17 18    0.5 pstress 101
+element quad 10012 9   18 17 19  0.5 pstress 101
+element quad 10013 17  16 7 20   0.5 pstress 101
+element quad 10014 19  17 20 8   0.5 pstress 101
+element quad 10015 22  9 19 21   0.5 pstress 101
+element quad 10016 4   22 21 23  0.5 pstress 101
+element quad 10017 21  19 8 24   0.5 pstress 101
+element quad 10018 23  21 24 10  0.5 pstress 101
+element quad 10019 20  7 25 26   0.5 pstress 101
+element quad 10020 8   20 26 27  0.5 pstress 101
+element quad 10021 26  25 2 28   0.5 pstress 101
+element quad 10022 27  26 28 11  0.5 pstress 101
+element quad 10023 24  8 27 29   0.5 pstress 101
+element quad 10024 10  24 29 30  0.5 pstress 101
+element quad 10025 29  27 11 31  0.5 pstress 101
+element quad 10026 30  29 31 5   0.5 pstress 101
+element quad 10027 28  2 32 33   0.5 pstress 101
+element quad 10028 11  28 33 34  0.5 pstress 101
+element quad 10029 33  32 12 35  0.5 pstress 101
+element quad 10030 34  33 35 13  0.5 pstress 101
+element quad 10031 31  11 34 36  0.5 pstress 101
+element quad 10032 5   31 36 37  0.5 pstress 101
+element quad 10033 36  34 13 38  0.5 pstress 101
+element quad 10034 37  36 38 14  0.5 pstress 101
+element quad 10035 35  12 39 40  0.5 pstress 101
+element quad 10036 13  35 40 41  0.5 pstress 101
+element quad 10037 40  39 3 42   0.5 pstress 101
+element quad 10038 41  40 42 15  0.5 pstress 101
+element quad 10039 38  13 41 43  0.5 pstress 101
+element quad 10040 14  38 43 44  0.5 pstress 101
+element quad 10041 43  41 15 45  0.5 pstress 101
+element quad 10042 44  43 45 6   0.5 pstress 101
+
+fix 1  1 1 1 
+fix 4  1 1 1 
+fix 9  1 1 1 
+fix 18 1 1 1
+fix 22 1 1 1

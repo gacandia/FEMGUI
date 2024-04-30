@@ -1,0 +1,19 @@
+window -0.5 1.5 -0.5 1.5
+gridlines X [-0.5:0.5:1.5] Y [-0.5:0.25:1.5]
+
+node 1 0 0
+node 2 0 1
+node 3 1 1
+
+
+mat 1 E ElasticIsotropic 1 0.25 0
+
+section 1 EI=2 1 1e4 2 1 0.1
+section 2 EI=1 1 1e4 1 1 0.1
+
+element elasticBeamColumn 1 1 2  1 0 0 
+element elasticBeamColumn 2 2 3  2 0 0 
+
+fix 1 1 1 1
+
+jointload 3 1 1 0

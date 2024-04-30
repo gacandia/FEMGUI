@@ -1,0 +1,183 @@
+units kgf,cm,s
+window -300 800 -300 800
+gridlines X [-200 -100 0 100 200 300 400 500 600 700] Y [-200 -100 0 100 200 300 400 500 600 700]
+
+mat 100 Steel01 ElasticIsotropic 2e+06 0.25 8.00204e-06
+mat 101 Steel02 ElasticIsotropic 2e+06 0.3 8.00204e-06
+
+section 200 B3040 100 70 16000 11000 50
+section 201 B3041 101 80 20000 5000 50
+
+node 1 -100 100
+node 2 300 100
+node 3 300 500
+node 4 -100 500
+node 5 300 300
+node 6 500 300
+node 7 500 500
+node 8 500 100
+node 9 400 300
+node 10 400 366.667
+node 11 300 366.667
+node 12 400 433.333
+node 13 300 433.333
+node 14 400 500
+node 15 500 366.667
+node 16 500 433.333
+node 17 400 100
+node 18 400 166.667
+node 19 300 166.667
+node 20 400 233.333
+node 21 300 233.333
+node 22 500 166.667
+node 23 500 233.333
+node 24 -42.8571 100
+node 25 -42.8571 157.143
+node 26 -100 157.143
+node 27 -42.8571 214.286
+node 28 -100 214.286
+node 29 -42.8571 271.429
+node 30 -100 271.429
+node 31 -42.8571 328.571
+node 32 -100 328.571
+node 33 -42.8571 385.714
+node 34 -100 385.714
+node 35 -42.8571 442.857
+node 36 -100 442.857
+node 37 -42.8571 500
+node 38 14.2857 100
+node 39 14.2857 157.143
+node 40 14.2857 214.286
+node 41 14.2857 271.429
+node 42 14.2857 328.571
+node 43 14.2857 385.714
+node 44 14.2857 442.857
+node 45 14.2857 500
+node 46 71.4286 100
+node 47 71.4286 157.143
+node 48 71.4286 214.286
+node 49 71.4286 271.429
+node 50 71.4286 328.571
+node 51 71.4286 385.714
+node 52 71.4286 442.857
+node 53 71.4286 500
+node 54 128.571 100
+node 55 128.571 157.143
+node 56 128.571 214.286
+node 57 128.571 271.429
+node 58 128.571 328.571
+node 59 128.571 385.714
+node 60 128.571 442.857
+node 61 128.571 500
+node 62 185.714 100
+node 63 185.714 157.143
+node 64 185.714 214.286
+node 65 185.714 271.429
+node 66 185.714 328.571
+node 67 185.714 385.714
+node 68 185.714 442.857
+node 69 185.714 500
+node 70 242.857 100
+node 71 242.857 157.143
+node 72 242.857 214.286
+node 73 242.857 271.429
+node 74 242.857 328.571
+node 75 242.857 385.714
+node 76 242.857 442.857
+node 77 242.857 500
+node 78 300 157.143
+node 79 300 214.286
+node 80 300 271.429
+node 81 300 328.571
+node 82 300 385.714
+node 83 300 442.857
+
+fix 1 1 1 1
+fix 4 1 1 1
+fix 26 1 1 1
+fix 28 1 1 1
+fix 30 1 1 1
+fix 32 1 1 1
+fix 34 1 1 1
+fix 36 1 1 1
+
+element quad 4 5 9 10 11 1 pstress 100
+element quad 5 11 10 12 13 1 pstress 100
+element quad 6 13 12 14 3 1 pstress 100
+element quad 7 9 6 15 10 1 pstress 100
+element quad 8 10 15 16 12 1 pstress 100
+element quad 9 12 16 7 14 1 pstress 100
+element quad 10 2 17 18 19 1 pstress 100
+element quad 11 19 18 20 21 1 pstress 100
+element quad 12 21 20 9 5 1 pstress 100
+element quad 13 17 8 22 18 1 pstress 100
+element quad 14 18 22 23 20 1 pstress 100
+element quad 15 20 23 6 9 1 pstress 100
+element quad 16 1 24 25 26 1 pstress 100
+element quad 17 26 25 27 28 1 pstress 100
+element quad 18 28 27 29 30 1 pstress 100
+element quad 19 30 29 31 32 1 pstress 100
+element quad 20 32 31 33 34 1 pstress 100
+element quad 21 34 33 35 36 1 pstress 100
+element quad 22 36 35 37 4 1 pstress 100
+element quad 23 24 38 39 25 1 pstress 100
+element quad 24 25 39 40 27 1 pstress 100
+element quad 25 27 40 41 29 1 pstress 100
+element quad 26 29 41 42 31 1 pstress 100
+element quad 27 31 42 43 33 1 pstress 100
+element quad 28 33 43 44 35 1 pstress 100
+element quad 29 35 44 45 37 1 pstress 100
+element quad 30 38 46 47 39 1 pstress 100
+element quad 31 39 47 48 40 1 pstress 100
+element quad 32 40 48 49 41 1 pstress 100
+element quad 33 41 49 50 42 1 pstress 100
+element quad 34 42 50 51 43 1 pstress 100
+element quad 35 43 51 52 44 1 pstress 100
+element quad 36 44 52 53 45 1 pstress 100
+element quad 37 46 54 55 47 1 pstress 100
+element quad 38 47 55 56 48 1 pstress 100
+element quad 39 48 56 57 49 1 pstress 100
+element quad 40 49 57 58 50 1 pstress 100
+element quad 41 50 58 59 51 1 pstress 100
+element quad 42 51 59 60 52 1 pstress 100
+element quad 43 52 60 61 53 1 pstress 100
+element quad 44 54 62 63 55 1 pstress 100
+element quad 45 55 63 64 56 1 pstress 100
+element quad 46 56 64 65 57 1 pstress 100
+element quad 47 57 65 66 58 1 pstress 100
+element quad 48 58 66 67 59 1 pstress 100
+element quad 49 59 67 68 60 1 pstress 100
+element quad 50 60 68 69 61 1 pstress 100
+element quad 51 62 70 71 63 1 pstress 100
+element quad 52 63 71 72 64 1 pstress 100
+element quad 53 64 72 73 65 1 pstress 100
+element quad 54 65 73 74 66 1 pstress 100
+element quad 55 66 74 75 67 1 pstress 100
+element quad 56 67 75 76 68 1 pstress 100
+element quad 57 68 76 77 69 1 pstress 100
+element quad 58 70 2 78 71 1 pstress 100
+element quad 59 71 78 79 72 1 pstress 100
+element quad 60 72 79 80 73 1 pstress 100
+element quad 61 73 80 81 74 1 pstress 100
+element quad 62 74 81 82 75 1 pstress 100
+element quad 63 75 82 83 76 1 pstress 100
+element quad 64 76 83 3 77 1 pstress 100
+
+edgeconstraint 58 59 60 nodes 19 21 
+edgeconstraint 61 62 63 64 nodes 5 11 13 
+
+jointload 6 0 100 0
+jointload 7 0 10 0
+jointload 8 0 10 0
+jointload 15 0 10 0
+jointload 16 0 10 0
+jointload 22 0 10 0
+jointload 23 0 10 0
+
+eleload 7 0 10
+eleload 8 0 10
+eleload 9 0 10
+eleload 13 0 10
+eleload 14 0 10
+eleload 15 0 10
+
