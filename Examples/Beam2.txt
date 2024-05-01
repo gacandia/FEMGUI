@@ -113,9 +113,67 @@ equaldof 21 22 23 24 25 dof 1 2
 equaldof 26 27 28 29 30 dof 1 2 
 equaldof 31 32 33 34 35 dof 1 2 
 
-jointload 31 1 0 0
-jointload 32 1 0 0
-jointload 33 1 0 0
-jointload 34 1 0 0
-jointload 35 1 0 0
 
+#loadcase DEAD swm 1
+#jointload 31 1 0 0
+#jointload 32 1 0 0
+#jointload 33 1 0 0
+#jointload 34 1 0 0
+#jointload 35 1 0 0
+#
+#
+#loadcase LIVE swm 0
+eleload 1  continuous global 0 -1
+eleload 2  continuous global 0 -1
+eleload 3  continuous global 0 -1
+eleload 4  continuous global 0 -1
+eleload 5  continuous global 0 -1
+eleload 6  continuous global 0 -1
+eleload 7  continuous global 0 -1
+eleload 8  continuous global 0 -1
+eleload 9  continuous global 0 -1
+eleload 10 continuous global 0 -1
+eleload 11 continuous global 0 -1
+eleload 12 continuous global 0 -1
+eleload 13 continuous global 0 -1
+eleload 14 continuous global 0 -1
+eleload 15 continuous global 0 -1
+eleload 16 continuous global 0 -1
+eleload 17 continuous global 0 -1
+eleload 18 continuous global 0 -1
+eleload 19 continuous global 0 -1
+eleload 20 continuous global 0 -1
+eleload 21 continuous global 0 -1
+eleload 22 continuous global 0 -1
+eleload 23 continuous global 0 -1
+eleload 24 continuous global 0 -1
+eleload 25 continuous global 0 -1
+eleload 26 continuous global 0 -1
+eleload 27 continuous global 0 -1
+eleload 28 continuous global 0 -1
+eleload 29 continuous global 0 -1
+eleload 30 continuous global 0 -1
+eleload 31 continuous global 0 -1
+eleload 32 continuous global 0 -1
+eleload 33 continuous global 0 -1
+eleload 34 continuous global 0 -1
+eleload 35 continuous global 0 -1
+eleload 36 continuous global 0 -1
+eleload 37 continuous global 0 -1
+eleload 38 continuous global 0 -1
+eleload 39 continuous global 0 -1
+eleload 40 continuous global 0 -1
+eleload 41 continuous global 0 -1
+eleload 42 continuous global 0 -1
+eleload 43 continuous global 0 -1
+eleload 44 continuous global 0 -1
+eleload 45 continuous global 0 -1
+eleload 46 continuous global 0 -1
+eleload 47 continuous global 0 -1
+eleload 48 continuous global 0 -1
+eleload 49 continuous global 0 -1
+eleload 50 continuous global 0 -1
+eleload 51 continuous global 0 -1
+eleload 52 continuous global 0 -1
+eleload 53 continuous global 0 -1
+eleload 54 continuous global 0 -1

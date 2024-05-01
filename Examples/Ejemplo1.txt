@@ -1274,4 +1274,3 @@ element tri31 813 448 445 279 1 pstress 100
 element tri31 814 279 2 448 1 pstress 100
 
 jointdisp 3 0 1 0
-

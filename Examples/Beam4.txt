@@ -26,7 +26,7 @@ jointcons 3 1   2 1 1
 jointcons 3 2   2 1 1   4 1 -1    4 2 1
 jointcons 2 2   1 2 1
 
-
+loadcase D swm 0
 jointload 2 100 0 0
 jointload 3 100 0 0
 jointload 1 100 0 0

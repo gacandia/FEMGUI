@@ -166,6 +166,8 @@ element quad 64 76 83 3 77 1 pstress 100
 edgeconstraint 58 59 60 nodes 19 21 
 edgeconstraint 61 62 63 64 nodes 5 11 13 
 
+
+loadcase D swm 0
 jointload 6 0 100 0
 jointload 7 0 10 0
 jointload 8 0 10 0
@@ -174,10 +176,10 @@ jointload 16 0 10 0
 jointload 22 0 10 0
 jointload 23 0 10 0
 
-eleload 7 0 10
-eleload 8 0 10
-eleload 9 0 10
-eleload 13 0 10
-eleload 14 0 10
-eleload 15 0 10
+eleload   7 0 10
+eleload   8 0 10
+eleload   9 0 10
+eleload   13 0 10
+eleload   14 0 10
+eleload   15 0 10
 

@@ -27,5 +27,6 @@ fix 4 0 0 1
 jointcons 3 2 4 1 0.57735   #z3
 jointcons 4 2 4 1 0.57735   #z3
 
+loadcase D swm 0
 jointload 2 50 0 0         
 eleload  20 discrete global 1 0 50

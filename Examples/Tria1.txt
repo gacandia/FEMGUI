@@ -2421,6 +2421,7 @@ element tri31 2906 411 111 825 1 pstress 100
 element tri31 2907 218 810 411 1 pstress 100
 element tri31 2908 810 109 411 1 pstress 100
 
+loadcase D swm 0
 eleload 1373 0 10
 eleload 1374 0 10
 eleload 1375 0 10

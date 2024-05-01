@@ -16,4 +16,5 @@ element elasticBeamColumn 2 2 3  2 0 0
 
 fix 1 1 1 1
 
+loadcase D swm 0
 jointload 3 1 1 0

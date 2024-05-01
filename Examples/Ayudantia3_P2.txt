@@ -15,6 +15,7 @@ element elasticBeamColumn 2 2 3  1 0 0
 fix 1 1 1 0
 fix 2 0 1 0
 
+loadcase D swm 0
 #set P [expr -7/6]
 #jointload 3 0 $P 1
 

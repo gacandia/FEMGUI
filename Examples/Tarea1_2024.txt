@@ -28,6 +28,7 @@ fix 8 0 1 0
 
 equalDOF 4 5 1 2 #(se unen los puntos 4 y 5 con una rotula)
 
+loadcase D swm 0
 jointload 2 0 -2 0
 jointload 3 0  0 -3
 jointload 6 -3 -3 0

@@ -10525,6 +10525,7 @@ element quad 6799 5259 5263 5264 1352 1 pstress 100
 element quad 6800 5261 1353 5265 5263 1 pstress 100
 element quad 6801 5263 5265 3 5264 1 pstress 100
 
+loadcase D swm 0
 eleload 1682 0 -10
 eleload 1683 0 -10
 eleload 1684 0 -10

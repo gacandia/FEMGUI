@@ -23,5 +23,6 @@ fix 2 0 1 0
 fix 3 1 1 0
 fix 4 0 1 0
 
+loadcase D swm 0
 eleload 10 discrete   global | 0.1 0.2 0.5 0.7 |  0 0 0 0  |  -1 -1 -1 -1
 eleload 20 continuous global 0 1

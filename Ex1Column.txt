@@ -1,0 +1,23 @@
+units kgf,m,s
+window -6 6 -2 10
+gridlines auto
+
+mat 100 Steel01 ElasticIsotropic 2e+10 0.25 0
+mat 101 Steel02 ElasticIsotropic 2.1e+10 0.3 0
+
+section 21 Col 100 0.007 0.00016 0.00011 1
+section 22 Beam 101 0.008 0.0002 5e-05 0.6
+
+node 1 0 0
+node 2 0 8
+
+fix 1 1 1 1
+
+element elasticBeamColumn 1 1 2 21 0 0
+
+#eleload 1 continuous global  0 -100
+#eleload 1  continuous global  0 0.5 1  0 0 0  -100 -100 -100
+#eleload 1 continuous global  0 0.5 1  0 0 0  0  -100  0
+
+#eleload 1 discrete global  0.5 0 -100
+eleload 1 discrete global   0.2 0.5   0 0   -100 -200 
